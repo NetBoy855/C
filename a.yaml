@@ -509,7 +509,7 @@ proxies:
   - {"name":"KR_分享日记_23","type":"vless","server":"112.153.118.61","port":11777,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"tg@zdyz2","headers":{"host":"cfed.tgzdyz2.top"}}}
   - {"name":"PL_分享日记_8","type":"ss","server":"51.77.53.200","port":2376,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
   - {"name":"HK_分享日记_44","type":"vless","server":"8.210.55.134","port":2083,"uuid":"770e8a1b-980e-474d-b583-2e4e98acb854","tls":true,"servername":"notls.11111111.eu.org","network":"ws","ws-opts":{"path":"/","headers":{"host":"notls.11111111.eu.org"}}}
-  - {"name":"UA_分享日记_4","type":"ss","server":"141.105.130.28","port":55994,"password":"y1HalpmGwwp3KcwApMuDi8hBNTA8siWXchN4MkATHJE=","cipher":"2022-blake3-aes-256-gcm:N6LJG14hZrO0oltKY8TLyslD/m650APXOnPom0K8+u8="}
+  - {"name":"UA_分享日记_4","type":"vless","server":"141.105.130.28","port":55994,"password":"y1HalpmGwwp3KcwApMuDi8hBNTA8siWXchN4MkATHJE=","cipher":"2022-blake3-aes-256-gcm:N6LJG14hZrO0oltKY8TLyslD/m650APXOnPom0K8+u8="}
   - {"name":"KR_分享日记_24","type":"vless","server":"15.165.49.161","port":8080,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"/tg@zdyz2","headers":{"host":"cfed.tgzdyz2.top"}}}
   - {"name":"US_分享日记_195","type":"vless","server":"69.84.182.236","port":443,"uuid":"a13df940-020c-465f-bc89-ee5279b5cd6a","tls":true,"servername":"kk999.ylks.link","network":"ws","ws-opts":{"path":"/blue","headers":{"host":"kk999.ylks.link"}}}
   - {"name":"PL_分享日记_9","type":"ss","server":"51.77.53.200","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
