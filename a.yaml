@@ -585,7 +585,7 @@ proxies:
   - {"name":"FR_分享日记_10","type":"ss","server":"149.202.82.172","port":8118,"password":"cdBIDV42DCwnfIN","cipher":"aes-256-gcm"}
   - {"name":"US_分享日记_200","type":"vless","server":"94.103.124.195","port":443,"uuid":"c82f8880-bdd8-4a35-b8e7-ad5aa880f7d0","tls":true,"servername":"v600.ylkszy.eu.org","network":"ws","ws-opts":{"path":"/","headers":{"host":"v600.ylkszy.eu.org"}}}
   - {"name":"PL_分享日记_7","type":"ss","server":"51.77.53.200","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
-  - {"name":"UA_分享日记_5","type":"ss","server":"91.231.182.193","port":52346,"password":"CB3zIOrdyc+N5XdMkBGqn1Q5LWcjStU2x+B4iHo+ebY=","cipher":"2022-blake3-aes-256-gcm:JTBh5Rw1xawLbLVZd5fcDzP/GPSIkCH6I3CdRVMuBXo="}
+  - {"name":"UA_分享日记_5","type":"ss","server":"51.77.53.200","port":9101,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
   - {"name":"KR_分享日记_26","type":"vless","server":"146.56.136.39","port":10099,"uuid":"a13df940-020c-465f-bc89-ee5279b5cd6a","tls":true,"servername":"kk555.ylks.link","network":"ws","ws-opts":{"path":"/blue","headers":{"host":"kk555.ylks.link"}}}
   - {"name":"LU_分享日记_15","type":"vless","server":"188.42.89.64","port":443,"uuid":"2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5","tls":true,"servername":"cfed.tgzdyz2.top","network":"ws","ws-opts":{"path":"tg@zdyz2","headers":{"host":"cfed.tgzdyz2.top"}}}
   - {"name":"PL_分享日记_8","type":"ss","server":"51.77.53.200","port":6379,"password":"zDNVedRFPQexG9v","cipher":"aes-256-gcm"}
