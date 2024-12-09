@@ -9,8 +9,8 @@ proxies:
     port: 80
   - name: 北京01
     type: http
-    server: 8.153.12.119
-    port: 3128
+    server: 8.140.140.249
+    port: 8088
   - name: 北京02
     type: http
     server: 8.130.39.155
