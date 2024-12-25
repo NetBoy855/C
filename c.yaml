@@ -9,12 +9,12 @@ proxies:
     port: 80
   - name: 北京01
     type: http
-    server: 8.140.140.249
+    server: 221.216.142.58
     port: 8088
   - name: 北京02
     type: http
-    server: 8.130.39.155
-    port: 3389
+    server: 180.89.56.240
+    port: 3128
 proxy-groups:
   - name: bj_group
     type: select
