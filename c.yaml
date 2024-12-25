@@ -8,9 +8,9 @@ proxies:
     server: 123.126.158.50
     port: 80
   - name: 北京01
-    type: http
-    server: 47.104.160.169
-    port: 443
+    type: socks5
+    server: 39.108.121.127
+    port: 1081
   - name: 北京02
     type: http
     server: 222.222.101.150
