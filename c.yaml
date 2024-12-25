@@ -13,20 +13,20 @@ proxies:
     port: 1081
   - name: 北京02
     type: http
-    server: 183.240.196.52
-    port: 38080
+    server: 115.231.181.40
+    port: 8128
   - name: 北京03
     type: http
-    server: 36.134.91.82
-    port: 8888
+    server: 47.97.121.189
+    port: 1000
   - name: 北京04
     type: http
-    server: 39.175.92.35
-    port: 30001
+    server: 106.42.30.243
+    port: 82
   - name: 北京05
     type: http
-    server: 112.86.55.130
-    port: 81
+    server: 120.76.140.155
+    port: 3333
 proxy-groups:
   - name: bj_group
     type: select
