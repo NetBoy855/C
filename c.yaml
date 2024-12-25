@@ -13,8 +13,8 @@ proxies:
     port: 1081
   - name: 北京02
     type: http
-    server: 222.222.101.150
-    port: 8008
+    server: 183.240.196.52
+    port: 38080
   - name: 北京03
     type: http
     server: 36.134.91.82
