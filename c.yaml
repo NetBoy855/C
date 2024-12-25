@@ -5,28 +5,28 @@ secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
   - name: 北京
     type: http
-    server: 123.126.158.50
-    port: 80
+    server: 180.89.56.240
+    port: 3128
   - name: 北京01
     type: socks5
     server: 39.108.121.127
     port: 1081
   - name: 北京02
     type: http
-    server: 115.231.181.40
-    port: 8128
+    server: 183.240.196.52
+    port: 38080
   - name: 北京03
     type: http
-    server: 47.97.121.189
-    port: 1000
+    server: 221.217.50.37
+    port: 9000
   - name: 北京04
     type: http
-    server: 106.42.30.243
-    port: 82
+    server: 120.133.37.235
+    port: 1080
   - name: 北京05
     type: http
-    server: 120.76.140.155
-    port: 3333
+    server: 101.35.42.99
+    port: 8080
 proxy-groups:
   - name: bj_group
     type: select
