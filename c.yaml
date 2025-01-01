@@ -13,8 +13,8 @@ proxies:
     port: 8080
   - name: 北京02
     type: http
-    server: 183.240.196.53
-    port: 38080
+    server: 114.250.20.192
+    port: 9000
   - name: 北京03
     type: http
     server: 221.217.50.37
