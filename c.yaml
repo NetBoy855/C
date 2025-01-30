@@ -13,20 +13,20 @@ proxies:
     port: 7899
   - name: 北京02
     type: http
-    server: 114.250.20.192
-    port: 9000
+    server: 120.133.37.235
+    port: 1080
   - name: 北京03
     type: http
     server: 221.217.50.37
     port: 9000
   - name: 北京04
     type: http
-    server: 120.133.37.235
-    port: 1080
+    server: 106.120.183.118
+    port: 12700
   - name: 北京05
     type: http
-    server: 101.35.42.99
-    port: 8080
+    server: 1.94.28.99
+    port: 6763
 proxy-groups:
   - name: bj_group
     type: select
