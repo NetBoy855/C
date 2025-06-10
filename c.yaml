@@ -4,9 +4,9 @@ external-controller: 127.0.0.1:49858
 secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
   - name: 北京
-    type: http
-    server: 120.131.124.23
-    port: 3128
+    type: socks5
+    server: 101.6.53.90
+    port: 9999
   - name: 北京01
     type: socks5
     server: 106.75.71.155
