@@ -5,8 +5,8 @@ secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
   - name: 北京
     type: socks5
-    server: 101.6.53.90
-    port: 9999
+    server: 120.53.103.114
+    port: 10443
   - name: 北京01
     type: socks5
     server: 106.75.71.155
