@@ -9,8 +9,8 @@ proxies:
     port: 10443
   - name: 北京01
     type: socks5
-    server: 106.75.71.155
-    port: 8443
+    server: 39.107.227.3
+    port: 1024
   - name: 北京02
     type: http
     server: 123.125.174.5
