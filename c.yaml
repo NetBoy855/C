@@ -12,9 +12,9 @@ proxies:
     server: 39.107.227.3
     port: 1024
   - name: 北京02
-    type: http
-    server: 123.125.174.5
-    port: 5906
+    type: socks5
+    server: 222.59.173.105
+    port: 44020
   - name: 北京03
     type: http
     server: 219.143.201.200
