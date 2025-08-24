@@ -5,55 +5,85 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 科技网络 🇺🇸, server: 38.11.220.185, port: 37001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880622934, headers: {Host: www.36790472.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 2, server: 107.167.5.151, port: 31001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.32969216.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 3, server: 38.11.50.200, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.54846389.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 4, server: 64.32.17.46, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.80382494.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 5, server: 45.58.182.86, port: 31004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.34250201.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 6, server: 45.58.180.36, port: 30001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.97749651.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 7, server: 192.74.245.250, port: 37002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880622934, headers: {Host: www.68584158.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 8, server: 38.11.49.41, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880622934, headers: {Host: www.45700497.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 9, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}, udp: true}
+  - {name: 科技网络 🇺🇸, server: 107.167.5.151, port: 31001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.32969216.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 2, server: 38.11.50.200, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.54846389.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 3, server: 64.32.17.46, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.80382494.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 4, server: 45.58.182.86, port: 31004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.34250201.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 5, server: 45.58.180.36, port: 30001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880895578, headers: {Host: www.97749651.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 6, server: 216.24.57.30, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}, udp: true}
+  - {name: 科技网络 🇺🇸 7, server: 137.175.40.202, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880622934, headers: {Host: www.95108080.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 8, server: 162.251.82.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 9, server: 160.79.104.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
   - {name: 科技网络 🇺🇸 10, server: 198.62.62.67, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}, udp: true}
-  - {name: 科技网络 🇺🇸 11, server: 137.175.40.202, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1755880622934, headers: {Host: www.95108080.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 12, server: 45.159.219.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 🇺🇸 11, server: 166.62.113.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 12, server: 199.34.229.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
   - {name: 科技网络 🇺🇸 13, server: 45.159.216.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 🇺🇸 14, server: 45.159.219.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 🇺🇸 15, server: 166.62.114.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 16, server: 45.40.150.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 17, server: 192.169.223.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 18, server: 166.62.104.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 19, server: 130.250.137.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 20, server: 192.200.160.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 21, server: 216.205.52.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 22, server: 160.79.105.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 23, server: 199.34.230.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 24, server: 192.200.160.211, port: 8880, type: vmess, uuid: 7a384b65-fcc9-32b1-bff4-d2494705b7b1, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 25, server: 72.167.241.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 26, server: 104.129.166.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 27, server: 184.174.80.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 28, server: 103.133.1.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 29, server: 166.62.115.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 30, server: 160.153.1.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 31, server: 50.62.175.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 32, server: 50.62.88.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇺🇸 33, server: 72.167.230.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
   - {name: 科技网络 🇷🇺, server: 45.67.215.95, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}, udp: true}
-  - {name: 科技网络 🇳🇱, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
-  - {name: 科技网络 🇨🇳, server: japan001.tmdns-sing.top, port: 13890, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
-  - {name: 科技网络 🇨🇳 2, server: usa022.tmdns-sing.top, port: 13892, type: ss, cipher: aes-128-gcm, password: 6b1e5475-7661-4921-aa26-d11758b2f3f1, udp: true}
-  - {name: 科技网络, server: OOoOOOooOp.222769.XYZ, port: 80, type: vmess, uuid: ce921385-2b31-45fe-84c5-1843e8ae845b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /VaaSEfNLHdW3I98dxLkez, headers: {Host: ooooooooop.222769.xyz}}, udp: true}
-  - {name: 科技网络 2, server: FFFFfFFvvBgnh.iRAn2035.DpDnS.OrG, port: 443, type: vmess, uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp, headers: {Host: fffffffvvbgnh.iran2035.dpdns.org}}, udp: true}
-  - {name: 科技网络 3, server: sssssssxxxx.2032.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: sssssssxxxx.2032.pp.ua}}, udp: true}
-  - {name: 科技网络 4, server: dddvvbn.931.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: dddvvbn.931.pp.ua}}, udp: true}
-  - {name: 科技网络 5, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
-  - {name: 科技网络 6, server: qqqqqqqqqqqqaaaa.www890604.dpdns.org, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: qqqqqqqqqqqqaaaa.www890604.dpdns.org}}, udp: true}
-  - {name: 科技网络 7, server: ssssssssssssfffffffgh.2032.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: ssssssssssssfffffffgh.2032.pp.ua}}, udp: true}
-  - {name: 科技网络 8, server: rak1ding.89060004.xyz, port: 2083, type: vmess, uuid: 75d96365-1229-4fc4-dbda-855717f876cf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: rak1d3.988988.shop}}, udp: true}
-  - {name: 科技网络 9, server: www.speedtest.net, port: 443, type: vmess, uuid: b7acf44f-3c3a-430c-8ed0-fb64ccc9a13a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvkwss, headers: {Host: BLaZE-fRA-64.BLaZECLOuD.sitE}}, udp: true}
-  - {name: 科技网络 10, server: gggggggggggggg.222769.xyz, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: gggggggggggggg.222769.xyz}}, udp: true}
-  - {name: 科技网络 11, server: aio.nolimit.dpdns.org, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.nolimit.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/146.190.192.43-80, headers: {Host: aio.nolimit.dpdns.org}}, udp: true}
-  - {name: 科技网络 12, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 13, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Channel--Telegram--@Hddify--@Hddify--@Hddify, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 14, server: 194.76.18.129, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}, udp: true}
-  - {name: 科技网络 15, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: "/Stupid-World/103.106.228.126-2053?*VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY---VITUREY*", headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 16, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: "/Stupid-World/103.106.228.126-2053?@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz", headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 17, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /telegram--Channel--@Hddify, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 18, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram-@CanfigVipTelgram, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 19, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /@VPNBaz---@VPNBaz---@VPNBaz---@VPNBaz---@VPNBaz---@VPNBaz, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 20, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /telegram--MTMVPN--telegram--MTMVPN--telegram--MTMVPN--telegram--MTMVPN--telegram--MTMVPN, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 21, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 22, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Tel-V2RAYNG_FARS---..., headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 23, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /telegram--Channel--MTMVPN---telegram--Channel--MTMVPN---telegram--Channel--MTMVPN---telegram--Channel--MTMVPN, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 24, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /@Hddify---@Hddify---@Hddify---@Hddify---@Hddify---@Hddify, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 25, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---@V2rayBaaz---, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 26, server: 104.21.72.109, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Stupid-World/103.106.228.126-2053, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 27, server: 45.80.110.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
-  - {name: 科技网络 28, server: 45.85.119.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: ttfang.fange.me}}, udp: true}
-  - {name: 科技网络 29, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
-  - {name: 科技网络 30, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Stupid-World/103.106.228.126-2053, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 31, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
-  - {name: 科技网络 32, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Tel-@ShadowProxy66, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
+  - {name: 科技网络 🇷🇺 2, server: 185.148.106.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇷🇺 3, server: 77.232.140.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇷🇺 4, server: 185.148.104.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇳🇱, server: 45.131.210.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 🇳🇱 2, server: 45.131.209.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 🇳🇱 3, server: 45.149.12.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 🇳🇱 4, server: 5.10.244.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇳🇱 5, server: 185.207.196.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇳🇱 6, server: 45.131.7.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 🇳🇱 7, server: 185.207.199.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇳🇱 8, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
+  - {name: 科技网络 🇮🇳, server: 103.245.228.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇮🇳 2, server: 154.198.173.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇬🇧, server: 185.193.29.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇬🇧 2, server: 185.193.28.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇬🇧 3, server: 109.176.239.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇫🇷, server: 141.11.203.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇪🇸, server: 185.251.82.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇪🇸 2, server: 185.251.80.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇩🇪, server: 77.37.33.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇨🇦, server: 74.49.215.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇦🇹, server: 212.183.88.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络, server: sssssssxxxx.2032.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: sssssssxxxx.2032.pp.ua}}, udp: true}
+  - {name: 科技网络 2, server: dddvvbn.931.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: dddvvbn.931.pp.ua}}, udp: true}
+  - {name: 科技网络 3, server: cloudgetservice.mcloudservice.site, port: 443, type: vmess, uuid: 37f464cb-b826-4278-9bf8-11bdf1ec892b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linvkws, headers: {Host: Fra-Vp-123.BLaZECLOUD.Site}}, udp: true}
+  - {name: 科技网络 4, server: test.flha.ru, port: 80, type: vmess, uuid: 2bab6b8f-8d6e-463a-8331-b9de3d56921d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /2bab6b8f-8d6e-463a-8331-b9de3d56921d-vmess, headers: {Host: test.flha.ru}}, udp: true}
+  - {name: 科技网络 5, server: 193.227.99.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 6, server: 89.116.180.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 7, server: 185.162.228.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 8, server: 77.74.228.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 9, server: 88.216.66.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 10, server: 45.130.125.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 11, server: 213.182.199.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 12, server: 77.105.163.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 13, server: 194.76.18.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 14, server: 45.85.118.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 15, server: 185.176.26.215, port: 8880, type: vmess, uuid: 0b67f537-9bdd-3c10-baa3-0554249bd788, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 16, server: aio.nolimit.dpdns.org, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.nolimit.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/146.190.192.43-80, headers: {Host: aio.nolimit.dpdns.org}}, udp: true}
+  - {name: 科技网络 17, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
+  - {name: 科技网络 18, server: 194.76.18.129, port: 443, type: trojan, password: tg-fq521free, sni: torjan.xn--xhq44j.eu.org, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: torjan.xn--xhq44j.eu.org}}, udp: true}
+  - {name: 科技网络 19, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
+  - {name: 科技网络 20, server: 45.80.110.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 21, server: 45.85.119.216, port: 2096, type: trojan, password: ttfang, sni: ttfang.fange.me, skip-cert-verify: true, network: ws, ws-opts: {path: /Telegram🇨🇳, headers: {Host: ttfang.fange.me}}, udp: true}
+  - {name: 科技网络 22, server: 104.21.72.109, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Stupid-World/103.106.228.126-2053, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
+  - {name: 科技网络 23, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -73,10 +103,49 @@ proxy-groups:
       - 科技网络 🇺🇸 11
       - 科技网络 🇺🇸 12
       - 科技网络 🇺🇸 13
+      - 科技网络 🇺🇸 14
+      - 科技网络 🇺🇸 15
+      - 科技网络 🇺🇸 16
+      - 科技网络 🇺🇸 17
+      - 科技网络 🇺🇸 18
+      - 科技网络 🇺🇸 19
+      - 科技网络 🇺🇸 20
+      - 科技网络 🇺🇸 21
+      - 科技网络 🇺🇸 22
+      - 科技网络 🇺🇸 23
+      - 科技网络 🇺🇸 24
+      - 科技网络 🇺🇸 25
+      - 科技网络 🇺🇸 26
+      - 科技网络 🇺🇸 27
+      - 科技网络 🇺🇸 28
+      - 科技网络 🇺🇸 29
+      - 科技网络 🇺🇸 30
+      - 科技网络 🇺🇸 31
+      - 科技网络 🇺🇸 32
+      - 科技网络 🇺🇸 33
       - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇷🇺 3
+      - 科技网络 🇷🇺 4
       - 科技网络 🇳🇱
-      - 科技网络 🇨🇳
-      - 科技网络 🇨🇳 2
+      - 科技网络 🇳🇱 2
+      - 科技网络 🇳🇱 3
+      - 科技网络 🇳🇱 4
+      - 科技网络 🇳🇱 5
+      - 科技网络 🇳🇱 6
+      - 科技网络 🇳🇱 7
+      - 科技网络 🇳🇱 8
+      - 科技网络 🇮🇳
+      - 科技网络 🇮🇳 2
+      - 科技网络 🇬🇧
+      - 科技网络 🇬🇧 2
+      - 科技网络 🇬🇧 3
+      - 科技网络 🇫🇷
+      - 科技网络 🇪🇸
+      - 科技网络 🇪🇸 2
+      - 科技网络 🇩🇪
+      - 科技网络 🇨🇦
+      - 科技网络 🇦🇹
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -100,15 +169,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -128,10 +188,49 @@ proxy-groups:
       - 科技网络 🇺🇸 11
       - 科技网络 🇺🇸 12
       - 科技网络 🇺🇸 13
+      - 科技网络 🇺🇸 14
+      - 科技网络 🇺🇸 15
+      - 科技网络 🇺🇸 16
+      - 科技网络 🇺🇸 17
+      - 科技网络 🇺🇸 18
+      - 科技网络 🇺🇸 19
+      - 科技网络 🇺🇸 20
+      - 科技网络 🇺🇸 21
+      - 科技网络 🇺🇸 22
+      - 科技网络 🇺🇸 23
+      - 科技网络 🇺🇸 24
+      - 科技网络 🇺🇸 25
+      - 科技网络 🇺🇸 26
+      - 科技网络 🇺🇸 27
+      - 科技网络 🇺🇸 28
+      - 科技网络 🇺🇸 29
+      - 科技网络 🇺🇸 30
+      - 科技网络 🇺🇸 31
+      - 科技网络 🇺🇸 32
+      - 科技网络 🇺🇸 33
       - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇷🇺 3
+      - 科技网络 🇷🇺 4
       - 科技网络 🇳🇱
-      - 科技网络 🇨🇳
-      - 科技网络 🇨🇳 2
+      - 科技网络 🇳🇱 2
+      - 科技网络 🇳🇱 3
+      - 科技网络 🇳🇱 4
+      - 科技网络 🇳🇱 5
+      - 科技网络 🇳🇱 6
+      - 科技网络 🇳🇱 7
+      - 科技网络 🇳🇱 8
+      - 科技网络 🇮🇳
+      - 科技网络 🇮🇳 2
+      - 科技网络 🇬🇧
+      - 科技网络 🇬🇧 2
+      - 科技网络 🇬🇧 3
+      - 科技网络 🇫🇷
+      - 科技网络 🇪🇸
+      - 科技网络 🇪🇸 2
+      - 科技网络 🇩🇪
+      - 科技网络 🇨🇦
+      - 科技网络 🇦🇹
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -155,15 +254,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -183,10 +273,49 @@ proxy-groups:
       - 科技网络 🇺🇸 11
       - 科技网络 🇺🇸 12
       - 科技网络 🇺🇸 13
+      - 科技网络 🇺🇸 14
+      - 科技网络 🇺🇸 15
+      - 科技网络 🇺🇸 16
+      - 科技网络 🇺🇸 17
+      - 科技网络 🇺🇸 18
+      - 科技网络 🇺🇸 19
+      - 科技网络 🇺🇸 20
+      - 科技网络 🇺🇸 21
+      - 科技网络 🇺🇸 22
+      - 科技网络 🇺🇸 23
+      - 科技网络 🇺🇸 24
+      - 科技网络 🇺🇸 25
+      - 科技网络 🇺🇸 26
+      - 科技网络 🇺🇸 27
+      - 科技网络 🇺🇸 28
+      - 科技网络 🇺🇸 29
+      - 科技网络 🇺🇸 30
+      - 科技网络 🇺🇸 31
+      - 科技网络 🇺🇸 32
+      - 科技网络 🇺🇸 33
       - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇷🇺 3
+      - 科技网络 🇷🇺 4
       - 科技网络 🇳🇱
-      - 科技网络 🇨🇳
-      - 科技网络 🇨🇳 2
+      - 科技网络 🇳🇱 2
+      - 科技网络 🇳🇱 3
+      - 科技网络 🇳🇱 4
+      - 科技网络 🇳🇱 5
+      - 科技网络 🇳🇱 6
+      - 科技网络 🇳🇱 7
+      - 科技网络 🇳🇱 8
+      - 科技网络 🇮🇳
+      - 科技网络 🇮🇳 2
+      - 科技网络 🇬🇧
+      - 科技网络 🇬🇧 2
+      - 科技网络 🇬🇧 3
+      - 科技网络 🇫🇷
+      - 科技网络 🇪🇸
+      - 科技网络 🇪🇸 2
+      - 科技网络 🇩🇪
+      - 科技网络 🇨🇦
+      - 科技网络 🇦🇹
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -210,15 +339,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
   - name: 📲 电报信息
     type: select
     proxies:
@@ -237,10 +357,49 @@ proxy-groups:
       - 科技网络 🇺🇸 11
       - 科技网络 🇺🇸 12
       - 科技网络 🇺🇸 13
+      - 科技网络 🇺🇸 14
+      - 科技网络 🇺🇸 15
+      - 科技网络 🇺🇸 16
+      - 科技网络 🇺🇸 17
+      - 科技网络 🇺🇸 18
+      - 科技网络 🇺🇸 19
+      - 科技网络 🇺🇸 20
+      - 科技网络 🇺🇸 21
+      - 科技网络 🇺🇸 22
+      - 科技网络 🇺🇸 23
+      - 科技网络 🇺🇸 24
+      - 科技网络 🇺🇸 25
+      - 科技网络 🇺🇸 26
+      - 科技网络 🇺🇸 27
+      - 科技网络 🇺🇸 28
+      - 科技网络 🇺🇸 29
+      - 科技网络 🇺🇸 30
+      - 科技网络 🇺🇸 31
+      - 科技网络 🇺🇸 32
+      - 科技网络 🇺🇸 33
       - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇷🇺 3
+      - 科技网络 🇷🇺 4
       - 科技网络 🇳🇱
-      - 科技网络 🇨🇳
-      - 科技网络 🇨🇳 2
+      - 科技网络 🇳🇱 2
+      - 科技网络 🇳🇱 3
+      - 科技网络 🇳🇱 4
+      - 科技网络 🇳🇱 5
+      - 科技网络 🇳🇱 6
+      - 科技网络 🇳🇱 7
+      - 科技网络 🇳🇱 8
+      - 科技网络 🇮🇳
+      - 科技网络 🇮🇳 2
+      - 科技网络 🇬🇧
+      - 科技网络 🇬🇧 2
+      - 科技网络 🇬🇧 3
+      - 科技网络 🇫🇷
+      - 科技网络 🇪🇸
+      - 科技网络 🇪🇸 2
+      - 科技网络 🇩🇪
+      - 科技网络 🇨🇦
+      - 科技网络 🇦🇹
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -264,15 +423,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -291,10 +441,49 @@ proxy-groups:
       - 科技网络 🇺🇸 11
       - 科技网络 🇺🇸 12
       - 科技网络 🇺🇸 13
+      - 科技网络 🇺🇸 14
+      - 科技网络 🇺🇸 15
+      - 科技网络 🇺🇸 16
+      - 科技网络 🇺🇸 17
+      - 科技网络 🇺🇸 18
+      - 科技网络 🇺🇸 19
+      - 科技网络 🇺🇸 20
+      - 科技网络 🇺🇸 21
+      - 科技网络 🇺🇸 22
+      - 科技网络 🇺🇸 23
+      - 科技网络 🇺🇸 24
+      - 科技网络 🇺🇸 25
+      - 科技网络 🇺🇸 26
+      - 科技网络 🇺🇸 27
+      - 科技网络 🇺🇸 28
+      - 科技网络 🇺🇸 29
+      - 科技网络 🇺🇸 30
+      - 科技网络 🇺🇸 31
+      - 科技网络 🇺🇸 32
+      - 科技网络 🇺🇸 33
       - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇷🇺 3
+      - 科技网络 🇷🇺 4
       - 科技网络 🇳🇱
-      - 科技网络 🇨🇳
-      - 科技网络 🇨🇳 2
+      - 科技网络 🇳🇱 2
+      - 科技网络 🇳🇱 3
+      - 科技网络 🇳🇱 4
+      - 科技网络 🇳🇱 5
+      - 科技网络 🇳🇱 6
+      - 科技网络 🇳🇱 7
+      - 科技网络 🇳🇱 8
+      - 科技网络 🇮🇳
+      - 科技网络 🇮🇳 2
+      - 科技网络 🇬🇧
+      - 科技网络 🇬🇧 2
+      - 科技网络 🇬🇧 3
+      - 科技网络 🇫🇷
+      - 科技网络 🇪🇸
+      - 科技网络 🇪🇸 2
+      - 科技网络 🇩🇪
+      - 科技网络 🇨🇦
+      - 科技网络 🇦🇹
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -318,15 +507,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -345,10 +525,49 @@ proxy-groups:
       - 科技网络 🇺🇸 11
       - 科技网络 🇺🇸 12
       - 科技网络 🇺🇸 13
+      - 科技网络 🇺🇸 14
+      - 科技网络 🇺🇸 15
+      - 科技网络 🇺🇸 16
+      - 科技网络 🇺🇸 17
+      - 科技网络 🇺🇸 18
+      - 科技网络 🇺🇸 19
+      - 科技网络 🇺🇸 20
+      - 科技网络 🇺🇸 21
+      - 科技网络 🇺🇸 22
+      - 科技网络 🇺🇸 23
+      - 科技网络 🇺🇸 24
+      - 科技网络 🇺🇸 25
+      - 科技网络 🇺🇸 26
+      - 科技网络 🇺🇸 27
+      - 科技网络 🇺🇸 28
+      - 科技网络 🇺🇸 29
+      - 科技网络 🇺🇸 30
+      - 科技网络 🇺🇸 31
+      - 科技网络 🇺🇸 32
+      - 科技网络 🇺🇸 33
       - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇷🇺 3
+      - 科技网络 🇷🇺 4
       - 科技网络 🇳🇱
-      - 科技网络 🇨🇳
-      - 科技网络 🇨🇳 2
+      - 科技网络 🇳🇱 2
+      - 科技网络 🇳🇱 3
+      - 科技网络 🇳🇱 4
+      - 科技网络 🇳🇱 5
+      - 科技网络 🇳🇱 6
+      - 科技网络 🇳🇱 7
+      - 科技网络 🇳🇱 8
+      - 科技网络 🇮🇳
+      - 科技网络 🇮🇳 2
+      - 科技网络 🇬🇧
+      - 科技网络 🇬🇧 2
+      - 科技网络 🇬🇧 3
+      - 科技网络 🇫🇷
+      - 科技网络 🇪🇸
+      - 科技网络 🇪🇸 2
+      - 科技网络 🇩🇪
+      - 科技网络 🇨🇦
+      - 科技网络 🇦🇹
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -372,15 +591,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -400,10 +610,49 @@ proxy-groups:
       - 科技网络 🇺🇸 11
       - 科技网络 🇺🇸 12
       - 科技网络 🇺🇸 13
+      - 科技网络 🇺🇸 14
+      - 科技网络 🇺🇸 15
+      - 科技网络 🇺🇸 16
+      - 科技网络 🇺🇸 17
+      - 科技网络 🇺🇸 18
+      - 科技网络 🇺🇸 19
+      - 科技网络 🇺🇸 20
+      - 科技网络 🇺🇸 21
+      - 科技网络 🇺🇸 22
+      - 科技网络 🇺🇸 23
+      - 科技网络 🇺🇸 24
+      - 科技网络 🇺🇸 25
+      - 科技网络 🇺🇸 26
+      - 科技网络 🇺🇸 27
+      - 科技网络 🇺🇸 28
+      - 科技网络 🇺🇸 29
+      - 科技网络 🇺🇸 30
+      - 科技网络 🇺🇸 31
+      - 科技网络 🇺🇸 32
+      - 科技网络 🇺🇸 33
       - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇷🇺 3
+      - 科技网络 🇷🇺 4
       - 科技网络 🇳🇱
-      - 科技网络 🇨🇳
-      - 科技网络 🇨🇳 2
+      - 科技网络 🇳🇱 2
+      - 科技网络 🇳🇱 3
+      - 科技网络 🇳🇱 4
+      - 科技网络 🇳🇱 5
+      - 科技网络 🇳🇱 6
+      - 科技网络 🇳🇱 7
+      - 科技网络 🇳🇱 8
+      - 科技网络 🇮🇳
+      - 科技网络 🇮🇳 2
+      - 科技网络 🇬🇧
+      - 科技网络 🇬🇧 2
+      - 科技网络 🇬🇧 3
+      - 科技网络 🇫🇷
+      - 科技网络 🇪🇸
+      - 科技网络 🇪🇸 2
+      - 科技网络 🇩🇪
+      - 科技网络 🇨🇦
+      - 科技网络 🇦🇹
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -427,15 +676,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -471,10 +711,49 @@ proxy-groups:
       - 科技网络 🇺🇸 11
       - 科技网络 🇺🇸 12
       - 科技网络 🇺🇸 13
+      - 科技网络 🇺🇸 14
+      - 科技网络 🇺🇸 15
+      - 科技网络 🇺🇸 16
+      - 科技网络 🇺🇸 17
+      - 科技网络 🇺🇸 18
+      - 科技网络 🇺🇸 19
+      - 科技网络 🇺🇸 20
+      - 科技网络 🇺🇸 21
+      - 科技网络 🇺🇸 22
+      - 科技网络 🇺🇸 23
+      - 科技网络 🇺🇸 24
+      - 科技网络 🇺🇸 25
+      - 科技网络 🇺🇸 26
+      - 科技网络 🇺🇸 27
+      - 科技网络 🇺🇸 28
+      - 科技网络 🇺🇸 29
+      - 科技网络 🇺🇸 30
+      - 科技网络 🇺🇸 31
+      - 科技网络 🇺🇸 32
+      - 科技网络 🇺🇸 33
       - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇷🇺 3
+      - 科技网络 🇷🇺 4
       - 科技网络 🇳🇱
-      - 科技网络 🇨🇳
-      - 科技网络 🇨🇳 2
+      - 科技网络 🇳🇱 2
+      - 科技网络 🇳🇱 3
+      - 科技网络 🇳🇱 4
+      - 科技网络 🇳🇱 5
+      - 科技网络 🇳🇱 6
+      - 科技网络 🇳🇱 7
+      - 科技网络 🇳🇱 8
+      - 科技网络 🇮🇳
+      - 科技网络 🇮🇳 2
+      - 科技网络 🇬🇧
+      - 科技网络 🇬🇧 2
+      - 科技网络 🇬🇧 3
+      - 科技网络 🇫🇷
+      - 科技网络 🇪🇸
+      - 科技网络 🇪🇸 2
+      - 科技网络 🇩🇪
+      - 科技网络 🇨🇦
+      - 科技网络 🇦🇹
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -498,15 +777,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
-      - 科技网络 28
-      - 科技网络 29
-      - 科技网络 30
-      - 科技网络 31
-      - 科技网络 32
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
