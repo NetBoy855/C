@@ -5,45 +5,39 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 科技网络 🇺🇸, server: 64.32.17.46, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756646487760, headers: {Host: www.80382494.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 2, server: 64.32.17.46, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756646487760, headers: {Host: www.80382494.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 3, server: 45.58.180.36, port: 30001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756646487760, headers: {Host: www.97749651.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 4, server: 45.58.180.36, port: 30001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756646487760, headers: {Host: www.97749651.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 5, server: 107.167.5.151, port: 31001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756646487760, headers: {Host: www.32969216.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 6, server: 107.167.5.151, port: 31001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756646487760, headers: {Host: www.32969216.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 7, server: 38.11.50.200, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756646487760, headers: {Host: www.54846389.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 8, server: 38.11.50.200, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756646487760, headers: {Host: www.54846389.xyz}}, udp: true}
-  - {name: 科技网络 🇺🇸 9, server: 38.11.50.200, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756132929587, headers: {Host: www.54846389.xyz}}, udp: true}
-  - {name: 科技网络 🇭🇰, server: awes35lesl.blhao0o.dpdns.org, port: 12009, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
-  - {name: 科技网络 🇭🇰 2, server: awes35lesl.blhao0o.dpdns.org, port: 12008, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
-  - {name: 科技网络 🇭🇰 3, server: 103.181.165.246, port: 12030, type: ss, cipher: aes-128-gcm, password: 01721e43-5389-4f97-b21c-900abb2bda9e, udp: true}
-  - {name: 科技网络, server: klo.986986.shop, port: 443, type: vmess, uuid: b75c9731-408d-4aa6-8ae9-3857205113a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nvjx6j7kbDQIQMZvbeVA9, headers: {Host: klo.986986.shop}}, udp: true}
-  - {name: 科技网络 2, server: klo.986986.shop, port: 443, type: vmess, uuid: b75c9731-408d-4aa6-8ae9-3857205113a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nvjx6j7kbDQIQMZvbeVA9, headers: {Host: klo.986986.shop}}, udp: true}
-  - {name: 科技网络 3, server: klo.986986.shop, port: 443, type: vmess, uuid: b75c9731-408d-4aa6-8ae9-3857205113a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nvjx6j7kbDQIQMZvbeVA9, headers: {Host: klo.986986.shop}}, udp: true}
-  - {name: 科技网络 4, server: OOoOOOooOp.222769.XYZ, port: 80, type: vmess, uuid: ce921385-2b31-45fe-84c5-1843e8ae845b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /VaaSEfNLHdW3I98dxLkez, headers: {Host: OOoOOOooOp.222769.XYZ}}, udp: true}
-  - {name: 科技网络 5, server: OOoOOOooOp.222769.XYZ, port: 80, type: vmess, uuid: ce921385-2b31-45fe-84c5-1843e8ae845b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /VaaSEfNLHdW3I98dxLkez, headers: {Host: ooooooooop.222769.xyz}}, udp: true}
-  - {name: 科技网络 6, server: OOoOOOooOp.222769.XYZ, port: 80, type: vmess, uuid: ce921385-2b31-45fe-84c5-1843e8ae845b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /VaaSEfNLHdW3I98dxLkez, headers: {Host: OOoOOOooOp.222769.XYZ}}, udp: true}
-  - {name: 科技网络 7, server: bBbbbbbBb.222769.XYZ, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: bbbbbbbbb.222769.xyz}}, udp: true}
-  - {name: 科技网络 8, server: bBbbbbbBb.222769.XYZ, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: bbbbbbbbb.222769.xyz}}, udp: true}
-  - {name: 科技网络 9, server: bBbbbbbBb.222769.XYZ, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: bbbbbbbbb.222769.xyz}}, udp: true}
-  - {name: 科技网络 10, server: gggggggggggggg.222769.xyz, port: 80, type: vmess, uuid: 2e65577e-8fdb-4bb1-a495-96f3122099a7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /f6taOMcOSZb9TPR, headers: {Host: gggggggggggggg.222769.xyz}}, udp: true}
-  - {name: 科技网络 11, server: aio.nolimit.dpdns.org, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.nolimit.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/146.190.192.43-80, headers: {Host: aio.nolimit.dpdns.org}}, udp: true}
-  - {name: 科技网络 12, server: aio.nolimit.dpdns.org, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.nolimit.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/146.190.192.43-80, headers: {Host: aio.nolimit.dpdns.org}}, udp: true}
-  - {name: 科技网络 13, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-88c9-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
-  - {name: 科技网络 14, server: aio.proxybox.dpdns.org, port: 443, type: trojan, password: 318cab24-ec99-40a6-a54a-0db9c661a3d0, sni: aio.proxybox.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /188.34.160.97-2053, headers: {Host: aio.proxybox.dpdns.org}}, udp: true}
-  - {name: 科技网络 15, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-88c9-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
-  - {name: 科技网络 16, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
-  - {name: 科技网络 17, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Tel-V2RAYNG_FARS---..., headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 18, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Tel-@ShadowProxy66, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 19, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Channel--Telegram--@Hddify--@Hddify--@Hddify, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 20, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /--TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY----TELEGRAM-VITUREY, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 21, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Tel-@V2ray_Alpha, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 22, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Channel--Telegram--@Hddify--@Hddify--@Hddify, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 23, server: 172.67.181.173, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /telegram--MTMVPN--telegram--MTMVPN--telegram--MTMVPN--telegram--MTMVPN--telegram--MTMVPN, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 24, server: aio.nolimit.dpdns.org, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.nolimit.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/146.190.192.43-80, headers: {Host: aio.nolimit.dpdns.org}}, udp: true}
-  - {name: 科技网络 25, server: 104.21.72.109, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: vpn.stupidworld.web.id, skip-cert-verify: true, network: ws, ws-opts: {path: /Stupid-World/103.106.228.126-2053, headers: {Host: vpn.stupidworld.web.id}}, udp: true}
-  - {name: 科技网络 26, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
-  - {name: 科技网络 27, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
+  - {name: 科技网络 🇺🇸, server: 142.0.131.171, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756815316069, headers: {Host: www.95108080.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 2, server: 142.0.131.171, port: 38003, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756815316069, headers: {Host: www.95108080.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 3, server: 38.11.220.168, port: 37001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756815316069, headers: {Host: www.36790472.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 4, server: 38.11.220.168, port: 37001, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756815316069, headers: {Host: www.36790472.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 5, server: 38.11.50.200, port: 30004, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756815648812, headers: {Host: www.54846389.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 6, server: 38.33.55.87, port: 37002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756815316069, headers: {Host: www.68584158.xyz}}, udp: true}
+  - {name: 科技网络 🇺🇸 7, server: 38.33.55.87, port: 37002, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1756815316069, headers: {Host: www.68584158.xyz}}, udp: true}
+  - {name: 科技网络 🇷🇺, server: 185.148.104.222, port: 8880, type: vmess, uuid: 2d97c25c-9d4c-316b-ae37-a8c5c98cb315, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram@freecodes/?ed=2560", headers: {Host: TG.freecodes.s4.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇷🇺 2, server: 5.182.84.249, port: 8880, type: vmess, uuid: 0acfeb7d-7ff5-39e1-be97-af07eb666319, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/dabai&Telegram🇨🇳@WangCai2/?ed=2560", headers: {Host: TG.WangCai2.s2.db-link02.top}}, udp: true}
+  - {name: 科技网络 🇳🇱, server: switcher-nick-croquet.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 9tqhMdIrTkgQ46PvhyAtMH, udp: true}
+  - {name: 科技网络, server: csgo.com, port: 80, type: vmess, uuid: 457f64d5-cc68-4911-82ee-636ebb568a46, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}, udp: true}
+  - {name: 科技网络 2, server: DdDDdddddDFrrrrrrRRy.IRan2035.dPDns.ORG, port: 443, type: vmess, uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp, headers: {Host: ddddddddddfrrrrrrrry.iran2035.dpdns.org}}, udp: true}
+  - {name: 科技网络 3, server: fastcup.net, port: 80, type: vmess, uuid: 457f64d5-cc68-4911-82ee-636ebb568a46, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}, udp: true}
+  - {name: 科技网络 4, server: FFFFfFFvvBgnh.iRAn2035.DpDnS.OrG, port: 443, type: vmess, uuid: a94fafdb-10d6-46c2-be8a-5c2e8358fbb0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /CjJ9A46ZRHvgWvVcmjyiKVby2Lp, headers: {Host: fffffffvvbgnh.iran2035.dpdns.org}}, udp: true}
+  - {name: 科技网络 5, server: klo.986986.shop, port: 443, type: vmess, uuid: b75c9731-408d-4aa6-8ae9-3857205113a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nvjx6j7kbDQIQMZvbeVA9, headers: {Host: klo.986986.shop}}, udp: true}
+  - {name: 科技网络 6, server: klo.986986.shop, port: 443, type: vmess, uuid: b75c9731-408d-4aa6-8ae9-3857205113a1, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /nvjx6j7kbDQIQMZvbeVA9, headers: {Host: klo.986986.shop}}, udp: true}
+  - {name: 科技网络 7, server: OOoOOOooOp.222769.XYZ, port: 80, type: vmess, uuid: ce921385-2b31-45fe-84c5-1843e8ae845b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /VaaSEfNLHdW3I98dxLkez, headers: {Host: ooooooooop.222769.xyz}}, udp: true}
+  - {name: 科技网络 8, server: OOoOOOooOp.222769.XYZ, port: 80, type: vmess, uuid: ce921385-2b31-45fe-84c5-1843e8ae845b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /VaaSEfNLHdW3I98dxLkez, headers: {Host: ooooooooop.222769.xyz}}, udp: true}
+  - {name: 科技网络 9, server: pubg.ac, port: 80, type: vmess, uuid: 457f64d5-cc68-4911-82ee-636ebb568a46, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /profile/telegram@ssrsub, headers: {Host: cdn-node-oss-99.paofu.de}}, udp: true}
+  - {name: 科技网络 10, server: ssssssssssssfffffffgh.2032.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: ssssssssssssfffffffgh.2032.pp.ua}}, udp: true}
+  - {name: 科技网络 11, server: sssssssxxxx.2032.pp.ua, port: 443, type: vmess, uuid: 4174b95d-115e-4d39-add6-1f8db95bb860, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /6We3U9Df1WGxgFnoFPw1, headers: {Host: sssssssxxxx.2032.pp.ua}}, udp: true}
+  - {name: 科技网络 12, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
+  - {name: 科技网络 13, server: test3.flha.ru, port: 80, type: vmess, uuid: 9a81340d-f81b-4c76-8abb-f4d305c535c0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /9a81340d-f81b-4c76-8abb-f4d305c535c0-vmess, headers: {Host: test3.flha.ru}}, udp: true}
+  - {name: 科技网络 14, server: aio.nolimit.dpdns.org, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.nolimit.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/146.190.192.43-80, headers: {Host: aio.nolimit.dpdns.org}}, udp: true}
+  - {name: 科技网络 15, server: aio.nolimit.dpdns.org, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.nolimit.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/146.190.192.43-80, headers: {Host: aio.nolimit.dpdns.org}}, udp: true}
+  - {name: 科技网络 16, server: aio.nolimit.dpdns.org, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.nolimit.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/146.190.192.43-80, headers: {Host: aio.nolimit.dpdns.org}}, udp: true}
+  - {name: 科技网络 17, server: aio.proxybox.dpdns.org, port: 443, type: trojan, password: 318cab24-ec99-40a6-a54a-0db9c661a3d0, sni: aio.proxybox.dpdns.org, skip-cert-verify: true, network: ws, ws-opts: {path: /188.34.160.97-2053, headers: {Host: aio.proxybox.dpdns.org}}, udp: true}
+  - {name: 科技网络 18, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
+  - {name: 科技网络 19, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-88c9-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
+  - {name: 科技网络 20, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-8c69-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
+  - {name: 科技网络 21, server: aio.zipzap.biz.id, port: 443, type: trojan, password: f282b878-8711-45a1-88c9-5564172123c1, sni: aio.zipzap.biz.id, skip-cert-verify: true, network: ws, ws-opts: {path: /aioproxybot/129.150.49.58-18650, headers: {Host: aio.zipzap.biz.id}}, udp: true}
+  - {name: 科技网络 22, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
+  - {name: 科技网络 23, server: arxfw2b78fi2q9hzylhn.freesocks.work, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: Nk9asglDzHzjktVzTkvhaA, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -57,11 +51,9 @@ proxy-groups:
       - 科技网络 🇺🇸 5
       - 科技网络 🇺🇸 6
       - 科技网络 🇺🇸 7
-      - 科技网络 🇺🇸 8
-      - 科技网络 🇺🇸 9
-      - 科技网络 🇭🇰
-      - 科技网络 🇭🇰 2
-      - 科技网络 🇭🇰 3
+      - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇳🇱
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -85,10 +77,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -102,11 +90,9 @@ proxy-groups:
       - 科技网络 🇺🇸 5
       - 科技网络 🇺🇸 6
       - 科技网络 🇺🇸 7
-      - 科技网络 🇺🇸 8
-      - 科技网络 🇺🇸 9
-      - 科技网络 🇭🇰
-      - 科技网络 🇭🇰 2
-      - 科技网络 🇭🇰 3
+      - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇳🇱
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -130,10 +116,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -147,11 +129,9 @@ proxy-groups:
       - 科技网络 🇺🇸 5
       - 科技网络 🇺🇸 6
       - 科技网络 🇺🇸 7
-      - 科技网络 🇺🇸 8
-      - 科技网络 🇺🇸 9
-      - 科技网络 🇭🇰
-      - 科技网络 🇭🇰 2
-      - 科技网络 🇭🇰 3
+      - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇳🇱
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -175,10 +155,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
   - name: 📲 电报信息
     type: select
     proxies:
@@ -191,11 +167,9 @@ proxy-groups:
       - 科技网络 🇺🇸 5
       - 科技网络 🇺🇸 6
       - 科技网络 🇺🇸 7
-      - 科技网络 🇺🇸 8
-      - 科技网络 🇺🇸 9
-      - 科技网络 🇭🇰
-      - 科技网络 🇭🇰 2
-      - 科技网络 🇭🇰 3
+      - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇳🇱
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -219,10 +193,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -235,11 +205,9 @@ proxy-groups:
       - 科技网络 🇺🇸 5
       - 科技网络 🇺🇸 6
       - 科技网络 🇺🇸 7
-      - 科技网络 🇺🇸 8
-      - 科技网络 🇺🇸 9
-      - 科技网络 🇭🇰
-      - 科技网络 🇭🇰 2
-      - 科技网络 🇭🇰 3
+      - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇳🇱
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -263,10 +231,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -279,11 +243,9 @@ proxy-groups:
       - 科技网络 🇺🇸 5
       - 科技网络 🇺🇸 6
       - 科技网络 🇺🇸 7
-      - 科技网络 🇺🇸 8
-      - 科技网络 🇺🇸 9
-      - 科技网络 🇭🇰
-      - 科技网络 🇭🇰 2
-      - 科技网络 🇭🇰 3
+      - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇳🇱
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -307,10 +269,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
   - name: 📢 谷歌FCM
     type: select
     proxies:
@@ -324,11 +282,9 @@ proxy-groups:
       - 科技网络 🇺🇸 5
       - 科技网络 🇺🇸 6
       - 科技网络 🇺🇸 7
-      - 科技网络 🇺🇸 8
-      - 科技网络 🇺🇸 9
-      - 科技网络 🇭🇰
-      - 科技网络 🇭🇰 2
-      - 科技网络 🇭🇰 3
+      - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇳🇱
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -352,10 +308,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -385,11 +337,9 @@ proxy-groups:
       - 科技网络 🇺🇸 5
       - 科技网络 🇺🇸 6
       - 科技网络 🇺🇸 7
-      - 科技网络 🇺🇸 8
-      - 科技网络 🇺🇸 9
-      - 科技网络 🇭🇰
-      - 科技网络 🇭🇰 2
-      - 科技网络 🇭🇰 3
+      - 科技网络 🇷🇺
+      - 科技网络 🇷🇺 2
+      - 科技网络 🇳🇱
       - 科技网络
       - 科技网络 2
       - 科技网络 3
@@ -413,10 +363,6 @@ proxy-groups:
       - 科技网络 21
       - 科技网络 22
       - 科技网络 23
-      - 科技网络 24
-      - 科技网络 25
-      - 科技网络 26
-      - 科技网络 27
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2663,434 +2609,6 @@ rules:
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
-  - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
-  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
-  - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
-  - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
-  - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
-  - DOMAIN-SUFFIX,garena.com,🚀 节点选择
-  - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
-  - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
-  - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
-  - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
-  - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
-  - DOMAIN-SUFFIX,notion.so,🚀 节点选择
-  - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
-  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
-  - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
-  - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
-  - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
-  - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
-  - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
-  - DOMAIN-SUFFIX,eu,🚀 节点选择
-  - DOMAIN-SUFFIX,hk,🚀 节点选择
-  - DOMAIN-SUFFIX,jp,🚀 节点选择
-  - DOMAIN-SUFFIX,kr,🚀 节点选择
-  - DOMAIN-SUFFIX,sg,🚀 节点选择
-  - DOMAIN-SUFFIX,tw,🚀 节点选择
-  - DOMAIN-SUFFIX,uk,🚀 节点选择
-  - DOMAIN-KEYWORD,1e100,🚀 节点选择
-  - DOMAIN-KEYWORD,abema,🚀 节点选择
-  - DOMAIN-KEYWORD,appledaily,🚀 节点选择
-  - DOMAIN-KEYWORD,avtb,🚀 节点选择
-  - DOMAIN-KEYWORD,beetalk,🚀 节点选择
-  - DOMAIN-KEYWORD,blogspot,🚀 节点选择
-  - DOMAIN-KEYWORD,dropbox,🚀 节点选择
-  - DOMAIN-KEYWORD,facebook,🚀 节点选择
-  - DOMAIN-KEYWORD,fbcdn,🚀 节点选择
-  - DOMAIN-KEYWORD,github,🚀 节点选择
-  - DOMAIN-KEYWORD,gmail,🚀 节点选择
-  - DOMAIN-KEYWORD,google,🚀 节点选择
-  - DOMAIN-KEYWORD,instagram,🚀 节点选择
-  - DOMAIN-KEYWORD,porn,🚀 节点选择
-  - DOMAIN-KEYWORD,sci-hub,🚀 节点选择
-  - DOMAIN-KEYWORD,spotify,🚀 节点选择
-  - DOMAIN-KEYWORD,telegram,🚀 节点选择
-  - DOMAIN-KEYWORD,twitter,🚀 节点选择
-  - DOMAIN-KEYWORD,whatsapp,🚀 节点选择
-  - DOMAIN-KEYWORD,youtube,🚀 节点选择
-  - DOMAIN-SUFFIX,4sqi.net,🚀 节点选择
-  - DOMAIN-SUFFIX,a248.e.akamai.net,🚀 节点选择
-  - DOMAIN-SUFFIX,adobedtm.com,🚀 节点选择
-  - DOMAIN-SUFFIX,ampproject.org,🚀 节点选择
-  - DOMAIN-SUFFIX,android.com,🚀 节点选择
-  - DOMAIN-SUFFIX,aolcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,apkmirror.com,🚀 节点选择
-  - DOMAIN-SUFFIX,apkpure.com,🚀 节点选择
-  - DOMAIN-SUFFIX,app-measurement.com,🚀 节点选择
-  - DOMAIN-SUFFIX,appspot.com,🚀 节点选择
-  - DOMAIN-SUFFIX,archive.org,🚀 节点选择
-  - DOMAIN-SUFFIX,armorgames.com,🚀 节点选择
-  - DOMAIN-SUFFIX,aspnetcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,awsstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,azureedge.net,🚀 节点选择
-  - DOMAIN-SUFFIX,azurewebsites.net,🚀 节点选择
-  - DOMAIN-SUFFIX,bandwagonhost.com,🚀 节点选择
-  - DOMAIN-SUFFIX,bing.com,🚀 节点选择
-  - DOMAIN-SUFFIX,bkrtx.com,🚀 节点选择
-  - DOMAIN-SUFFIX,blogcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,blogger.com,🚀 节点选择
-  - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 节点选择
-  - DOMAIN-SUFFIX,blogspot.com,🚀 节点选择
-  - DOMAIN-SUFFIX,blogspot.hk,🚀 节点选择
-  - DOMAIN-SUFFIX,blogspot.jp,🚀 节点选择
-  - DOMAIN-SUFFIX,bloomberg.cn,🚀 节点选择
-  - DOMAIN-SUFFIX,bloomberg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,box.com,🚀 节点选择
-  - DOMAIN-SUFFIX,cachefly.net,🚀 节点选择
-  - DOMAIN-SUFFIX,cdnst.net,🚀 节点选择
-  - DOMAIN-SUFFIX,cloudfront.net,🚀 节点选择
-  - DOMAIN-SUFFIX,comodoca.com,🚀 节点选择
-  - DOMAIN-SUFFIX,daum.net,🚀 节点选择
-  - DOMAIN-SUFFIX,deskconnect.com,🚀 节点选择
-  - DOMAIN-SUFFIX,disqus.com,🚀 节点选择
-  - DOMAIN-SUFFIX,disquscdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,dropbox.com,🚀 节点选择
-  - DOMAIN-SUFFIX,dropboxapi.com,🚀 节点选择
-  - DOMAIN-SUFFIX,dropboxstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,dropboxusercontent.com,🚀 节点选择
-  - DOMAIN-SUFFIX,duckduckgo.com,🚀 节点选择
-  - DOMAIN-SUFFIX,edgecastcdn.net,🚀 节点选择
-  - DOMAIN-SUFFIX,edgekey.net,🚀 节点选择
-  - DOMAIN-SUFFIX,edgesuite.net,🚀 节点选择
-  - DOMAIN-SUFFIX,eurekavpt.com,🚀 节点选择
-  - DOMAIN-SUFFIX,fastmail.com,🚀 节点选择
-  - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
-  - DOMAIN-SUFFIX,flickr.com,🚀 节点选择
-  - DOMAIN-SUFFIX,flipboard.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gfx.ms,🚀 节点选择
-  - DOMAIN-SUFFIX,gongm.in,🚀 节点选择
-  - DOMAIN-SUFFIX,hulu.com,🚀 节点选择
-  - DOMAIN-SUFFIX,id.heroku.com,🚀 节点选择
-  - DOMAIN-SUFFIX,io.io,🚀 节点选择
-  - DOMAIN-SUFFIX,issuu.com,🚀 节点选择
-  - DOMAIN-SUFFIX,ixquick.com,🚀 节点选择
-  - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
-  - DOMAIN-SUFFIX,kat.cr,🚀 节点选择
-  - DOMAIN-SUFFIX,kik.com,🚀 节点选择
-  - DOMAIN-SUFFIX,kobo.com,🚀 节点选择
-  - DOMAIN-SUFFIX,kobobooks.com,🚀 节点选择
-  - DOMAIN-SUFFIX,licdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,live.net,🚀 节点选择
-  - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
-  - DOMAIN-SUFFIX,llnwd.net,🚀 节点选择
-  - DOMAIN-SUFFIX,macrumors.com,🚀 节点选择
-  - DOMAIN-SUFFIX,medium.com,🚀 节点选择
-  - DOMAIN-SUFFIX,mega.nz,🚀 节点选择
-  - DOMAIN-SUFFIX,megaupload.com,🚀 节点选择
-  - DOMAIN-SUFFIX,messenger.com,🚀 节点选择
-  - DOMAIN-SUFFIX,netdna-cdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,nintendo.net,🚀 节点选择
-  - DOMAIN-SUFFIX,nsstatic.net,🚀 节点选择
-  - DOMAIN-SUFFIX,nytstyle.com,🚀 节点选择
-  - DOMAIN-SUFFIX,overcast.fm,🚀 节点选择
-  - DOMAIN-SUFFIX,openvpn.net,🚀 节点选择
-  - DOMAIN-SUFFIX,periscope.tv,🚀 节点选择
-  - DOMAIN-SUFFIX,pinimg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,pinterest.com,🚀 节点选择
-  - DOMAIN-SUFFIX,potato.im,🚀 节点选择
-  - DOMAIN-SUFFIX,prfct.co,🚀 节点选择
-  - DOMAIN-SUFFIX,pscp.tv,🚀 节点选择
-  - DOMAIN-SUFFIX,quora.com,🚀 节点选择
-  - DOMAIN-SUFFIX,resilio.com,🚀 节点选择
-  - DOMAIN-SUFFIX,sfx.ms,🚀 节点选择
-  - DOMAIN-SUFFIX,shadowsocks.org,🚀 节点选择
-  - DOMAIN-SUFFIX,slack-edge.com,🚀 节点选择
-  - DOMAIN-SUFFIX,smartdnsproxy.com,🚀 节点选择
-  - DOMAIN-SUFFIX,sndcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,soundcloud.com,🚀 节点选择
-  - DOMAIN-SUFFIX,startpage.com,🚀 节点选择
-  - DOMAIN-SUFFIX,staticflickr.com,🚀 节点选择
-  - DOMAIN-SUFFIX,symauth.com,🚀 节点选择
-  - DOMAIN-SUFFIX,symcb.com,🚀 节点选择
-  - DOMAIN-SUFFIX,symcd.com,🚀 节点选择
-  - DOMAIN-SUFFIX,textnow.com,🚀 节点选择
-  - DOMAIN-SUFFIX,textnow.me,🚀 节点选择
-  - DOMAIN-SUFFIX,thefacebook.com,🚀 节点选择
-  - DOMAIN-SUFFIX,thepiratebay.org,🚀 节点选择
-  - DOMAIN-SUFFIX,torproject.org,🚀 节点选择
-  - DOMAIN-SUFFIX,trustasiassl.com,🚀 节点选择
-  - DOMAIN-SUFFIX,tumblr.co,🚀 节点选择
-  - DOMAIN-SUFFIX,tumblr.com,🚀 节点选择
-  - DOMAIN-SUFFIX,tvb.com,🚀 节点选择
-  - DOMAIN-SUFFIX,txmblr.com,🚀 节点选择
-  - DOMAIN-SUFFIX,v2ex.com,🚀 节点选择
-  - DOMAIN-SUFFIX,vimeo.com,🚀 节点选择
-  - DOMAIN-SUFFIX,vine.co,🚀 节点选择
-  - DOMAIN-SUFFIX,vox-cdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,amazon.co.jp,🚀 节点选择
-  - DOMAIN-SUFFIX,amazon.com,🚀 节点选择
-  - DOMAIN-SUFFIX,amazonaws.com,🚀 节点选择
-  - IP-CIDR,13.32.0.0/15,🚀 节点选择,no-resolve
-  - IP-CIDR,13.35.0.0/17,🚀 节点选择,no-resolve
-  - IP-CIDR,18.184.0.0/15,🚀 节点选择,no-resolve
-  - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
-  - IP-CIDR,18.208.0.0/13,🚀 节点选择,no-resolve
-  - IP-CIDR,18.232.0.0/14,🚀 节点选择,no-resolve
-  - IP-CIDR,52.58.0.0/15,🚀 节点选择,no-resolve
-  - IP-CIDR,52.74.0.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,52.77.0.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,52.84.0.0/15,🚀 节点选择,no-resolve
-  - IP-CIDR,52.200.0.0/13,🚀 节点选择,no-resolve
-  - IP-CIDR,54.93.0.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,54.156.0.0/14,🚀 节点选择,no-resolve
-  - IP-CIDR,54.226.0.0/15,🚀 节点选择,no-resolve
-  - IP-CIDR,54.230.156.0/22,🚀 节点选择,no-resolve
-  - DOMAIN-KEYWORD,uk-live,🚀 节点选择
-  - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
-  - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
-  - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
-  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,apache.org,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
-  - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
-  - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
-  - DOMAIN-SUFFIX,gitlab.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gitlab.io,🚀 节点选择
-  - DOMAIN-SUFFIX,jitpack.io,🚀 节点选择
-  - DOMAIN-SUFFIX,maven.org,🚀 节点选择
-  - DOMAIN-SUFFIX,medium.com,🚀 节点选择
-  - DOMAIN-SUFFIX,mvnrepository.com,🚀 节点选择
-  - DOMAIN-SUFFIX,quay.io,🚀 节点选择
-  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
-  - DOMAIN-SUFFIX,redhat.com,🚀 节点选择
-  - DOMAIN-SUFFIX,sonatype.org,🚀 节点选择
-  - DOMAIN-SUFFIX,sourcegraph.com,🚀 节点选择
-  - DOMAIN-SUFFIX,spring.io,🚀 节点选择
-  - DOMAIN-SUFFIX,spring.net,🚀 节点选择
-  - DOMAIN-SUFFIX,stackoverflow.com,🚀 节点选择
-  - DOMAIN,d1q6f0aelx0por.cloudfront.net,🚀 节点选择
-  - DOMAIN,d2wy8f7a9ursnm.cloudfront.net,🚀 节点选择
-  - DOMAIN,d36jcksde1wxzq.cloudfront.net,🚀 节点选择
-  - DOMAIN-SUFFIX,compose-spec.io,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
-  - DOMAIN-SUFFIX,dockerhub.com,🚀 节点选择
-  - DOMAIN-SUFFIX,discord.co,🚀 节点选择
-  - DOMAIN-SUFFIX,discord.com,🚀 节点选择
-  - DOMAIN-SUFFIX,discord.gg,🚀 节点选择
-  - DOMAIN-SUFFIX,discord.media,🚀 节点选择
-  - DOMAIN-SUFFIX,discordapp.com,🚀 节点选择
-  - DOMAIN-SUFFIX,discordapp.net,🚀 节点选择
-  - DOMAIN-SUFFIX,facebook.com,🚀 节点选择
-  - DOMAIN-SUFFIX,fb.com,🚀 节点选择
-  - DOMAIN-SUFFIX,fb.me,🚀 节点选择
-  - DOMAIN-SUFFIX,fbcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,fbcdn.net,🚀 节点选择
-  - IP-CIDR,31.13.24.0/21,🚀 节点选择,no-resolve
-  - IP-CIDR,31.13.64.0/18,🚀 节点选择,no-resolve
-  - IP-CIDR,45.64.40.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,66.220.144.0/20,🚀 节点选择,no-resolve
-  - IP-CIDR,69.63.176.0/20,🚀 节点选择,no-resolve
-  - IP-CIDR,69.171.224.0/19,🚀 节点选择,no-resolve
-  - IP-CIDR,74.119.76.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,103.4.96.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,129.134.0.0/17,🚀 节点选择,no-resolve
-  - IP-CIDR,157.240.0.0/17,🚀 节点选择,no-resolve
-  - IP-CIDR,173.252.64.0/18,🚀 节点选择,no-resolve
-  - IP-CIDR,179.60.192.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,185.60.216.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,204.15.20.0/22,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,github.com,🚀 节点选择
-  - DOMAIN-SUFFIX,github.io,🚀 节点选择
-  - DOMAIN-SUFFIX,githubapp.com,🚀 节点选择
-  - DOMAIN-SUFFIX,githubassets.com,🚀 节点选择
-  - DOMAIN-SUFFIX,githubusercontent.com,🚀 节点选择
-  - DOMAIN-SUFFIX,1e100.net,🚀 节点选择
-  - DOMAIN-SUFFIX,2mdn.net,🚀 节点选择
-  - DOMAIN-SUFFIX,app-measurement.net,🚀 节点选择
-  - DOMAIN-SUFFIX,g.co,🚀 节点选择
-  - DOMAIN-SUFFIX,ggpht.com,🚀 节点选择
-  - DOMAIN-SUFFIX,goo.gl,🚀 节点选择
-  - DOMAIN-SUFFIX,googleapis.cn,🚀 节点选择
-  - DOMAIN-SUFFIX,googleapis.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gstatic.cn,🚀 节点选择
-  - DOMAIN-SUFFIX,gstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gvt0.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gvt1.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gvt2.com,🚀 节点选择
-  - DOMAIN-SUFFIX,gvt3.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 节点选择
-  - DOMAIN-SUFFIX,youtu.be,🚀 节点选择
-  - DOMAIN-SUFFIX,youtube-nocookie.com,🚀 节点选择
-  - DOMAIN-SUFFIX,youtube.com,🚀 节点选择
-  - DOMAIN-SUFFIX,yt.be,🚀 节点选择
-  - DOMAIN-SUFFIX,ytimg.com,🚀 节点选择
-  - IP-CIDR,74.125.0.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,173.194.0.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,120.232.181.162/32,🚀 节点选择,no-resolve
-  - IP-CIDR,120.241.147.226/32,🚀 节点选择,no-resolve
-  - IP-CIDR,120.253.253.226/32,🚀 节点选择,no-resolve
-  - IP-CIDR,120.253.255.162/32,🚀 节点选择,no-resolve
-  - IP-CIDR,120.253.255.34/32,🚀 节点选择,no-resolve
-  - IP-CIDR,120.253.255.98/32,🚀 节点选择,no-resolve
-  - IP-CIDR,180.163.150.162/32,🚀 节点选择,no-resolve
-  - IP-CIDR,180.163.150.34/32,🚀 节点选择,no-resolve
-  - IP-CIDR,180.163.151.162/32,🚀 节点选择,no-resolve
-  - IP-CIDR,180.163.151.34/32,🚀 节点选择,no-resolve
-  - IP-CIDR,203.208.39.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,203.208.40.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,203.208.41.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,203.208.43.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,203.208.50.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,220.181.174.162/32,🚀 节点选择,no-resolve
-  - IP-CIDR,220.181.174.226/32,🚀 节点选择,no-resolve
-  - IP-CIDR,220.181.174.34/32,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,cdninstagram.com,🚀 节点选择
-  - DOMAIN-SUFFIX,instagram.com,🚀 节点选择
-  - DOMAIN-SUFFIX,instagr.am,🚀 节点选择
-  - DOMAIN-SUFFIX,iwara.tv,🚀 节点选择
-  - DOMAIN-SUFFIX,kakao.com,🚀 节点选择
-  - DOMAIN-SUFFIX,kakao.co.kr,🚀 节点选择
-  - DOMAIN-SUFFIX,kakaocdn.net,🚀 节点选择
-  - IP-CIDR,1.201.0.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,27.0.236.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,103.27.148.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,103.246.56.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,110.76.140.0/22,🚀 节点选择,no-resolve
-  - IP-CIDR,113.61.104.0/22,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,lin.ee,🚀 节点选择
-  - DOMAIN-SUFFIX,line-apps.com,🚀 节点选择
-  - DOMAIN-SUFFIX,line-cdn.net,🚀 节点选择
-  - DOMAIN-SUFFIX,line-scdn.net,🚀 节点选择
-  - DOMAIN-SUFFIX,line.me,🚀 节点选择
-  - DOMAIN-SUFFIX,line.naver.jp,🚀 节点选择
-  - DOMAIN-SUFFIX,nhncorp.jp,🚀 节点选择
-  - IP-CIDR,103.2.28.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,103.2.30.0/23,🚀 节点选择,no-resolve
-  - IP-CIDR,119.235.224.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,119.235.232.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,119.235.235.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
-  - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
-  - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
-  - DOMAIN-KEYWORD,1drv,🚀 节点选择
-  - DOMAIN-KEYWORD,onedrive,🚀 节点选择
-  - DOMAIN-KEYWORD,skydrive,🚀 节点选择
-  - DOMAIN-SUFFIX,livefilestore.com,🚀 节点选择
-  - DOMAIN-SUFFIX,oneclient.sfx.ms,🚀 节点选择
-  - DOMAIN-SUFFIX,onedrive.com,🚀 节点选择
-  - DOMAIN-SUFFIX,onedrive.live.com,🚀 节点选择
-  - DOMAIN-SUFFIX,photos.live.com,🚀 节点选择
-  - DOMAIN-SUFFIX,skydrive.wns.windows.com,🚀 节点选择
-  - DOMAIN-SUFFIX,spoprod-a.akamaihd.net,🚀 节点选择
-  - DOMAIN-SUFFIX,storage.live.com,🚀 节点选择
-  - DOMAIN-SUFFIX,storage.msn.com,🚀 节点选择
-  - DOMAIN-KEYWORD,porn,🚀 节点选择
-  - DOMAIN-SUFFIX,8teenxxx.com,🚀 节点选择
-  - DOMAIN-SUFFIX,ahcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,bcvcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,bongacams.com,🚀 节点选择
-  - DOMAIN-SUFFIX,chaturbate.com,🚀 节点选择
-  - DOMAIN-SUFFIX,dditscdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,livejasmin.com,🚀 节点选择
-  - DOMAIN-SUFFIX,phncdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,phprcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,pornhub.com,🚀 节点选择
-  - DOMAIN-SUFFIX,pornhubpremium.com,🚀 节点选择
-  - DOMAIN-SUFFIX,rdtcdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,redtube.com,🚀 节点选择
-  - DOMAIN-SUFFIX,sb-cd.com,🚀 节点选择
-  - DOMAIN-SUFFIX,spankbang.com,🚀 节点选择
-  - DOMAIN-SUFFIX,t66y.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xhamster.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xnxx-cdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xnxx.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xvideos-cdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,xvideos.com,🚀 节点选择
-  - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
-  - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
-  - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
-  - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
-  - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
-  - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
-  - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
-  - DOMAIN-SUFFIX,readdle.com,🚀 节点选择
-  - DOMAIN-SUFFIX,smartmailcloud.com,🚀 节点选择
-  - DOMAIN-SUFFIX,fanatical.com,🚀 节点选择
-  - DOMAIN-SUFFIX,humblebundle.com,🚀 节点选择
-  - DOMAIN-SUFFIX,underlords.com,🚀 节点选择
-  - DOMAIN-SUFFIX,valvesoftware.com,🚀 节点选择
-  - DOMAIN-SUFFIX,playartifact.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steam-chat.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamcommunity.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamgames.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steampowered.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamserver.net,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
-  - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
-  - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
-  - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steamuserimages-a.akamaihd.net,🚀 节点选择
-  - DOMAIN,steampipe.akamaized.net,🚀 节点选择
-  - DOMAIN-SUFFIX,tap.io,🚀 节点选择
-  - DOMAIN-SUFFIX,taptap.tw,🚀 节点选择
-  - DOMAIN-SUFFIX,twitch.tv,🚀 节点选择
-  - DOMAIN-SUFFIX,ttvnw.net,🚀 节点选择
-  - DOMAIN-SUFFIX,jtvnw.net,🚀 节点选择
-  - DOMAIN-KEYWORD,ttvnw,🚀 节点选择
-  - DOMAIN-SUFFIX,t.co,🚀 节点选择
-  - DOMAIN-SUFFIX,twimg.co,🚀 节点选择
-  - DOMAIN-SUFFIX,twimg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,twimg.org,🚀 节点选择
-  - DOMAIN-SUFFIX,x.com,🚀 节点选择
-  - DOMAIN-SUFFIX,t.me,🚀 节点选择
-  - DOMAIN-SUFFIX,tdesktop.com,🚀 节点选择
-  - DOMAIN-SUFFIX,telegra.ph,🚀 节点选择
-  - DOMAIN-SUFFIX,telegram.me,🚀 节点选择
-  - DOMAIN-SUFFIX,telegram.org,🚀 节点选择
-  - DOMAIN-SUFFIX,telesco.pe,🚀 节点选择
-  - IP-CIDR,91.108.0.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,109.239.140.0/24,🚀 节点选择,no-resolve
-  - IP-CIDR,149.154.160.0/20,🚀 节点选择,no-resolve
-  - IP-CIDR6,2001:67c:4e8::/48,🚀 节点选择,no-resolve
-  - IP-CIDR6,2001:b28:f23d::/48,🚀 节点选择,no-resolve
-  - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,terabox.com,🚀 节点选择
-  - DOMAIN-SUFFIX,teraboxcdn.com,🚀 节点选择
-  - IP-CIDR,18.194.0.0/15,🚀 节点选择,no-resolve
-  - IP-CIDR,34.224.0.0/12,🚀 节点选择,no-resolve
-  - IP-CIDR,54.242.0.0/15,🚀 节点选择,no-resolve
-  - IP-CIDR,50.22.198.204/30,🚀 节点选择,no-resolve
-  - IP-CIDR,208.43.122.128/27,🚀 节点选择,no-resolve
-  - IP-CIDR,108.168.174.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,173.192.231.32/27,🚀 节点选择,no-resolve
-  - IP-CIDR,158.85.5.192/27,🚀 节点选择,no-resolve
-  - IP-CIDR,174.37.243.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,158.85.46.128/27,🚀 节点选择,no-resolve
-  - IP-CIDR,173.192.222.160/27,🚀 节点选择,no-resolve
-  - IP-CIDR,184.173.128.0/17,🚀 节点选择,no-resolve
-  - IP-CIDR,158.85.224.160/27,🚀 节点选择,no-resolve
-  - IP-CIDR,75.126.150.0/16,🚀 节点选择,no-resolve
-  - IP-CIDR,69.171.235.0/16,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,mediawiki.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikibooks.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikidata.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikileaks.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikimedia.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikinews.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikipedia.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikiquote.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikisource.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
-  - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
-  - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
-  - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
-  - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
-  - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
-  - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
-  - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
-  - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
-  - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
