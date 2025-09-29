@@ -15,7 +15,7 @@ proxies:
     type: socks5
     server: 222.59.173.105
     port: 44020
-  - name: 上海
+  - name: 上海01
     type: http
     server: 116.236.68.169
     port: 8800
@@ -31,11 +31,11 @@ proxy-groups:
   - name: bj_group
     type: select
     proxies:
-      - 北京
+      - 上海
       - 北京01
       - 北京02
-      - 北京03
-      - 北京04
-      - 北京05
+      - 上海01
+      - 云南
+      - 北京
 rules:
   - "MATCH,DIRECT"
