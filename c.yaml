@@ -3,30 +3,30 @@ allow-lan: false
 external-controller: 127.0.0.1:49858
 secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
-  - name: 北京
+  - name: 上海
     type: socks5
     server: 120.53.103.114
     port: 10443
   - name: 北京01
-    type: socks5
-    server: 39.107.227.3
-    port: 1024
+    type: socks4
+    server: 106.13.58.110
+    port: 8888
   - name: 北京02
     type: socks5
     server: 222.59.173.105
     port: 44020
-  - name: 北京03
+  - name: 上海
     type: http
-    server: 219.143.201.200
-    port: 8010
-  - name: 北京04
+    server: 116.236.68.169
+    port: 8800
+  - name: 云南
     type: http
-    server: 114.80.37.90
-    port: 3081
-  - name: 北京05
+    server: 36.147.78.166
+    port: 80
+  - name: 北京
     type: http
-    server: 1.94.28.99
-    port: 6763
+    server: 221.217.52.9
+    port: 9000
 proxy-groups:
   - name: bj_group
     type: select
