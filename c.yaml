@@ -3,12 +3,12 @@ allow-lan: false
 external-controller: 127.0.0.1:49858
 secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
-  - name: 北京001
+  - name: 北京
     type: http
-    server: 120.53.103.114
+    server: 210.75.240.135
     port: 10044
   - name: 北京002
-    type: socks5
+    type: http
     server: 140.179.89.64
     port: 8080
   - name: 江苏
@@ -23,7 +23,7 @@ proxies:
     type: http
     server: 36.147.78.166
     port: 80
-  - name: 北京
+  - name: 北京123
     type: http
     server: 221.217.52.9
     port: 9000
@@ -31,11 +31,11 @@ proxy-groups:
   - name: bj_group
     type: select
     proxies:
-      - 北京001
+      - 北京
       - 北京002
       - 江苏
       - 上海01
       - 云南
-      - 北京
+      - 北京123
 rules:
   - "MATCH,DIRECT"
