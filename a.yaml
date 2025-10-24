@@ -1,2507 +1,943 @@
-# 生成地址：v2rayse.com
-# 模版名称：defaultName
-# 生成时间：2025-10-22 07:43:43
-# 不要随意改变关键字，否则会导致出错
-# acl4SSR规则
-# 去广告：支持
-# 自动测速：支持
-# 微软分流：支持
-# 苹果分流：支持
-# 增强中国IP段：不支持
-# 增强国外GFW：不支持
-
+####################################
+# 创建者：v2rayse.com
+# 客户端：Clash.Meta
+# 创建时间：2025-10-24 07:46:28
+# 使用模版：V2RaySE 默认模版
+# 节点数量：117
+####################################
+# !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
-allow-lan: false
-mode: rule
-ipv6: false
+allow-lan: true
 log-level: info
 external-controller: 0.0.0.0:9090
 dns:
-  enable: true
-  listen: 0.0.0.0:53
-  ipv6: false
+  enabled: true
+  listen: 0.0.0.0:1053
+  ipv6: true
   default-nameserver:
     - 223.5.5.5
     - 114.114.114.114
-  nameserver:
-    - 223.5.5.5
-    - 114.114.114.114
-    - 119.29.29.29
-    - 180.76.76.76
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
-    - "*.lan"
-    - "*.localdomain"
-    - "*.example"
-    - "*.invalid"
-    - "*.localhost"
-    - "*.test"
-    - "*.local"
-    - "*.home.arpa"
-    - router.asus.com
-    - localhost.sec.qq.com
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - swscan.apple.com
+    - mesu.apple.com
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - time.*.com
+    - time.*.gov
+    - time.*.edu.cn
+    - time.*.apple.com
+    - time1.*.com
+    - time2.*.com
+    - time3.*.com
+    - time4.*.com
+    - time5.*.com
+    - time6.*.com
+    - time7.*.com
+    - ntp.*.com
+    - ntp.*.com
+    - ntp1.*.com
+    - ntp2.*.com
+    - ntp3.*.com
+    - ntp4.*.com
+    - ntp5.*.com
+    - ntp6.*.com
+    - ntp7.*.com
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - +.pool.ntp.org
+    - time1.cloud.tencent.com
+    - +.music.163.com
+    - '*.126.net'
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - '*.kuwo.cn'
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - +.y.qq.com
+    - +.music.tc.qq.com
+    - aqqmusic.tc.qq.com
+    - +.stream.qqmusic.qq.com
+    - '*.xiami.com'
+    - +.music.migu.cn
+    - +.srv.nintendo.net
+    - +.stun.playstation.net
+    - xbox.*.microsoft.com
+    - +.xboxlive.com
     - localhost.ptlogin2.qq.com
-    - +.msftconnecttest.com
-tun:
-  enable: true
-  stack: system
-  auto-route: true
-  auto-detect-interface: true
-  dns-hijack:
-    - 114.114.114.114
-    - 180.76.76.76
-    - 119.29.29.29
-    - 223.5.5.5
-    - 8.8.8.8
-    - 8.8.4.4
-    - 1.1.1.1
-    - 1.0.0.1
+    - proxy.golang.org
+    - stun.*.*
+    - stun.*.*.*
+    - '*.mcdn.bilivideo.cn'
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+
 proxies:
-  - name: 分享日记_美国_1
-    port: 49153
-    server: 47.79.90.37
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_日本_1
-    port: 19999
-    server: 202.84.53.85
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_中国_1
-    port: 10004
-    server: 114.34.202.224
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_中国_2
-    port: 81
-    server: 210.61.97.241
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_中国_3
-    port: 18622
-    server: 210.6.207.42
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_日本_2
-    port: 443
-    server: 160.16.203.210
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_日本_3
-    port: 443
-    server: 153.121.45.101
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_爱尔兰
-    port: 2053
-    server: 185.18.222.208
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_1
-    port: 50001
-    server: 211.177.114.117
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_2
-    port: 26257
-    server: 124.61.52.107
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_荷兰_1
-    port: 2096
-    server: 188.42.145.253
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_3
-    port: 50001
-    server: 106.252.245.199
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_中国_4
-    port: 26876
-    server: 36.156.102.115
-    type: trojan
-    network: tcp
-    udp: true
-    password: BxceQaOe
-    skip-cert-verify: true
-  - name: 分享日记_美国_2
-    port: 2096
-    server: 159.112.235.253
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    client-fingerprint: chrome
-  - name: 分享日记_韩国_4
-    port: 30067
-    server: 112.156.154.95
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_中国_5
-    port: 47790
-    server: 36.50.90.241
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_荷兰_2
-    port: 2096
-    server: 45.135.235.253
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_5
-    port: 30012
-    server: 116.93.199.28
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_未知
-    port: 44300
-    server: "[2001:bc8:32d7:30b::3]"
-    type: hysteria2
-    udp: true
-    sni: apple.com
-    password: dongtaiwang.com
-    skip-cert-verify: true
-  - name: 分享日记_法国_1
-    port: 44579
-    server: 2001:bc8:32d7:302::10
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    ws-opts:
-      path: ""
-      headers:
-        host: ""
-    cipher: auto
-    uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-    alterId: 0
-  - name: 分享日记_美国_3
-    port: 2096
-    server: 139.64.235.253
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-    client-fingerprint: chrome
-  - name: 分享日记_美国_4
-    port: 22222
-    server: 208.87.243.187
-    type: hysteria2
-    udp: true
-    sni: www.bing.com
-    password: dongtaiwang.com
-    skip-cert-verify: true
-  - name: 分享日记_日本_4
-    port: 19842
-    server: 121.85.55.59
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_中国_6
-    port: 443
-    server: 202.85.53.74
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_6
-    port: 50000
-    server: 182.208.209.54
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_7
-    port: 50000
-    server: 125.128.215.162
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_8
-    port: 10041
-    server: 211.197.161.123
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_9
-    port: 12147
-    server: 182.31.70.92
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_10
-    port: 50001
-    server: 220.72.245.245
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_11
-    port: 27879
-    server: 125.130.15.106
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_12
-    port: 11443
-    server: 220.118.153.222
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_13
-    port: 29429
-    server: 183.106.76.116
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_14
-    port: 50001
-    server: 118.40.126.7
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_15
-    port: 50001
-    server: 211.196.80.94
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_16
-    port: 50001
-    server: 118.91.78.76
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_17
-    port: 50001
-    server: 221.151.212.249
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_18
-    port: 12171
-    server: 211.59.232.85
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_19
-    port: 50000
-    server: 211.57.90.42
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_20
-    port: 50004
-    server: 121.145.201.24
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_21
-    port: 50004
-    server: 221.163.173.252
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_22
-    port: 50001
-    server: 118.45.150.77
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_23
-    port: 50001
-    server: 211.228.5.119
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_24
-    port: 50000
-    server: 14.39.99.235
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_25
-    port: 50000
-    server: 118.47.194.165
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_26
-    port: 50000
-    server: 121.154.2.209
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_27
-    port: 12228
-    server: 218.148.100.87
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_28
-    port: 50001
-    server: 211.184.133.123
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_29
-    port: 50003
-    server: 175.211.35.161
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_30
-    port: 50000
-    server: 203.251.70.240
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_31
-    port: 50001
-    server: 122.47.74.139
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_32
-    port: 16923
-    server: 183.104.0.181
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /x @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_33
-    port: 31337
-    server: 211.219.241.28
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_34
-    port: 10001
-    server: 119.201.195.135
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_35
-    port: 10911
-    server: 59.1.74.97
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_36
-    port: 50000
-    server: 118.38.245.191
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_法国_2
-    port: 443
-    server: "2001:41d0:70e:c100::"
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: serkat.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /linkvws
-      headers:
-        host: serkat.org
-    cipher: auto
-    uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-    alterId: 0
-  - name: 分享日记_韩国_37
-    port: 10090
-    server: 222.113.18.207
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_38
-    port: 60001
-    server: 119.65.139.101
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_39
-    port: 10008
-    server: 14.32.12.235
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_中国_7
-    port: 811
-    server: 36.151.251.18
-    type: trojan
-    network: tcp
-    udp: true
-    password: BxceQaOe
-    skip-cert-verify: true
-  - name: 分享日记_中国_8
-    port: 32003
-    server: 60.249.114.181
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_40
-    port: 20583
-    server: 175.208.202.41
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_41
-    port: 50003
-    server: 175.215.175.175
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_42
-    port: 50001
-    server: 218.146.200.8
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_43
-    port: 50001
-    server: 27.117.52.110
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_44
-    port: 11611
-    server: 121.158.194.32
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_45
-    port: 12576
-    server: 183.101.243.99
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_46
-    port: 50001
-    server: 222.114.57.191
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_47
-    port: 13128
-    server: 222.113.18.206
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_48
-    port: 12312
-    server: 211.48.77.114
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_俄罗斯_1
-    port: 2096
-    server: 195.13.45.253
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_美国_5
-    port: 8443
-    server: b1-direct.the-best-airport.top
-    type: vless
-    network: tcp
-    udp: true
-    servername: icloud.cdn-apple.com
-    skip-cert-verify: true
-    uuid: 33c9eb13-c6a9-44ca-9269-5c4d19900f43
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-  - name: 分享日记_韩国_49
-    port: 10026
-    server: 220.80.75.163
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_美国_6
-    port: 4443
-    server: c1-direct.the-best-airport.top
-    type: vless
-    network: tcp
-    udp: true
-    servername: icloud.cdn-apple.com
-    skip-cert-verify: true
-    uuid: 33c9eb13-c6a9-44ca-9269-5c4d19900f43
-    flow: xtls-rprx-vision
-    client-fingerprint: ios
-  - name: 分享日记_韩国_50
-    port: 50003
-    server: 222.109.206.218
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_美国_7
-    port: 23891
-    server: 108.165.213.197
-    type: hysteria2
-    udp: true
-    sni: fus01.mistea.top
-    password: c232f411-96b5-4b07-b2f7-66a434725ffb
-    skip-cert-verify: true
-  - name: 分享日记_韩国_51
-    port: 14443
-    server: 222.113.18.211
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_日本_5
-    port: 12553
-    server: 113.37.149.36
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_日本_6
-    port: 443
-    server: 158.101.77.33
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_52
-    port: 50000
-    server: 112.165.52.204
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_53
-    port: 50000
-    server: 118.44.64.9
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_54
-    port: 50000
-    server: 14.33.140.80
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_55
-    port: 10080
-    server: 59.19.192.51
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_56
-    port: 12219
-    server: 121.131.242.29
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_57
-    port: 10283
-    server: 222.113.18.214
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_58
-    port: 14041
-    server: 123.143.9.5
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_59
-    port: 21286
-    server: 14.36.155.120
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_60
-    port: 12185
-    server: 121.173.93.124
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_61
-    port: 12151
-    server: 218.151.91.131
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /x@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_62
-    port: 10042
-    server: 220.118.109.204
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_63
-    port: 21297
-    server: 183.100.113.37
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_法国_3
-    port: 33200
-    server: 2001:bc8:32d7:30b::201
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: www.bing.com
-    skip-cert-verify: true
-    ws-opts:
-      path: /github.com/Alvin9999
-      headers:
-        host: www.bing.com
-    cipher: auto
-    uuid: 82dc5319-662c-4ca5-8e82-69744d2300c1
-    alterId: 0
-  - name: 分享日记_美国_8
-    port: 443
-    server: 172.67.206.152
-    type: vmess
-    network: ws
-    tls: true
-    udp: true
-    version: "2"
-    servername: 9ef7d8c2-70ef-dcb5-39a5-5c514e43bf12.freevpnatm2025.dpdns.org
-    skip-cert-verify: true
-    ws-opts:
-      path: /ri9mOOVJuAimB74kgXZ
-      headers:
-        host: 9ef7d8c2-70ef-dcb5-39a5-5c514e43bf12.freevpnatm2025.dpdns.org
-    cipher: auto
-    uuid: e053ff61-f350-4fe8-9a45-56da927d417c
-    alterId: 0
-  - name: 分享日记_韩国_64
-    port: 50003
-    server: 14.40.124.226
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_伊朗
-    port: 8443
-    server: 217.60.38.191
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_65
-    port: 50008
-    server: 59.25.160.141
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_伊拉克
-    port: 8443
-    server: 5.42.220.253
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_中国_9
-    port: 10002
-    server: 223.16.138.113
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_俄罗斯_2
-    port: 8443
-    server: 46.8.226.39
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_66
-    port: 27249
-    server: 203.243.63.166
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_67
-    port: 50001
-    server: 121.182.150.149
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: X@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_美国_9
-    port: 80
-    server: bestcdn1.868863.xyz
-    type: vmess
-    network: ws
-    tls: false
-    udp: true
-    version: "2"
-    servername: vn-c2.no.168382.xyz
-    skip-cert-verify: true
-    ws-opts:
-      path: /htehehehn
-      headers:
-        host: vn-c2.no.168382.xyz
-    cipher: auto
-    uuid: 33c9eb13-c6a9-44ca-9269-5c4d19900f43
-    alterId: 0
-  - name: 分享日记_俄罗斯_3
-    port: 2053
-    server: 31.192.238.71
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_柬埔寨
-    port: 443
-    server: 167.179.27.92
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_68
-    port: 50000
-    server: 27.100.229.147
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_69
-    port: 50001
-    server: 49.142.150.222
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_英国
-    port: 2083
-    server: 81.168.83.89
-    type: hysteria2
-    udp: true
-    sni: kotlet.arshiacomplus.dpdns.org
-    obfs: salamander
-    password: YwuvGJk36B
-    skip-cert-verify: true
-    obfs-password: khameniiko@smad@ret
-  - name: 分享日记_美国_10
-    port: 45000
-    server: 206.71.158.23
-    type: hysteria2
-    udp: true
-    sni: gavazn.55994421.xyz
-    obfs: salamander
-    password: Telegram--%3E%40Ln2Ray
-    skip-cert-verify: true
-    obfs-password: Telegram-->@Ln2Ray
-  - name: 分享日记_美国_11
-    port: 22286
-    server: 47.245.106.193
-    type: vmess
-    network: tcp
-    tls: false
-    udp: true
-    version: "2"
-    servername: ""
-    skip-cert-verify: true
-    cipher: auto
-    uuid: 8646218f-a600-4b73-8721-aa5d4567819e
-    alterId: 0
-  - name: 分享日记_美国_12
-    port: 45000
-    server: gavazn.lnmarketplace.net
-    type: hysteria2
-    udp: true
-    sni: gavazn.55994421.xyz
-    obfs: salamander
-    password: Telegram--%3E%40Ln2Ray
-    skip-cert-verify: true
-    obfs-password: Telegram-->@Ln2Ray
-  - name: 分享日记_美国_13
-    port: 36600
-    server: yapc-1.adamhayward.co.uk
-    type: hysteria2
-    udp: true
-    sni: YAPC-1.afshin.ir
-    obfs: salamander
-    password: Yet-Another-Public-Config-1
-    skip-cert-verify: true
-    obfs-password: Yet-Another-Public-Config-1
-  - name: 分享日记_美国_14
-    port: 36600
-    server: 206.71.158.37
-    type: hysteria2
-    udp: true
-    sni: YAPC-1.afshin.ir
-    obfs: salamander
-    password: Yet-Another-Public-Config-1
-    skip-cert-verify: true
-    obfs-password: Yet-Another-Public-Config-1
-  - name: 分享日记_韩国_70
-    port: 19413
-    server: 121.165.101.69
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_美国_15
-    port: 8443
-    server: 64.49.14.41
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_法国_4
-    port: 22008
-    server: 212.129.5.242
-    type: vless
-    network: tcp
-    udp: true
-    servername: www.yahoo.com
-    skip-cert-verify: true
-    uuid: 77a33d77-7af9-4c33-9556-d6711becca04
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: 分享日记_韩国_71
-    port: 12566
-    server: 111.118.118.177
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@节点狂魔/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_72
-    port: 50001
-    server: 222.96.197.31
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X @节点狂魔 /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_美国_16
-    port: 9443
-    server: a1-direct.the-best-airport.top
-    type: vless
-    network: tcp
-    udp: true
-    servername: icloud.cdn-apple.com
-    skip-cert-verify: true
-    uuid: 33c9eb13-c6a9-44ca-9269-5c4d19900f43
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: 分享日记_韩国_73
-    port: 50000
-    server: 27.100.189.152
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram @freecodes /?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_沙特阿拉伯
-    port: 443
-    server: 77.110.109.72
-    type: vless
-    network: tcp
-    tls: true
-    udp: true
-    servername: ad.mail.ru
-    skip-cert-verify: true
-    reality-opts:
-      public-key: MIVrDwJBfit7cvJlTyt4z8So78Sidkb0cZFy5BW2NRE
-      short-id: "96"
-    uuid: 045eb821-bdae-43c5-8945-9cb181e65dcb
-    flow: xtls-rprx-vision
-    client-fingerprint: chrome
-  - name: 分享日记_韩国_74
-    port: 15211
-    server: 14.35.29.177
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /Telegram🇨🇳@WangCai2/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_75
-    port: 50001
-    server: 211.207.97.48
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: /X@节点狂魔/
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  - name: 分享日记_韩国_76
-    port: 18097
-    server: 58.143.198.82
-    type: vless
-    network: ws
-    tls: true
-    udp: true
-    servername: gaosir.unfeeling.sbs
-    skip-cert-verify: true
-    ws-opts:
-      path: Telegram@freecodes/?ed=2560
-      headers:
-        host: gaosir.unfeeling.sbs
-    uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
+  - {"name":"分享日记_1","type":"vless","server":"47.79.90.37","port":49153,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_2","type":"vless","server":"211.59.232.85","port":18077,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_3","type":"trojan","server":"36.156.102.82","port":401,"udp":true,"password":"BxceQaOe","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"分享日记_4","type":"vless","server":"27.100.189.152","port":50000,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_5","type":"vless","server":"160.16.203.210","port":443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_6","type":"vless","server":"188.42.145.253","port":2096,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_7","type":"vless","server":"121.85.55.59","port":19842,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_8","type":"vless","server":"153.121.45.101","port":443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_9","type":"vless","server":"122.47.74.139","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_10","type":"vmess","server":"47.245.106.193","port":22286,"cipher":"auto","uuid":"8646218f-a600-4b73-8721-aa5d4567819e","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"分享日记_11","type":"vless","server":"222.113.18.207","port":18001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_12","type":"vmess","server":"47.245.106.193","port":22433,"cipher":"auto","uuid":"bfcb103f-2133-4965-8684-6b4c8ef7a774","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"分享日记_13","type":"vless","server":"a.168381.xyz","port":9443,"uuid":"423c990c-bcd4-4f00-9045-0a09c98f7e0b","tls":false,"servername":"icloud.cdn-apple.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"分享日记_14","type":"vless","server":"119.65.139.101","port":60001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_15","type":"vless","server":"159.112.235.253","port":2096,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_16","type":"vless","server":"59.1.74.97","port":10911,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_17","type":"vless","server":"b.168381.xyz","port":8443,"uuid":"423c990c-bcd4-4f00-9045-0a09c98f7e0b","tls":false,"servername":"icloud.cdn-apple.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"分享日记_18","type":"vless","server":"121.154.2.209","port":50000,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_19","type":"vless","server":"183.106.76.116","port":29429,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_20","type":"vless","server":"222.113.18.214","port":12533,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_21","type":"vless","server":"211.219.241.28","port":31337,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_22","type":"vless","server":"131.186.18.145","port":443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_23","type":"vless","server":"222.113.18.207","port":16030,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_24","type":"ss","server":"uk.vpnsparta.pro","port":57456,"password":"c40641c1f89e7acb","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"分享日记_25","type":"vless","server":"58.143.198.82","port":18097,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_26","type":"vless","server":"175.215.175.175","port":50003,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_27","type":"vless","server":"61.85.1.77","port":12389,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_28","type":"vless","server":"61.83.202.17","port":10042,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_29","type":"vless","server":"202.84.53.85","port":19999,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_30","type":"vless","server":"222.113.18.207","port":10090,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_31","type":"vless","server":"222.113.18.206","port":10004,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_32","type":"vless","server":"222.113.18.214","port":10283,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_33","type":"trojan","server":"nop-55q.pages.dev","port":2053,"udp":true,"password":"T@_WvT8Ho@LW%w_,","sni":"NOp-55q.pAgEs.dEv","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"分享日记_34","type":"vless","server":"114.34.202.224","port":10004,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_35","type":"vless","server":"61.85.1.77","port":12394,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_36","type":"vless","server":"125.128.215.162","port":50000,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_37","type":"vless","server":"222.113.18.211","port":14443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x @节点狂魔 /","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_38","type":"vless","server":"61.85.1.77","port":12374,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_39","type":"vless","server":"203.243.63.166","port":27249,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_40","type":"ss","server":"arxfw2b78fi2q9hzylhn.freesocks.work","port":443,"password":"Nk9asglDzHzjktVzTkvhaA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"分享日记_41","type":"vless","server":"36.50.90.241","port":47790,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_42","type":"vless","server":"61.85.1.77","port":12106,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_43","type":"vless","server":"104.21.238.2","port":2096,"uuid":"7937d663-a3bf-4218-9295-edfa224b72c4","tls":true,"servername":"fei.634676.xyz","network":"ws","ws-opts":{"path":"/?ed=2560","headers":{"host":"fei.634676.xyz"}}}
+  - {"name":"分享日记_44","type":"vless","server":"210.6.207.42","port":18622,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_45","type":"vmess","server":"47.242.90.210","port":31212,"cipher":"auto","uuid":"3a4271fb-2718-4489-da78-80a8e7701aa5","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"分享日记_46","type":"vless","server":"118.141.64.192","port":36619,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_47","type":"vless","server":"222.113.18.206","port":13128,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_48","type":"vless","server":"c.168381.xyz","port":4443,"uuid":"423c990c-bcd4-4f00-9045-0a09c98f7e0b","tls":false,"servername":"icloud.cdn-apple.com","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"分享日记_49","type":"vless","server":"121.165.101.69","port":19413,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_50","type":"vless","server":"116.93.199.28","port":12136,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_51","type":"vmess","server":"bestcdn1.868863.xyz","port":443,"cipher":"auto","uuid":"47257d05-216f-4719-b808-94f9d47112fe","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/aejynik","headers":{"host":"v-a2.796812.xyz"}}}
+  - {"name":"分享日记_52","type":"vless","server":"167.179.27.92","port":443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_53","type":"vless","server":"27.117.52.110","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_54","type":"vless","server":"31.192.238.71","port":8443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_55","type":"vless","server":"118.45.150.77","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_56","type":"vless","server":"59.25.160.141","port":50008,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_57","type":"vless","server":"bestcdn1.868863.xyz","port":443,"uuid":"423c990c-bcd4-4f00-9045-0a09c98f7e0b","tls":true,"servername":"fp-b3.pimi.edu.kg","network":"ws","ws-opts":{"path":"/etuiwer","headers":{"host":"fp-b3.pimi.edu.kg"}}}
+  - {"name":"分享日记_58","type":"vless","server":"223.16.138.113","port":12457,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_59","type":"trojan","server":"203.198.122.144","port":443,"udp":true,"password":"ea39fa94f1ee00999337ea1fd3318e69","sni":"www.nintendogames.net","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"分享日记_60","type":"vless","server":"220.90.247.28","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_61","type":"trojan","server":"bestcdn1.868863.xyz","port":443,"udp":true,"password":"423c990c-bcd4-4f00-9045-0a09c98f7e0b","sni":"t-a3.pimi.edu.kg","skip-cert-verify":true,"network":"tcp"}
+  - {"name":"分享日记_62","type":"vless","server":"139.64.235.253","port":2096,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_63","type":"vless","server":"113.37.149.36","port":12553,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_64","type":"vmess","server":"2001:41d0:70e:c100::","port":443,"cipher":"auto","uuid":"03fcc618-b93d-6796-6aed-8a38c975d581","alterId":0,"tls":true,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/linkvws","headers":{"host":"serkat.org"}}}
+  - {"name":"分享日记_65","type":"vless","server":"211.59.232.85","port":12140,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_66","type":"vless","server":"147.75.225.105","port":443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_67","type":"vless","server":"31.192.238.71","port":2053,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_68","type":"vless","server":"125.130.15.106","port":27879,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_69","type":"vless","server":"64.49.14.41","port":8443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_70","type":"vless","server":"218.54.55.117","port":12176,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_71","type":"vless","server":"5.42.220.253","port":8443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_72","type":"vless","server":"202.85.53.74","port":443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_73","type":"vless","server":"111.118.118.177","port":12566,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_74","type":"vless","server":"111.118.118.177","port":36167,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_75","type":"vless","server":"222.113.18.214","port":10049,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_76","type":"vless","server":"123.143.9.5","port":14041,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_77","type":"vless","server":"47.76.218.163","port":443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_78","type":"vless","server":"27.100.229.147","port":50000,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x @节点狂魔 /","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_79","type":"vless","server":"27.100.229.147","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_80","type":"vless","server":"218.151.91.131","port":12151,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_81","type":"vless","server":"210.61.97.241","port":81,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/freecodes/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_82","type":"vless","server":"112.156.154.95","port":30067,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_83","type":"vless","server":"185.18.222.208","port":2053,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_84","type":"vless","server":"45.130.125.253","port":2096,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_85","type":"vless","server":"36.50.90.241","port":35951,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_86","type":"vless","server":"211.196.80.94","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_87","type":"vless","server":"218.146.200.8","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_88","type":"vless","server":"118.91.78.76","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/freecodes/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_89","type":"vless","server":"211.48.77.114","port":12312,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_90","type":"vless","server":"60.249.114.181","port":32003,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_91","type":"vless","server":"121.145.201.24","port":50004,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_92","type":"vless","server":"222.113.18.207","port":32773,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_93","type":"vless","server":"77.110.109.72","port":443,"uuid":"045eb821-bdae-43c5-8945-9cb181e65dcb","tls":false,"servername":"ad.mail.ru","flow":"xtls-rprx-vision","network":"tcp"}
+  - {"name":"分享日记_94","type":"vless","server":"222.113.18.206","port":10913,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_95","type":"vless","server":"211.229.77.184","port":27443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_96","type":"vmess","server":"2001:bc8:32d7:302::10","port":44579,"cipher":"auto","uuid":"8e34e170-13ae-4892-9d20-05962acc9f84","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/"}}
+  - {"name":"分享日记_97","type":"vless","server":"211.197.161.123","port":10041,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_98","type":"vless","server":"220.80.75.163","port":10026,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_99","type":"vless","server":"175.211.35.161","port":50003,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_100","type":"vless","server":"111.118.118.177","port":12319,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_101","type":"vless","server":"217.60.248.66","port":443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_102","type":"vless","server":"160.187.111.222","port":443,"uuid":"3e7f67de-648e-4871-b51a-a225214d41ee","tls":false,"servername":"images-na.ssl-images-amazon.com","network":"tcp"}
+  - {"name":"分享日记_103","type":"vless","server":"69.84.182.18","port":443,"uuid":"82ba36ec-dafe-40eb-b9ad-0f8a98101020","tls":true,"servername":"cdn-node-oss-63.paofu.de","network":"ws","ws-opts":{"path":"/profile/sharenode","headers":{"host":"cdn-node-oss-63.paofu.de"}}}
+  - {"name":"分享日记_104","type":"vless","server":"222.114.57.191","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_105","type":"vless","server":"116.93.199.28","port":12020,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram @节点狂魔 /","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_106","type":"vless","server":"46.8.226.39","port":2053,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_107","type":"vless","server":"46.8.226.39","port":8443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_108","type":"vless","server":"121.173.93.124","port":12185,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_109","type":"vless","server":"112.165.52.204","port":50000,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"x @节点狂魔 /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_110","type":"vless","server":"211.177.114.117","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_111","type":"vless","server":"116.93.199.28","port":30012,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram@freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_112","type":"vless","server":"69.84.182.108","port":443,"uuid":"82ba36ec-dafe-40eb-b9ad-0f8a98101020","tls":true,"servername":"cdn-node-oss-63.paofu.de","network":"ws","ws-opts":{"path":"/profile/sharenode","headers":{"host":"cdn-node-oss-63.paofu.de"}}}
+  - {"name":"分享日记_113","type":"vless","server":"14.36.155.120","port":21286,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/telegram🇨🇳@wangcai2/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_114","type":"vless","server":"119.201.195.135","port":10001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/freecodes/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_115","type":"vless","server":"222.96.197.31","port":50001,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"/x@节点狂魔/?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
+  - {"name":"分享日记_116","type":"ss","server":"switcher-nick-croquet.freesocks.work","port":443,"password":"9tqhMdIrTkgQ46PvhyAtMH","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"分享日记_117","type":"vless","server":"220.118.153.222","port":11443,"uuid":"f61a4285-7264-4d07-9408-7b9ba1922c26","tls":true,"servername":"gaosir.unfeeling.sbs","network":"ws","ws-opts":{"path":"telegram @freecodes /?ed=2560","headers":{"host":"gaosir.unfeeling.sbs"}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 分享日记_美国_1
-      - 分享日记_日本_1
-      - 分享日记_中国_1
-      - 分享日记_中国_2
-      - 分享日记_中国_3
-      - 分享日记_日本_2
-      - 分享日记_日本_3
-      - 分享日记_爱尔兰
-      - 分享日记_韩国_1
-      - 分享日记_韩国_2
-      - 分享日记_荷兰_1
-      - 分享日记_韩国_3
-      - 分享日记_中国_4
-      - 分享日记_美国_2
-      - 分享日记_韩国_4
-      - 分享日记_中国_5
-      - 分享日记_荷兰_2
-      - 分享日记_韩国_5
-      - 分享日记_未知
-      - 分享日记_法国_1
-      - 分享日记_美国_3
-      - 分享日记_美国_4
-      - 分享日记_日本_4
-      - 分享日记_中国_6
-      - 分享日记_韩国_6
-      - 分享日记_韩国_7
-      - 分享日记_韩国_8
-      - 分享日记_韩国_9
-      - 分享日记_韩国_10
-      - 分享日记_韩国_11
-      - 分享日记_韩国_12
-      - 分享日记_韩国_13
-      - 分享日记_韩国_14
-      - 分享日记_韩国_15
-      - 分享日记_韩国_16
-      - 分享日记_韩国_17
-      - 分享日记_韩国_18
-      - 分享日记_韩国_19
-      - 分享日记_韩国_20
-      - 分享日记_韩国_21
-      - 分享日记_韩国_22
-      - 分享日记_韩国_23
-      - 分享日记_韩国_24
-      - 分享日记_韩国_25
-      - 分享日记_韩国_26
-      - 分享日记_韩国_27
-      - 分享日记_韩国_28
-      - 分享日记_韩国_29
-      - 分享日记_韩国_30
-      - 分享日记_韩国_31
-      - 分享日记_韩国_32
-      - 分享日记_韩国_33
-      - 分享日记_韩国_34
-      - 分享日记_韩国_35
-      - 分享日记_韩国_36
-      - 分享日记_法国_2
-      - 分享日记_韩国_37
-      - 分享日记_韩国_38
-      - 分享日记_韩国_39
-      - 分享日记_中国_7
-      - 分享日记_中国_8
-      - 分享日记_韩国_40
-      - 分享日记_韩国_41
-      - 分享日记_韩国_42
-      - 分享日记_韩国_43
-      - 分享日记_韩国_44
-      - 分享日记_韩国_45
-      - 分享日记_韩国_46
-      - 分享日记_韩国_47
-      - 分享日记_韩国_48
-      - 分享日记_俄罗斯_1
-      - 分享日记_美国_5
-      - 分享日记_韩国_49
-      - 分享日记_美国_6
-      - 分享日记_韩国_50
-      - 分享日记_美国_7
-      - 分享日记_韩国_51
-      - 分享日记_日本_5
-      - 分享日记_日本_6
-      - 分享日记_韩国_52
-      - 分享日记_韩国_53
-      - 分享日记_韩国_54
-      - 分享日记_韩国_55
-      - 分享日记_韩国_56
-      - 分享日记_韩国_57
-      - 分享日记_韩国_58
-      - 分享日记_韩国_59
-      - 分享日记_韩国_60
-      - 分享日记_韩国_61
-      - 分享日记_韩国_62
-      - 分享日记_韩国_63
-      - 分享日记_法国_3
-      - 分享日记_美国_8
-      - 分享日记_韩国_64
-      - 分享日记_伊朗
-      - 分享日记_韩国_65
-      - 分享日记_伊拉克
-      - 分享日记_中国_9
-      - 分享日记_俄罗斯_2
-      - 分享日记_韩国_66
-      - 分享日记_韩国_67
-      - 分享日记_美国_9
-      - 分享日记_俄罗斯_3
-      - 分享日记_柬埔寨
-      - 分享日记_韩国_68
-      - 分享日记_韩国_69
-      - 分享日记_英国
-      - 分享日记_美国_10
-      - 分享日记_美国_11
-      - 分享日记_美国_12
-      - 分享日记_美国_13
-      - 分享日记_美国_14
-      - 分享日记_韩国_70
-      - 分享日记_美国_15
-      - 分享日记_法国_4
-      - 分享日记_韩国_71
-      - 分享日记_韩国_72
-      - 分享日记_美国_16
-      - 分享日记_韩国_73
-      - 分享日记_沙特阿拉伯
-      - 分享日记_韩国_74
-      - 分享日记_韩国_75
-      - 分享日记_韩国_76
+      - 分享日记_1
+      - 分享日记_2
+      - 分享日记_3
+      - 分享日记_4
+      - 分享日记_5
+      - 分享日记_6
+      - 分享日记_7
+      - 分享日记_8
+      - 分享日记_9
+      - 分享日记_10
+      - 分享日记_11
+      - 分享日记_12
+      - 分享日记_13
+      - 分享日记_14
+      - 分享日记_15
+      - 分享日记_16
+      - 分享日记_17
+      - 分享日记_18
+      - 分享日记_19
+      - 分享日记_20
+      - 分享日记_21
+      - 分享日记_22
+      - 分享日记_23
+      - 分享日记_24
+      - 分享日记_25
+      - 分享日记_26
+      - 分享日记_27
+      - 分享日记_28
+      - 分享日记_29
+      - 分享日记_30
+      - 分享日记_31
+      - 分享日记_32
+      - 分享日记_33
+      - 分享日记_34
+      - 分享日记_35
+      - 分享日记_36
+      - 分享日记_37
+      - 分享日记_38
+      - 分享日记_39
+      - 分享日记_40
+      - 分享日记_41
+      - 分享日记_42
+      - 分享日记_43
+      - 分享日记_44
+      - 分享日记_45
+      - 分享日记_46
+      - 分享日记_47
+      - 分享日记_48
+      - 分享日记_49
+      - 分享日记_50
+      - 分享日记_51
+      - 分享日记_52
+      - 分享日记_53
+      - 分享日记_54
+      - 分享日记_55
+      - 分享日记_56
+      - 分享日记_57
+      - 分享日记_58
+      - 分享日记_59
+      - 分享日记_60
+      - 分享日记_61
+      - 分享日记_62
+      - 分享日记_63
+      - 分享日记_64
+      - 分享日记_65
+      - 分享日记_66
+      - 分享日记_67
+      - 分享日记_68
+      - 分享日记_69
+      - 分享日记_70
+      - 分享日记_71
+      - 分享日记_72
+      - 分享日记_73
+      - 分享日记_74
+      - 分享日记_75
+      - 分享日记_76
+      - 分享日记_77
+      - 分享日记_78
+      - 分享日记_79
+      - 分享日记_80
+      - 分享日记_81
+      - 分享日记_82
+      - 分享日记_83
+      - 分享日记_84
+      - 分享日记_85
+      - 分享日记_86
+      - 分享日记_87
+      - 分享日记_88
+      - 分享日记_89
+      - 分享日记_90
+      - 分享日记_91
+      - 分享日记_92
+      - 分享日记_93
+      - 分享日记_94
+      - 分享日记_95
+      - 分享日记_96
+      - 分享日记_97
+      - 分享日记_98
+      - 分享日记_99
+      - 分享日记_100
+      - 分享日记_101
+      - 分享日记_102
+      - 分享日记_103
+      - 分享日记_104
+      - 分享日记_105
+      - 分享日记_106
+      - 分享日记_107
+      - 分享日记_108
+      - 分享日记_109
+      - 分享日记_110
+      - 分享日记_111
+      - 分享日记_112
+      - 分享日记_113
+      - 分享日记_114
+      - 分享日记_115
+      - 分享日记_116
+      - 分享日记_117
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 分享日记_美国_1
-      - 分享日记_日本_1
-      - 分享日记_中国_1
-      - 分享日记_中国_2
-      - 分享日记_中国_3
-      - 分享日记_日本_2
-      - 分享日记_日本_3
-      - 分享日记_爱尔兰
-      - 分享日记_韩国_1
-      - 分享日记_韩国_2
-      - 分享日记_荷兰_1
-      - 分享日记_韩国_3
-      - 分享日记_中国_4
-      - 分享日记_美国_2
-      - 分享日记_韩国_4
-      - 分享日记_中国_5
-      - 分享日记_荷兰_2
-      - 分享日记_韩国_5
-      - 分享日记_未知
-      - 分享日记_法国_1
-      - 分享日记_美国_3
-      - 分享日记_美国_4
-      - 分享日记_日本_4
-      - 分享日记_中国_6
-      - 分享日记_韩国_6
-      - 分享日记_韩国_7
-      - 分享日记_韩国_8
-      - 分享日记_韩国_9
-      - 分享日记_韩国_10
-      - 分享日记_韩国_11
-      - 分享日记_韩国_12
-      - 分享日记_韩国_13
-      - 分享日记_韩国_14
-      - 分享日记_韩国_15
-      - 分享日记_韩国_16
-      - 分享日记_韩国_17
-      - 分享日记_韩国_18
-      - 分享日记_韩国_19
-      - 分享日记_韩国_20
-      - 分享日记_韩国_21
-      - 分享日记_韩国_22
-      - 分享日记_韩国_23
-      - 分享日记_韩国_24
-      - 分享日记_韩国_25
-      - 分享日记_韩国_26
-      - 分享日记_韩国_27
-      - 分享日记_韩国_28
-      - 分享日记_韩国_29
-      - 分享日记_韩国_30
-      - 分享日记_韩国_31
-      - 分享日记_韩国_32
-      - 分享日记_韩国_33
-      - 分享日记_韩国_34
-      - 分享日记_韩国_35
-      - 分享日记_韩国_36
-      - 分享日记_法国_2
-      - 分享日记_韩国_37
-      - 分享日记_韩国_38
-      - 分享日记_韩国_39
-      - 分享日记_中国_7
-      - 分享日记_中国_8
-      - 分享日记_韩国_40
-      - 分享日记_韩国_41
-      - 分享日记_韩国_42
-      - 分享日记_韩国_43
-      - 分享日记_韩国_44
-      - 分享日记_韩国_45
-      - 分享日记_韩国_46
-      - 分享日记_韩国_47
-      - 分享日记_韩国_48
-      - 分享日记_俄罗斯_1
-      - 分享日记_美国_5
-      - 分享日记_韩国_49
-      - 分享日记_美国_6
-      - 分享日记_韩国_50
-      - 分享日记_美国_7
-      - 分享日记_韩国_51
-      - 分享日记_日本_5
-      - 分享日记_日本_6
-      - 分享日记_韩国_52
-      - 分享日记_韩国_53
-      - 分享日记_韩国_54
-      - 分享日记_韩国_55
-      - 分享日记_韩国_56
-      - 分享日记_韩国_57
-      - 分享日记_韩国_58
-      - 分享日记_韩国_59
-      - 分享日记_韩国_60
-      - 分享日记_韩国_61
-      - 分享日记_韩国_62
-      - 分享日记_韩国_63
-      - 分享日记_法国_3
-      - 分享日记_美国_8
-      - 分享日记_韩国_64
-      - 分享日记_伊朗
-      - 分享日记_韩国_65
-      - 分享日记_伊拉克
-      - 分享日记_中国_9
-      - 分享日记_俄罗斯_2
-      - 分享日记_韩国_66
-      - 分享日记_韩国_67
-      - 分享日记_美国_9
-      - 分享日记_俄罗斯_3
-      - 分享日记_柬埔寨
-      - 分享日记_韩国_68
-      - 分享日记_韩国_69
-      - 分享日记_英国
-      - 分享日记_美国_10
-      - 分享日记_美国_11
-      - 分享日记_美国_12
-      - 分享日记_美国_13
-      - 分享日记_美国_14
-      - 分享日记_韩国_70
-      - 分享日记_美国_15
-      - 分享日记_法国_4
-      - 分享日记_韩国_71
-      - 分享日记_韩国_72
-      - 分享日记_美国_16
-      - 分享日记_韩国_73
-      - 分享日记_沙特阿拉伯
-      - 分享日记_韩国_74
-      - 分享日记_韩国_75
-      - 分享日记_韩国_76
+      - 分享日记_1
+      - 分享日记_2
+      - 分享日记_3
+      - 分享日记_4
+      - 分享日记_5
+      - 分享日记_6
+      - 分享日记_7
+      - 分享日记_8
+      - 分享日记_9
+      - 分享日记_10
+      - 分享日记_11
+      - 分享日记_12
+      - 分享日记_13
+      - 分享日记_14
+      - 分享日记_15
+      - 分享日记_16
+      - 分享日记_17
+      - 分享日记_18
+      - 分享日记_19
+      - 分享日记_20
+      - 分享日记_21
+      - 分享日记_22
+      - 分享日记_23
+      - 分享日记_24
+      - 分享日记_25
+      - 分享日记_26
+      - 分享日记_27
+      - 分享日记_28
+      - 分享日记_29
+      - 分享日记_30
+      - 分享日记_31
+      - 分享日记_32
+      - 分享日记_33
+      - 分享日记_34
+      - 分享日记_35
+      - 分享日记_36
+      - 分享日记_37
+      - 分享日记_38
+      - 分享日记_39
+      - 分享日记_40
+      - 分享日记_41
+      - 分享日记_42
+      - 分享日记_43
+      - 分享日记_44
+      - 分享日记_45
+      - 分享日记_46
+      - 分享日记_47
+      - 分享日记_48
+      - 分享日记_49
+      - 分享日记_50
+      - 分享日记_51
+      - 分享日记_52
+      - 分享日记_53
+      - 分享日记_54
+      - 分享日记_55
+      - 分享日记_56
+      - 分享日记_57
+      - 分享日记_58
+      - 分享日记_59
+      - 分享日记_60
+      - 分享日记_61
+      - 分享日记_62
+      - 分享日记_63
+      - 分享日记_64
+      - 分享日记_65
+      - 分享日记_66
+      - 分享日记_67
+      - 分享日记_68
+      - 分享日记_69
+      - 分享日记_70
+      - 分享日记_71
+      - 分享日记_72
+      - 分享日记_73
+      - 分享日记_74
+      - 分享日记_75
+      - 分享日记_76
+      - 分享日记_77
+      - 分享日记_78
+      - 分享日记_79
+      - 分享日记_80
+      - 分享日记_81
+      - 分享日记_82
+      - 分享日记_83
+      - 分享日记_84
+      - 分享日记_85
+      - 分享日记_86
+      - 分享日记_87
+      - 分享日记_88
+      - 分享日记_89
+      - 分享日记_90
+      - 分享日记_91
+      - 分享日记_92
+      - 分享日记_93
+      - 分享日记_94
+      - 分享日记_95
+      - 分享日记_96
+      - 分享日记_97
+      - 分享日记_98
+      - 分享日记_99
+      - 分享日记_100
+      - 分享日记_101
+      - 分享日记_102
+      - 分享日记_103
+      - 分享日记_104
+      - 分享日记_105
+      - 分享日记_106
+      - 分享日记_107
+      - 分享日记_108
+      - 分享日记_109
+      - 分享日记_110
+      - 分享日记_111
+      - 分享日记_112
+      - 分享日记_113
+      - 分享日记_114
+      - 分享日记_115
+      - 分享日记_116
+      - 分享日记_117
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 分享日记_美国_1
-      - 分享日记_日本_1
-      - 分享日记_中国_1
-      - 分享日记_中国_2
-      - 分享日记_中国_3
-      - 分享日记_日本_2
-      - 分享日记_日本_3
-      - 分享日记_爱尔兰
-      - 分享日记_韩国_1
-      - 分享日记_韩国_2
-      - 分享日记_荷兰_1
-      - 分享日记_韩国_3
-      - 分享日记_中国_4
-      - 分享日记_美国_2
-      - 分享日记_韩国_4
-      - 分享日记_中国_5
-      - 分享日记_荷兰_2
-      - 分享日记_韩国_5
-      - 分享日记_未知
-      - 分享日记_法国_1
-      - 分享日记_美国_3
-      - 分享日记_美国_4
-      - 分享日记_日本_4
-      - 分享日记_中国_6
-      - 分享日记_韩国_6
-      - 分享日记_韩国_7
-      - 分享日记_韩国_8
-      - 分享日记_韩国_9
-      - 分享日记_韩国_10
-      - 分享日记_韩国_11
-      - 分享日记_韩国_12
-      - 分享日记_韩国_13
-      - 分享日记_韩国_14
-      - 分享日记_韩国_15
-      - 分享日记_韩国_16
-      - 分享日记_韩国_17
-      - 分享日记_韩国_18
-      - 分享日记_韩国_19
-      - 分享日记_韩国_20
-      - 分享日记_韩国_21
-      - 分享日记_韩国_22
-      - 分享日记_韩国_23
-      - 分享日记_韩国_24
-      - 分享日记_韩国_25
-      - 分享日记_韩国_26
-      - 分享日记_韩国_27
-      - 分享日记_韩国_28
-      - 分享日记_韩国_29
-      - 分享日记_韩国_30
-      - 分享日记_韩国_31
-      - 分享日记_韩国_32
-      - 分享日记_韩国_33
-      - 分享日记_韩国_34
-      - 分享日记_韩国_35
-      - 分享日记_韩国_36
-      - 分享日记_法国_2
-      - 分享日记_韩国_37
-      - 分享日记_韩国_38
-      - 分享日记_韩国_39
-      - 分享日记_中国_7
-      - 分享日记_中国_8
-      - 分享日记_韩国_40
-      - 分享日记_韩国_41
-      - 分享日记_韩国_42
-      - 分享日记_韩国_43
-      - 分享日记_韩国_44
-      - 分享日记_韩国_45
-      - 分享日记_韩国_46
-      - 分享日记_韩国_47
-      - 分享日记_韩国_48
-      - 分享日记_俄罗斯_1
-      - 分享日记_美国_5
-      - 分享日记_韩国_49
-      - 分享日记_美国_6
-      - 分享日记_韩国_50
-      - 分享日记_美国_7
-      - 分享日记_韩国_51
-      - 分享日记_日本_5
-      - 分享日记_日本_6
-      - 分享日记_韩国_52
-      - 分享日记_韩国_53
-      - 分享日记_韩国_54
-      - 分享日记_韩国_55
-      - 分享日记_韩国_56
-      - 分享日记_韩国_57
-      - 分享日记_韩国_58
-      - 分享日记_韩国_59
-      - 分享日记_韩国_60
-      - 分享日记_韩国_61
-      - 分享日记_韩国_62
-      - 分享日记_韩国_63
-      - 分享日记_法国_3
-      - 分享日记_美国_8
-      - 分享日记_韩国_64
-      - 分享日记_伊朗
-      - 分享日记_韩国_65
-      - 分享日记_伊拉克
-      - 分享日记_中国_9
-      - 分享日记_俄罗斯_2
-      - 分享日记_韩国_66
-      - 分享日记_韩国_67
-      - 分享日记_美国_9
-      - 分享日记_俄罗斯_3
-      - 分享日记_柬埔寨
-      - 分享日记_韩国_68
-      - 分享日记_韩国_69
-      - 分享日记_英国
-      - 分享日记_美国_10
-      - 分享日记_美国_11
-      - 分享日记_美国_12
-      - 分享日记_美国_13
-      - 分享日记_美国_14
-      - 分享日记_韩国_70
-      - 分享日记_美国_15
-      - 分享日记_法国_4
-      - 分享日记_韩国_71
-      - 分享日记_韩国_72
-      - 分享日记_美国_16
-      - 分享日记_韩国_73
-      - 分享日记_沙特阿拉伯
-      - 分享日记_韩国_74
-      - 分享日记_韩国_75
-      - 分享日记_韩国_76
+      - 分享日记_1
+      - 分享日记_2
+      - 分享日记_3
+      - 分享日记_4
+      - 分享日记_5
+      - 分享日记_6
+      - 分享日记_7
+      - 分享日记_8
+      - 分享日记_9
+      - 分享日记_10
+      - 分享日记_11
+      - 分享日记_12
+      - 分享日记_13
+      - 分享日记_14
+      - 分享日记_15
+      - 分享日记_16
+      - 分享日记_17
+      - 分享日记_18
+      - 分享日记_19
+      - 分享日记_20
+      - 分享日记_21
+      - 分享日记_22
+      - 分享日记_23
+      - 分享日记_24
+      - 分享日记_25
+      - 分享日记_26
+      - 分享日记_27
+      - 分享日记_28
+      - 分享日记_29
+      - 分享日记_30
+      - 分享日记_31
+      - 分享日记_32
+      - 分享日记_33
+      - 分享日记_34
+      - 分享日记_35
+      - 分享日记_36
+      - 分享日记_37
+      - 分享日记_38
+      - 分享日记_39
+      - 分享日记_40
+      - 分享日记_41
+      - 分享日记_42
+      - 分享日记_43
+      - 分享日记_44
+      - 分享日记_45
+      - 分享日记_46
+      - 分享日记_47
+      - 分享日记_48
+      - 分享日记_49
+      - 分享日记_50
+      - 分享日记_51
+      - 分享日记_52
+      - 分享日记_53
+      - 分享日记_54
+      - 分享日记_55
+      - 分享日记_56
+      - 分享日记_57
+      - 分享日记_58
+      - 分享日记_59
+      - 分享日记_60
+      - 分享日记_61
+      - 分享日记_62
+      - 分享日记_63
+      - 分享日记_64
+      - 分享日记_65
+      - 分享日记_66
+      - 分享日记_67
+      - 分享日记_68
+      - 分享日记_69
+      - 分享日记_70
+      - 分享日记_71
+      - 分享日记_72
+      - 分享日记_73
+      - 分享日记_74
+      - 分享日记_75
+      - 分享日记_76
+      - 分享日记_77
+      - 分享日记_78
+      - 分享日记_79
+      - 分享日记_80
+      - 分享日记_81
+      - 分享日记_82
+      - 分享日记_83
+      - 分享日记_84
+      - 分享日记_85
+      - 分享日记_86
+      - 分享日记_87
+      - 分享日记_88
+      - 分享日记_89
+      - 分享日记_90
+      - 分享日记_91
+      - 分享日记_92
+      - 分享日记_93
+      - 分享日记_94
+      - 分享日记_95
+      - 分享日记_96
+      - 分享日记_97
+      - 分享日记_98
+      - 分享日记_99
+      - 分享日记_100
+      - 分享日记_101
+      - 分享日记_102
+      - 分享日记_103
+      - 分享日记_104
+      - 分享日记_105
+      - 分享日记_106
+      - 分享日记_107
+      - 分享日记_108
+      - 分享日记_109
+      - 分享日记_110
+      - 分享日记_111
+      - 分享日记_112
+      - 分享日记_113
+      - 分享日记_114
+      - 分享日记_115
+      - 分享日记_116
+      - 分享日记_117
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 分享日记_美国_1
-      - 分享日记_日本_1
-      - 分享日记_中国_1
-      - 分享日记_中国_2
-      - 分享日记_中国_3
-      - 分享日记_日本_2
-      - 分享日记_日本_3
-      - 分享日记_爱尔兰
-      - 分享日记_韩国_1
-      - 分享日记_韩国_2
-      - 分享日记_荷兰_1
-      - 分享日记_韩国_3
-      - 分享日记_中国_4
-      - 分享日记_美国_2
-      - 分享日记_韩国_4
-      - 分享日记_中国_5
-      - 分享日记_荷兰_2
-      - 分享日记_韩国_5
-      - 分享日记_未知
-      - 分享日记_法国_1
-      - 分享日记_美国_3
-      - 分享日记_美国_4
-      - 分享日记_日本_4
-      - 分享日记_中国_6
-      - 分享日记_韩国_6
-      - 分享日记_韩国_7
-      - 分享日记_韩国_8
-      - 分享日记_韩国_9
-      - 分享日记_韩国_10
-      - 分享日记_韩国_11
-      - 分享日记_韩国_12
-      - 分享日记_韩国_13
-      - 分享日记_韩国_14
-      - 分享日记_韩国_15
-      - 分享日记_韩国_16
-      - 分享日记_韩国_17
-      - 分享日记_韩国_18
-      - 分享日记_韩国_19
-      - 分享日记_韩国_20
-      - 分享日记_韩国_21
-      - 分享日记_韩国_22
-      - 分享日记_韩国_23
-      - 分享日记_韩国_24
-      - 分享日记_韩国_25
-      - 分享日记_韩国_26
-      - 分享日记_韩国_27
-      - 分享日记_韩国_28
-      - 分享日记_韩国_29
-      - 分享日记_韩国_30
-      - 分享日记_韩国_31
-      - 分享日记_韩国_32
-      - 分享日记_韩国_33
-      - 分享日记_韩国_34
-      - 分享日记_韩国_35
-      - 分享日记_韩国_36
-      - 分享日记_法国_2
-      - 分享日记_韩国_37
-      - 分享日记_韩国_38
-      - 分享日记_韩国_39
-      - 分享日记_中国_7
-      - 分享日记_中国_8
-      - 分享日记_韩国_40
-      - 分享日记_韩国_41
-      - 分享日记_韩国_42
-      - 分享日记_韩国_43
-      - 分享日记_韩国_44
-      - 分享日记_韩国_45
-      - 分享日记_韩国_46
-      - 分享日记_韩国_47
-      - 分享日记_韩国_48
-      - 分享日记_俄罗斯_1
-      - 分享日记_美国_5
-      - 分享日记_韩国_49
-      - 分享日记_美国_6
-      - 分享日记_韩国_50
-      - 分享日记_美国_7
-      - 分享日记_韩国_51
-      - 分享日记_日本_5
-      - 分享日记_日本_6
-      - 分享日记_韩国_52
-      - 分享日记_韩国_53
-      - 分享日记_韩国_54
-      - 分享日记_韩国_55
-      - 分享日记_韩国_56
-      - 分享日记_韩国_57
-      - 分享日记_韩国_58
-      - 分享日记_韩国_59
-      - 分享日记_韩国_60
-      - 分享日记_韩国_61
-      - 分享日记_韩国_62
-      - 分享日记_韩国_63
-      - 分享日记_法国_3
-      - 分享日记_美国_8
-      - 分享日记_韩国_64
-      - 分享日记_伊朗
-      - 分享日记_韩国_65
-      - 分享日记_伊拉克
-      - 分享日记_中国_9
-      - 分享日记_俄罗斯_2
-      - 分享日记_韩国_66
-      - 分享日记_韩国_67
-      - 分享日记_美国_9
-      - 分享日记_俄罗斯_3
-      - 分享日记_柬埔寨
-      - 分享日记_韩国_68
-      - 分享日记_韩国_69
-      - 分享日记_英国
-      - 分享日记_美国_10
-      - 分享日记_美国_11
-      - 分享日记_美国_12
-      - 分享日记_美国_13
-      - 分享日记_美国_14
-      - 分享日记_韩国_70
-      - 分享日记_美国_15
-      - 分享日记_法国_4
-      - 分享日记_韩国_71
-      - 分享日记_韩国_72
-      - 分享日记_美国_16
-      - 分享日记_韩国_73
-      - 分享日记_沙特阿拉伯
-      - 分享日记_韩国_74
-      - 分享日记_韩国_75
-      - 分享日记_韩国_76
+      - 分享日记_1
+      - 分享日记_2
+      - 分享日记_3
+      - 分享日记_4
+      - 分享日记_5
+      - 分享日记_6
+      - 分享日记_7
+      - 分享日记_8
+      - 分享日记_9
+      - 分享日记_10
+      - 分享日记_11
+      - 分享日记_12
+      - 分享日记_13
+      - 分享日记_14
+      - 分享日记_15
+      - 分享日记_16
+      - 分享日记_17
+      - 分享日记_18
+      - 分享日记_19
+      - 分享日记_20
+      - 分享日记_21
+      - 分享日记_22
+      - 分享日记_23
+      - 分享日记_24
+      - 分享日记_25
+      - 分享日记_26
+      - 分享日记_27
+      - 分享日记_28
+      - 分享日记_29
+      - 分享日记_30
+      - 分享日记_31
+      - 分享日记_32
+      - 分享日记_33
+      - 分享日记_34
+      - 分享日记_35
+      - 分享日记_36
+      - 分享日记_37
+      - 分享日记_38
+      - 分享日记_39
+      - 分享日记_40
+      - 分享日记_41
+      - 分享日记_42
+      - 分享日记_43
+      - 分享日记_44
+      - 分享日记_45
+      - 分享日记_46
+      - 分享日记_47
+      - 分享日记_48
+      - 分享日记_49
+      - 分享日记_50
+      - 分享日记_51
+      - 分享日记_52
+      - 分享日记_53
+      - 分享日记_54
+      - 分享日记_55
+      - 分享日记_56
+      - 分享日记_57
+      - 分享日记_58
+      - 分享日记_59
+      - 分享日记_60
+      - 分享日记_61
+      - 分享日记_62
+      - 分享日记_63
+      - 分享日记_64
+      - 分享日记_65
+      - 分享日记_66
+      - 分享日记_67
+      - 分享日记_68
+      - 分享日记_69
+      - 分享日记_70
+      - 分享日记_71
+      - 分享日记_72
+      - 分享日记_73
+      - 分享日记_74
+      - 分享日记_75
+      - 分享日记_76
+      - 分享日记_77
+      - 分享日记_78
+      - 分享日记_79
+      - 分享日记_80
+      - 分享日记_81
+      - 分享日记_82
+      - 分享日记_83
+      - 分享日记_84
+      - 分享日记_85
+      - 分享日记_86
+      - 分享日记_87
+      - 分享日记_88
+      - 分享日记_89
+      - 分享日记_90
+      - 分享日记_91
+      - 分享日记_92
+      - 分享日记_93
+      - 分享日记_94
+      - 分享日记_95
+      - 分享日记_96
+      - 分享日记_97
+      - 分享日记_98
+      - 分享日记_99
+      - 分享日记_100
+      - 分享日记_101
+      - 分享日记_102
+      - 分享日记_103
+      - 分享日记_104
+      - 分享日记_105
+      - 分享日记_106
+      - 分享日记_107
+      - 分享日记_108
+      - 分享日记_109
+      - 分享日记_110
+      - 分享日记_111
+      - 分享日记_112
+      - 分享日记_113
+      - 分享日记_114
+      - 分享日记_115
+      - 分享日记_116
+      - 分享日记_117
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 分享日记_美国_1
-      - 分享日记_日本_1
-      - 分享日记_中国_1
-      - 分享日记_中国_2
-      - 分享日记_中国_3
-      - 分享日记_日本_2
-      - 分享日记_日本_3
-      - 分享日记_爱尔兰
-      - 分享日记_韩国_1
-      - 分享日记_韩国_2
-      - 分享日记_荷兰_1
-      - 分享日记_韩国_3
-      - 分享日记_中国_4
-      - 分享日记_美国_2
-      - 分享日记_韩国_4
-      - 分享日记_中国_5
-      - 分享日记_荷兰_2
-      - 分享日记_韩国_5
-      - 分享日记_未知
-      - 分享日记_法国_1
-      - 分享日记_美国_3
-      - 分享日记_美国_4
-      - 分享日记_日本_4
-      - 分享日记_中国_6
-      - 分享日记_韩国_6
-      - 分享日记_韩国_7
-      - 分享日记_韩国_8
-      - 分享日记_韩国_9
-      - 分享日记_韩国_10
-      - 分享日记_韩国_11
-      - 分享日记_韩国_12
-      - 分享日记_韩国_13
-      - 分享日记_韩国_14
-      - 分享日记_韩国_15
-      - 分享日记_韩国_16
-      - 分享日记_韩国_17
-      - 分享日记_韩国_18
-      - 分享日记_韩国_19
-      - 分享日记_韩国_20
-      - 分享日记_韩国_21
-      - 分享日记_韩国_22
-      - 分享日记_韩国_23
-      - 分享日记_韩国_24
-      - 分享日记_韩国_25
-      - 分享日记_韩国_26
-      - 分享日记_韩国_27
-      - 分享日记_韩国_28
-      - 分享日记_韩国_29
-      - 分享日记_韩国_30
-      - 分享日记_韩国_31
-      - 分享日记_韩国_32
-      - 分享日记_韩国_33
-      - 分享日记_韩国_34
-      - 分享日记_韩国_35
-      - 分享日记_韩国_36
-      - 分享日记_法国_2
-      - 分享日记_韩国_37
-      - 分享日记_韩国_38
-      - 分享日记_韩国_39
-      - 分享日记_中国_7
-      - 分享日记_中国_8
-      - 分享日记_韩国_40
-      - 分享日记_韩国_41
-      - 分享日记_韩国_42
-      - 分享日记_韩国_43
-      - 分享日记_韩国_44
-      - 分享日记_韩国_45
-      - 分享日记_韩国_46
-      - 分享日记_韩国_47
-      - 分享日记_韩国_48
-      - 分享日记_俄罗斯_1
-      - 分享日记_美国_5
-      - 分享日记_韩国_49
-      - 分享日记_美国_6
-      - 分享日记_韩国_50
-      - 分享日记_美国_7
-      - 分享日记_韩国_51
-      - 分享日记_日本_5
-      - 分享日记_日本_6
-      - 分享日记_韩国_52
-      - 分享日记_韩国_53
-      - 分享日记_韩国_54
-      - 分享日记_韩国_55
-      - 分享日记_韩国_56
-      - 分享日记_韩国_57
-      - 分享日记_韩国_58
-      - 分享日记_韩国_59
-      - 分享日记_韩国_60
-      - 分享日记_韩国_61
-      - 分享日记_韩国_62
-      - 分享日记_韩国_63
-      - 分享日记_法国_3
-      - 分享日记_美国_8
-      - 分享日记_韩国_64
-      - 分享日记_伊朗
-      - 分享日记_韩国_65
-      - 分享日记_伊拉克
-      - 分享日记_中国_9
-      - 分享日记_俄罗斯_2
-      - 分享日记_韩国_66
-      - 分享日记_韩国_67
-      - 分享日记_美国_9
-      - 分享日记_俄罗斯_3
-      - 分享日记_柬埔寨
-      - 分享日记_韩国_68
-      - 分享日记_韩国_69
-      - 分享日记_英国
-      - 分享日记_美国_10
-      - 分享日记_美国_11
-      - 分享日记_美国_12
-      - 分享日记_美国_13
-      - 分享日记_美国_14
-      - 分享日记_韩国_70
-      - 分享日记_美国_15
-      - 分享日记_法国_4
-      - 分享日记_韩国_71
-      - 分享日记_韩国_72
-      - 分享日记_美国_16
-      - 分享日记_韩国_73
-      - 分享日记_沙特阿拉伯
-      - 分享日记_韩国_74
-      - 分享日记_韩国_75
-      - 分享日记_韩国_76
+      - 分享日记_1
+      - 分享日记_2
+      - 分享日记_3
+      - 分享日记_4
+      - 分享日记_5
+      - 分享日记_6
+      - 分享日记_7
+      - 分享日记_8
+      - 分享日记_9
+      - 分享日记_10
+      - 分享日记_11
+      - 分享日记_12
+      - 分享日记_13
+      - 分享日记_14
+      - 分享日记_15
+      - 分享日记_16
+      - 分享日记_17
+      - 分享日记_18
+      - 分享日记_19
+      - 分享日记_20
+      - 分享日记_21
+      - 分享日记_22
+      - 分享日记_23
+      - 分享日记_24
+      - 分享日记_25
+      - 分享日记_26
+      - 分享日记_27
+      - 分享日记_28
+      - 分享日记_29
+      - 分享日记_30
+      - 分享日记_31
+      - 分享日记_32
+      - 分享日记_33
+      - 分享日记_34
+      - 分享日记_35
+      - 分享日记_36
+      - 分享日记_37
+      - 分享日记_38
+      - 分享日记_39
+      - 分享日记_40
+      - 分享日记_41
+      - 分享日记_42
+      - 分享日记_43
+      - 分享日记_44
+      - 分享日记_45
+      - 分享日记_46
+      - 分享日记_47
+      - 分享日记_48
+      - 分享日记_49
+      - 分享日记_50
+      - 分享日记_51
+      - 分享日记_52
+      - 分享日记_53
+      - 分享日记_54
+      - 分享日记_55
+      - 分享日记_56
+      - 分享日记_57
+      - 分享日记_58
+      - 分享日记_59
+      - 分享日记_60
+      - 分享日记_61
+      - 分享日记_62
+      - 分享日记_63
+      - 分享日记_64
+      - 分享日记_65
+      - 分享日记_66
+      - 分享日记_67
+      - 分享日记_68
+      - 分享日记_69
+      - 分享日记_70
+      - 分享日记_71
+      - 分享日记_72
+      - 分享日记_73
+      - 分享日记_74
+      - 分享日记_75
+      - 分享日记_76
+      - 分享日记_77
+      - 分享日记_78
+      - 分享日记_79
+      - 分享日记_80
+      - 分享日记_81
+      - 分享日记_82
+      - 分享日记_83
+      - 分享日记_84
+      - 分享日记_85
+      - 分享日记_86
+      - 分享日记_87
+      - 分享日记_88
+      - 分享日记_89
+      - 分享日记_90
+      - 分享日记_91
+      - 分享日记_92
+      - 分享日记_93
+      - 分享日记_94
+      - 分享日记_95
+      - 分享日记_96
+      - 分享日记_97
+      - 分享日记_98
+      - 分享日记_99
+      - 分享日记_100
+      - 分享日记_101
+      - 分享日记_102
+      - 分享日记_103
+      - 分享日记_104
+      - 分享日记_105
+      - 分享日记_106
+      - 分享日记_107
+      - 分享日记_108
+      - 分享日记_109
+      - 分享日记_110
+      - 分享日记_111
+      - 分享日记_112
+      - 分享日记_113
+      - 分享日记_114
+      - 分享日记_115
+      - 分享日记_116
+      - 分享日记_117
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 分享日记_美国_1
-      - 分享日记_日本_1
-      - 分享日记_中国_1
-      - 分享日记_中国_2
-      - 分享日记_中国_3
-      - 分享日记_日本_2
-      - 分享日记_日本_3
-      - 分享日记_爱尔兰
-      - 分享日记_韩国_1
-      - 分享日记_韩国_2
-      - 分享日记_荷兰_1
-      - 分享日记_韩国_3
-      - 分享日记_中国_4
-      - 分享日记_美国_2
-      - 分享日记_韩国_4
-      - 分享日记_中国_5
-      - 分享日记_荷兰_2
-      - 分享日记_韩国_5
-      - 分享日记_未知
-      - 分享日记_法国_1
-      - 分享日记_美国_3
-      - 分享日记_美国_4
-      - 分享日记_日本_4
-      - 分享日记_中国_6
-      - 分享日记_韩国_6
-      - 分享日记_韩国_7
-      - 分享日记_韩国_8
-      - 分享日记_韩国_9
-      - 分享日记_韩国_10
-      - 分享日记_韩国_11
-      - 分享日记_韩国_12
-      - 分享日记_韩国_13
-      - 分享日记_韩国_14
-      - 分享日记_韩国_15
-      - 分享日记_韩国_16
-      - 分享日记_韩国_17
-      - 分享日记_韩国_18
-      - 分享日记_韩国_19
-      - 分享日记_韩国_20
-      - 分享日记_韩国_21
-      - 分享日记_韩国_22
-      - 分享日记_韩国_23
-      - 分享日记_韩国_24
-      - 分享日记_韩国_25
-      - 分享日记_韩国_26
-      - 分享日记_韩国_27
-      - 分享日记_韩国_28
-      - 分享日记_韩国_29
-      - 分享日记_韩国_30
-      - 分享日记_韩国_31
-      - 分享日记_韩国_32
-      - 分享日记_韩国_33
-      - 分享日记_韩国_34
-      - 分享日记_韩国_35
-      - 分享日记_韩国_36
-      - 分享日记_法国_2
-      - 分享日记_韩国_37
-      - 分享日记_韩国_38
-      - 分享日记_韩国_39
-      - 分享日记_中国_7
-      - 分享日记_中国_8
-      - 分享日记_韩国_40
-      - 分享日记_韩国_41
-      - 分享日记_韩国_42
-      - 分享日记_韩国_43
-      - 分享日记_韩国_44
-      - 分享日记_韩国_45
-      - 分享日记_韩国_46
-      - 分享日记_韩国_47
-      - 分享日记_韩国_48
-      - 分享日记_俄罗斯_1
-      - 分享日记_美国_5
-      - 分享日记_韩国_49
-      - 分享日记_美国_6
-      - 分享日记_韩国_50
-      - 分享日记_美国_7
-      - 分享日记_韩国_51
-      - 分享日记_日本_5
-      - 分享日记_日本_6
-      - 分享日记_韩国_52
-      - 分享日记_韩国_53
-      - 分享日记_韩国_54
-      - 分享日记_韩国_55
-      - 分享日记_韩国_56
-      - 分享日记_韩国_57
-      - 分享日记_韩国_58
-      - 分享日记_韩国_59
-      - 分享日记_韩国_60
-      - 分享日记_韩国_61
-      - 分享日记_韩国_62
-      - 分享日记_韩国_63
-      - 分享日记_法国_3
-      - 分享日记_美国_8
-      - 分享日记_韩国_64
-      - 分享日记_伊朗
-      - 分享日记_韩国_65
-      - 分享日记_伊拉克
-      - 分享日记_中国_9
-      - 分享日记_俄罗斯_2
-      - 分享日记_韩国_66
-      - 分享日记_韩国_67
-      - 分享日记_美国_9
-      - 分享日记_俄罗斯_3
-      - 分享日记_柬埔寨
-      - 分享日记_韩国_68
-      - 分享日记_韩国_69
-      - 分享日记_英国
-      - 分享日记_美国_10
-      - 分享日记_美国_11
-      - 分享日记_美国_12
-      - 分享日记_美国_13
-      - 分享日记_美国_14
-      - 分享日记_韩国_70
-      - 分享日记_美国_15
-      - 分享日记_法国_4
-      - 分享日记_韩国_71
-      - 分享日记_韩国_72
-      - 分享日记_美国_16
-      - 分享日记_韩国_73
-      - 分享日记_沙特阿拉伯
-      - 分享日记_韩国_74
-      - 分享日记_韩国_75
-      - 分享日记_韩国_76
+      - 分享日记_1
+      - 分享日记_2
+      - 分享日记_3
+      - 分享日记_4
+      - 分享日记_5
+      - 分享日记_6
+      - 分享日记_7
+      - 分享日记_8
+      - 分享日记_9
+      - 分享日记_10
+      - 分享日记_11
+      - 分享日记_12
+      - 分享日记_13
+      - 分享日记_14
+      - 分享日记_15
+      - 分享日记_16
+      - 分享日记_17
+      - 分享日记_18
+      - 分享日记_19
+      - 分享日记_20
+      - 分享日记_21
+      - 分享日记_22
+      - 分享日记_23
+      - 分享日记_24
+      - 分享日记_25
+      - 分享日记_26
+      - 分享日记_27
+      - 分享日记_28
+      - 分享日记_29
+      - 分享日记_30
+      - 分享日记_31
+      - 分享日记_32
+      - 分享日记_33
+      - 分享日记_34
+      - 分享日记_35
+      - 分享日记_36
+      - 分享日记_37
+      - 分享日记_38
+      - 分享日记_39
+      - 分享日记_40
+      - 分享日记_41
+      - 分享日记_42
+      - 分享日记_43
+      - 分享日记_44
+      - 分享日记_45
+      - 分享日记_46
+      - 分享日记_47
+      - 分享日记_48
+      - 分享日记_49
+      - 分享日记_50
+      - 分享日记_51
+      - 分享日记_52
+      - 分享日记_53
+      - 分享日记_54
+      - 分享日记_55
+      - 分享日记_56
+      - 分享日记_57
+      - 分享日记_58
+      - 分享日记_59
+      - 分享日记_60
+      - 分享日记_61
+      - 分享日记_62
+      - 分享日记_63
+      - 分享日记_64
+      - 分享日记_65
+      - 分享日记_66
+      - 分享日记_67
+      - 分享日记_68
+      - 分享日记_69
+      - 分享日记_70
+      - 分享日记_71
+      - 分享日记_72
+      - 分享日记_73
+      - 分享日记_74
+      - 分享日记_75
+      - 分享日记_76
+      - 分享日记_77
+      - 分享日记_78
+      - 分享日记_79
+      - 分享日记_80
+      - 分享日记_81
+      - 分享日记_82
+      - 分享日记_83
+      - 分享日记_84
+      - 分享日记_85
+      - 分享日记_86
+      - 分享日记_87
+      - 分享日记_88
+      - 分享日记_89
+      - 分享日记_90
+      - 分享日记_91
+      - 分享日记_92
+      - 分享日记_93
+      - 分享日记_94
+      - 分享日记_95
+      - 分享日记_96
+      - 分享日记_97
+      - 分享日记_98
+      - 分享日记_99
+      - 分享日记_100
+      - 分享日记_101
+      - 分享日记_102
+      - 分享日记_103
+      - 分享日记_104
+      - 分享日记_105
+      - 分享日记_106
+      - 分享日记_107
+      - 分享日记_108
+      - 分享日记_109
+      - 分享日记_110
+      - 分享日记_111
+      - 分享日记_112
+      - 分享日记_113
+      - 分享日记_114
+      - 分享日记_115
+      - 分享日记_116
+      - 分享日记_117
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -2524,137 +960,136 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 分享日记_美国_1
-      - 分享日记_日本_1
-      - 分享日记_中国_1
-      - 分享日记_中国_2
-      - 分享日记_中国_3
-      - 分享日记_日本_2
-      - 分享日记_日本_3
-      - 分享日记_爱尔兰
-      - 分享日记_韩国_1
-      - 分享日记_韩国_2
-      - 分享日记_荷兰_1
-      - 分享日记_韩国_3
-      - 分享日记_中国_4
-      - 分享日记_美国_2
-      - 分享日记_韩国_4
-      - 分享日记_中国_5
-      - 分享日记_荷兰_2
-      - 分享日记_韩国_5
-      - 分享日记_未知
-      - 分享日记_法国_1
-      - 分享日记_美国_3
-      - 分享日记_美国_4
-      - 分享日记_日本_4
-      - 分享日记_中国_6
-      - 分享日记_韩国_6
-      - 分享日记_韩国_7
-      - 分享日记_韩国_8
-      - 分享日记_韩国_9
-      - 分享日记_韩国_10
-      - 分享日记_韩国_11
-      - 分享日记_韩国_12
-      - 分享日记_韩国_13
-      - 分享日记_韩国_14
-      - 分享日记_韩国_15
-      - 分享日记_韩国_16
-      - 分享日记_韩国_17
-      - 分享日记_韩国_18
-      - 分享日记_韩国_19
-      - 分享日记_韩国_20
-      - 分享日记_韩国_21
-      - 分享日记_韩国_22
-      - 分享日记_韩国_23
-      - 分享日记_韩国_24
-      - 分享日记_韩国_25
-      - 分享日记_韩国_26
-      - 分享日记_韩国_27
-      - 分享日记_韩国_28
-      - 分享日记_韩国_29
-      - 分享日记_韩国_30
-      - 分享日记_韩国_31
-      - 分享日记_韩国_32
-      - 分享日记_韩国_33
-      - 分享日记_韩国_34
-      - 分享日记_韩国_35
-      - 分享日记_韩国_36
-      - 分享日记_法国_2
-      - 分享日记_韩国_37
-      - 分享日记_韩国_38
-      - 分享日记_韩国_39
-      - 分享日记_中国_7
-      - 分享日记_中国_8
-      - 分享日记_韩国_40
-      - 分享日记_韩国_41
-      - 分享日记_韩国_42
-      - 分享日记_韩国_43
-      - 分享日记_韩国_44
-      - 分享日记_韩国_45
-      - 分享日记_韩国_46
-      - 分享日记_韩国_47
-      - 分享日记_韩国_48
-      - 分享日记_俄罗斯_1
-      - 分享日记_美国_5
-      - 分享日记_韩国_49
-      - 分享日记_美国_6
-      - 分享日记_韩国_50
-      - 分享日记_美国_7
-      - 分享日记_韩国_51
-      - 分享日记_日本_5
-      - 分享日记_日本_6
-      - 分享日记_韩国_52
-      - 分享日记_韩国_53
-      - 分享日记_韩国_54
-      - 分享日记_韩国_55
-      - 分享日记_韩国_56
-      - 分享日记_韩国_57
-      - 分享日记_韩国_58
-      - 分享日记_韩国_59
-      - 分享日记_韩国_60
-      - 分享日记_韩国_61
-      - 分享日记_韩国_62
-      - 分享日记_韩国_63
-      - 分享日记_法国_3
-      - 分享日记_美国_8
-      - 分享日记_韩国_64
-      - 分享日记_伊朗
-      - 分享日记_韩国_65
-      - 分享日记_伊拉克
-      - 分享日记_中国_9
-      - 分享日记_俄罗斯_2
-      - 分享日记_韩国_66
-      - 分享日记_韩国_67
-      - 分享日记_美国_9
-      - 分享日记_俄罗斯_3
-      - 分享日记_柬埔寨
-      - 分享日记_韩国_68
-      - 分享日记_韩国_69
-      - 分享日记_英国
-      - 分享日记_美国_10
-      - 分享日记_美国_11
-      - 分享日记_美国_12
-      - 分享日记_美国_13
-      - 分享日记_美国_14
-      - 分享日记_韩国_70
-      - 分享日记_美国_15
-      - 分享日记_法国_4
-      - 分享日记_韩国_71
-      - 分享日记_韩国_72
-      - 分享日记_美国_16
-      - 分享日记_韩国_73
-      - 分享日记_沙特阿拉伯
-      - 分享日记_韩国_74
-      - 分享日记_韩国_75
-      - 分享日记_韩国_76
+      - 分享日记_1
+      - 分享日记_2
+      - 分享日记_3
+      - 分享日记_4
+      - 分享日记_5
+      - 分享日记_6
+      - 分享日记_7
+      - 分享日记_8
+      - 分享日记_9
+      - 分享日记_10
+      - 分享日记_11
+      - 分享日记_12
+      - 分享日记_13
+      - 分享日记_14
+      - 分享日记_15
+      - 分享日记_16
+      - 分享日记_17
+      - 分享日记_18
+      - 分享日记_19
+      - 分享日记_20
+      - 分享日记_21
+      - 分享日记_22
+      - 分享日记_23
+      - 分享日记_24
+      - 分享日记_25
+      - 分享日记_26
+      - 分享日记_27
+      - 分享日记_28
+      - 分享日记_29
+      - 分享日记_30
+      - 分享日记_31
+      - 分享日记_32
+      - 分享日记_33
+      - 分享日记_34
+      - 分享日记_35
+      - 分享日记_36
+      - 分享日记_37
+      - 分享日记_38
+      - 分享日记_39
+      - 分享日记_40
+      - 分享日记_41
+      - 分享日记_42
+      - 分享日记_43
+      - 分享日记_44
+      - 分享日记_45
+      - 分享日记_46
+      - 分享日记_47
+      - 分享日记_48
+      - 分享日记_49
+      - 分享日记_50
+      - 分享日记_51
+      - 分享日记_52
+      - 分享日记_53
+      - 分享日记_54
+      - 分享日记_55
+      - 分享日记_56
+      - 分享日记_57
+      - 分享日记_58
+      - 分享日记_59
+      - 分享日记_60
+      - 分享日记_61
+      - 分享日记_62
+      - 分享日记_63
+      - 分享日记_64
+      - 分享日记_65
+      - 分享日记_66
+      - 分享日记_67
+      - 分享日记_68
+      - 分享日记_69
+      - 分享日记_70
+      - 分享日记_71
+      - 分享日记_72
+      - 分享日记_73
+      - 分享日记_74
+      - 分享日记_75
+      - 分享日记_76
+      - 分享日记_77
+      - 分享日记_78
+      - 分享日记_79
+      - 分享日记_80
+      - 分享日记_81
+      - 分享日记_82
+      - 分享日记_83
+      - 分享日记_84
+      - 分享日记_85
+      - 分享日记_86
+      - 分享日记_87
+      - 分享日记_88
+      - 分享日记_89
+      - 分享日记_90
+      - 分享日记_91
+      - 分享日记_92
+      - 分享日记_93
+      - 分享日记_94
+      - 分享日记_95
+      - 分享日记_96
+      - 分享日记_97
+      - 分享日记_98
+      - 分享日记_99
+      - 分享日记_100
+      - 分享日记_101
+      - 分享日记_102
+      - 分享日记_103
+      - 分享日记_104
+      - 分享日记_105
+      - 分享日记_106
+      - 分享日记_107
+      - 分享日记_108
+      - 分享日记_109
+      - 分享日记_110
+      - 分享日记_111
+      - 分享日记_112
+      - 分享日记_113
+      - 分享日记_114
+      - 分享日记_115
+      - 分享日记_116
+      - 分享日记_117
+
 rules:
+# 本地/局域网地址
+# 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
+# ACL4SSR标志 如没有，代表不是用ACL4SSR规则
+# 本地/局域网地址
+# Router managed 路由器管理域名
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-loopback,🎯 全球直连
   - DOMAIN-SUFFIX,lan,🎯 全球直连
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - DOMAIN-SUFFIX,localhost,🎯 全球直连
-  - IP-CIDR,0.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,10.0.0.0/8,🎯 全球直连,no-resolve
   - IP-CIDR,100.64.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,127.0.0.0/8,🎯 全球直连,no-resolve
@@ -2669,7 +1104,6 @@ rules:
   - DOMAIN,instant.arubanetworks.com,🎯 全球直连
   - DOMAIN,setmeup.arubanetworks.com,🎯 全球直连
   - DOMAIN,router.asus.com,🎯 全球直连
-  - DOMAIN,www.asusrouter.com,🎯 全球直连
   - DOMAIN-SUFFIX,hiwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,leike.cc,🎯 全球直连
   - DOMAIN-SUFFIX,miwifi.com,🎯 全球直连
@@ -2682,16 +1116,23 @@ rules:
   - DOMAIN-SUFFIX,tendawifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zte.home,🎯 全球直连
   - DOMAIN-SUFFIX,tplogin.cn,🎯 全球直连
-  - DOMAIN-SUFFIX,wifi.cmcc,🎯 全球直连
+# 本碎片只包含常见广告关键字、广告联盟。无副作用，放心使用
+# 广告关键词
+# 广告联盟-国内****************
+# 广告联盟-国外****************
+# 垃圾站点****************
+# 运营商广告****************
   - DOMAIN-KEYWORD,admarvel,🛑 全球拦截
   - DOMAIN-KEYWORD,admaster,🛑 全球拦截
   - DOMAIN-KEYWORD,adsage,🛑 全球拦截
   - DOMAIN-KEYWORD,adsensor,🛑 全球拦截
+  - DOMAIN-KEYWORD,adservice,🛑 全球拦截
   - DOMAIN-KEYWORD,adsmogo,🛑 全球拦截
   - DOMAIN-KEYWORD,adsrvmedia,🛑 全球拦截
   - DOMAIN-KEYWORD,adsserving,🛑 全球拦截
   - DOMAIN-KEYWORD,adsystem,🛑 全球拦截
   - DOMAIN-KEYWORD,adwords,🛑 全球拦截
+  - DOMAIN-KEYWORD,analysis,🛑 全球拦截
   - DOMAIN-KEYWORD,applovin,🛑 全球拦截
   - DOMAIN-KEYWORD,appsflyer,🛑 全球拦截
   - DOMAIN-KEYWORD,domob,🛑 全球拦截
@@ -2705,6 +1146,7 @@ rules:
   - DOMAIN-KEYWORD,pingfore,🛑 全球拦截
   - DOMAIN-KEYWORD,socdm,🛑 全球拦截
   - DOMAIN-KEYWORD,supersonicads,🛑 全球拦截
+  - DOMAIN-KEYWORD,usage,🛑 全球拦截
   - DOMAIN-KEYWORD,wlmonitor,🛑 全球拦截
   - DOMAIN-KEYWORD,zjtoolbar,🛑 全球拦截
   - DOMAIN-SUFFIX,09mk.cn,🛑 全球拦截
@@ -3101,7 +1543,6 @@ rules:
   - DOMAIN-SUFFIX,zhjfad.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zqzxz.com,🛑 全球拦截
   - DOMAIN-SUFFIX,zzsx8.com,🛑 全球拦截
-  - DOMAIN-SUFFIX,wwads.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,acuityplatform.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-stir.com,🛑 全球拦截
   - DOMAIN-SUFFIX,ad-survey.com,🛑 全球拦截
@@ -3275,6 +1716,66 @@ rules:
   - DOMAIN-SUFFIX,go.10086.cn,🛑 全球拦截
   - DOMAIN-SUFFIX,hivedata.cc,🛑 全球拦截
   - DOMAIN-SUFFIX,navi.gd.chinamobile.com,🛑 全球拦截
+# 包含常用应用的各种去广告规则。
+# 可能有轻微副作用，可放心使用。（如果网站功能和广告冲突，会删掉去广告规则）
+# 163
+# 17173
+# 178
+# 2345
+# 360
+# 58
+# Alibaba
+# Adobe
+# Apple
+# AutoHome
+# Baidu
+# Book-app 起点 掌阅 书旗 宜搜
+# ByteDance 头条抖音
+# Dangdang
+# Duomi
+# Facebook
+# Fang
+# Google
+# JD
+# Kugou
+# Kuwo
+# Meizu flyme 魅族
+# Meitu
+# Miui 小米
+# Moji
+# Qingting.fm
+# QQ
+# RenRen
+# Sina
+# Sougou
+# Teleplus
+# Twitter
+# UC ali
+# Weifeng
+# WPS Office
+# Wi-Fi key
+# Ximalaya 喜马拉雅
+# Xunlei 迅雷app&看看
+# Yahoo
+# Zhihu
+# Ads in Video apps 下面都是 ********************
+# 6间房
+# Baofeng 暴风影音
+# Douyu
+# Fenghuang 凤凰TV
+# Funshion 风行
+# iqiyi PPS 爱奇艺
+# Ku6 酷6
+# LeTV 乐视
+# MGTV 芒果TV
+# Sohu 搜狐
+# PPTV、PPLive
+# QQ Live
+# Youku & Tudou
+# Youtube
+# Others ads in Video apps
+# Ads in Video apps end 上面都是 ********************
+# 常用网站广告
   - DOMAIN-SUFFIX,a.youdao.com,🍃 应用净化
   - DOMAIN-SUFFIX,adgeo.corp.163.com,🍃 应用净化
   - DOMAIN-SUFFIX,analytics.126.net,🍃 应用净化
@@ -3439,6 +1940,7 @@ rules:
   - DOMAIN-SUFFIX,baidu9635.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidustatic.com,🍃 应用净化
   - DOMAIN-SUFFIX,baidutv.baidu.com,🍃 应用净化
+  - DOMAIN-SUFFIX,baikebcs.bdimg.com,🍃 应用净化
   - DOMAIN-SUFFIX,banlv.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bar.baidu.com,🍃 应用净化
   - DOMAIN-SUFFIX,bdplus.baidu.com,🍃 应用净化
@@ -3796,6 +2298,7 @@ rules:
   - DOMAIN-SUFFIX,stat.pandora.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,union.mi.com,🍃 应用净化
   - DOMAIN-SUFFIX,wtradv.market.xiaomi.com,🍃 应用净化
+  - DOMAIN-SUFFIX,xmpush.xiaomi.com,🍃 应用净化
   - DOMAIN-SUFFIX,ad.api.moji.com,🍃 应用净化
   - DOMAIN-SUFFIX,app.moji001.com,🍃 应用净化
   - DOMAIN-SUFFIX,cdn.moji002.com,🍃 应用净化
@@ -3990,6 +2493,7 @@ rules:
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com,🍃 应用净化
   - DOMAIN-SUFFIX,yads.yahoo.co.jp,🍃 应用净化
   - DOMAIN-SUFFIX,ybp.yahoo.com,🍃 应用净化
+  - DOMAIN-SUFFIX,zhihu-web-analytics.zhihu.com,🍃 应用净化
   - DOMAIN-SUFFIX,shrek.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,simba.6.cn,🍃 应用净化
   - DOMAIN-SUFFIX,union.6.cn,🍃 应用净化
@@ -4298,6 +2802,8 @@ rules:
   - DOMAIN-SUFFIX,tralog.ganji.com,🍃 应用净化
   - DOMAIN-SUFFIX,up.qingdaonews.com,🍃 应用净化
   - DOMAIN-SUFFIX,vaserviece.10jqka.com.cn,🍃 应用净化
+# Google China
+#DOMAIN-SUFFIX,translate.googleapis.com
   - DOMAIN-SUFFIX,265.com,🎯 全球直连
   - DOMAIN-SUFFIX,2mdn.net,🎯 全球直连
   - DOMAIN-SUFFIX,alt1-mtalk.google.com,🎯 全球直连
@@ -4309,24 +2815,34 @@ rules:
   - DOMAIN-SUFFIX,alt7-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,alt8-mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,app-measurement.com,🎯 全球直连
+  - DOMAIN-SUFFIX,c.android.clients.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,cache.pack.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,clickserve.dartsearch.net,🎯 全球直连
+  - DOMAIN-SUFFIX,clientservices.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,crl.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,dl.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,dl.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,fonts.googleapis.com,🎯 全球直连
+  - DOMAIN-SUFFIX,fonts.gstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagmanager.com,🎯 全球直连
   - DOMAIN-SUFFIX,googletagservices.com,🎯 全球直连
   - DOMAIN-SUFFIX,gtm.oasisfeng.com,🎯 全球直连
+  - DOMAIN-SUFFIX,imasdk.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,mtalk.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,ocsp.pki.goog,🎯 全球直连
   - DOMAIN-SUFFIX,recaptcha.net,🎯 全球直连
   - DOMAIN-SUFFIX,safebrowsing-cache.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,safebrowsing.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,settings.crashlytics.com,🎯 全球直连
   - DOMAIN-SUFFIX,ssl-google-analytics.l.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,toolbarqueries.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.google.com,🎯 全球直连
   - DOMAIN-SUFFIX,tools.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,update.googleapis.com,🎯 全球直连
   - DOMAIN-SUFFIX,www-googletagmanager.l.google.com,🎯 全球直连
+  - DOMAIN-SUFFIX,www.gstatic.com,🎯 全球直连
+# 内容：SteamCN
+# 数量：15条
   - DOMAIN,csgo.wmsj.cn,🎯 全球直连
   - DOMAIN,dl.steam.clngaa.com,🎯 全球直连
   - DOMAIN,dl.steam.ksyna.com,🎯 全球直连
@@ -4338,11 +2854,13 @@ rules:
   - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
   - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
   - DOMAIN,wmsjsteam.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
   - DOMAIN-SUFFIX,cm.steampowered.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamchina.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamcontent.com,🎯 全球直连
   - DOMAIN-SUFFIX,steamusercontent.com,🎯 全球直连
+# Microsoft Services
+# optimized from https://gist.github.com/TTTPOB/ce93fb3b04ba2f21880b09427442d831
+# source: https://docs.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges
   - DOMAIN-KEYWORD,1drv,Ⓜ️ 微软服务
   - DOMAIN-KEYWORD,microsoft,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,aadrm.com,Ⓜ️ 微软服务
@@ -4355,11 +2873,8 @@ rules:
   - DOMAIN-SUFFIX,azure.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azure.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azureedge.net,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,azureiotcentral.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,azurerms.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,bing.com,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,bing.net,Ⓜ️ 微软服务
-  - DOMAIN-SUFFIX,bingapis.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudapp.net,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,cloudappsecurity.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,edgesuite.net,Ⓜ️ 微软服务
@@ -4422,11 +2937,12 @@ rules:
   - DOMAIN-SUFFIX,wunderlist.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammer.com,Ⓜ️ 微软服务
   - DOMAIN-SUFFIX,yammerusercontent.com,Ⓜ️ 微软服务
+# Apple
+# 一般国内Apple肯定正常,不需要开代理
   - DOMAIN,apple.comscoreresearch.com,🍎 苹果服务
   - DOMAIN-SUFFIX,aaplimg.com,🍎 苹果服务
   - DOMAIN-SUFFIX,akadns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-cloudkit.com,🍎 苹果服务
-  - DOMAIN-SUFFIX,apple-dns.net,🍎 苹果服务
   - DOMAIN-SUFFIX,apple-mapkit.com,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.co,🍎 苹果服务
   - DOMAIN-SUFFIX,apple.com,🍎 苹果服务
@@ -4451,13 +2967,64 @@ rules:
   - IP-CIDR,192.35.50.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,198.183.17.0/24,🍎 苹果服务,no-resolve
   - IP-CIDR,205.180.175.0/24,🍎 苹果服务,no-resolve
+# 内容：国外媒体列表
+# 更新：2023-01-15 22:06:33
+# 数量：330条
+# ABC
+# AbemaTV
+# All4
+# Amazon
+# AppleNews
+# AppleTV
+# BBCiPlayer
+# Bahamut
+# DAZN
+# Deezer
+# DiscoveryPlus
+# DisneyPlus
+# EncoreTVB
+# FoxNow
+# HBO
+# HBO_GO_HKG
+# HWTV
+# Hulu
+# HuluJapan
+# ITV
+# JOOX
+# Japonx
+# KKBOX
+# KKTV
+# LiTV
+# LineTV
+# My5
+# MyTVSuper
+# Netflix
+# Niconico
+# PBS
+# Pandora
+# Pornhub
+# Qobuz
+# SoundCloud
+# Spotify
+# TIDAL
+# TaiWanGood 台湾好
+# TikTok
+# Twitch
+# ViuTV
+# YouTube
+# YouTubeMusic
   - DOMAIN-SUFFIX,edgedatg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,go.com,🌍 国外媒体
+#   - USER-AGENT,AbemaTV*,🌍 国外媒体
   - DOMAIN-KEYWORD,abematv.akamaized.net,🌍 国外媒体
+  - DOMAIN,api-abematv.bucketeer.jp,🌍 国外媒体
+  - DOMAIN-SUFFIX,abema-tv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.io,🌍 国外媒体
   - DOMAIN-SUFFIX,abema.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ameba.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,hayabusa.io,🌍 国外媒体
+  - DOMAIN-SUFFIX,hayabusa.media,🌍 国外媒体
+#   - USER-AGENT,All4*,🌍 国外媒体
   - DOMAIN-SUFFIX,c4assets.com,🌍 国外媒体
   - DOMAIN-SUFFIX,channel4.com,🌍 国外媒体
   - DOMAIN-KEYWORD,avoddashs,🌍 国外媒体
@@ -4475,17 +3042,18 @@ rules:
   - DOMAIN-SUFFIX,aiv-cdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,aiv-delivery.net,🌍 国外媒体
   - DOMAIN-SUFFIX,amazon.jobs,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazontools.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,amazontours.com,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonuniversity.jobs,🌍 国外媒体
   - DOMAIN-SUFFIX,amazonvideo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,media-amazon.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pv-cdn.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,seattlespheres.com,🌍 国外媒体
+#   - URL-REGEX,^https?:\/\/www\.amazon\.com\/(Amazon-Video|gp\/video)\/,🌍 国外媒体
+#   - USER-AGENT,AppleNews*,🌍 国外媒体
+#   - USER-AGENT,com.apple.news*,🌍 国外媒体
   - DOMAIN,gspe1-ssl.ls.apple.com,🌍 国外媒体
   - DOMAIN,np-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN,play-edge.itunes.apple.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tv.apple.com,🌍 国外媒体
+#   - USER-AGENT,BBCiPlayer*,🌍 国外媒体
   - DOMAIN-KEYWORD,bbcfmt,🌍 国外媒体
   - DOMAIN-KEYWORD,uk-live,🌍 国外媒体
   - DOMAIN,aod-dash-uk-live.akamaized.net,🌍 国外媒体
@@ -4500,11 +3068,13 @@ rules:
   - DOMAIN-SUFFIX,bbci.co,🌍 国外媒体
   - DOMAIN-SUFFIX,bbci.co.uk,🌍 国外媒体
   - DOMAIN-SUFFIX,bidi.net.uk,🌍 国外媒体
+#   - USER-AGENT,Anime*,🌍 国外媒体
   - DOMAIN,bahamut.akamaized.net,🌍 国外媒体
   - DOMAIN,gamer-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN,gamer2-cds.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,bahamut.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,gamer.com.tw,🌍 国外媒体
+#   - USER-AGENT,DAZN*,🌍 国外媒体
   - DOMAIN-KEYWORD,voddazn,🌍 国外媒体
   - DOMAIN,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d151l6v8er5bdm.cloudfront.net,🌍 国外媒体
@@ -4516,11 +3086,14 @@ rules:
   - DOMAIN-SUFFIX,indazn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,indaznlab.com,🌍 国外媒体
   - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
+#   - USER-AGENT,Deezer*,🌍 国外媒体
   - DOMAIN-SUFFIX,deezer.com,🌍 国外媒体
   - DOMAIN-SUFFIX,dzcdn.net,🌍 国外媒体
   - DOMAIN-SUFFIX,disco-api.com,🌍 国外媒体
   - DOMAIN-SUFFIX,discovery.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+#   - USER-AGENT,Disney*,🌍 国外媒体
+#   - USER-AGENT,Disney+*,🌍 国外媒体
   - DOMAIN,cdn.registerdisney.go.com,🌍 国外媒体
   - DOMAIN-SUFFIX,adobedtm.com,🌍 国外媒体
   - DOMAIN-SUFFIX,bam.nr-data.net,🌍 国外媒体
@@ -4541,19 +3114,25 @@ rules:
   - DOMAIN-SUFFIX,dssott.com,🌍 国外媒体
   - DOMAIN-SUFFIX,execute-api.us-east-1.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,js-agent.newrelic.com,🌍 国外媒体
+#   - USER-AGENT,encoreTVB*,🌍 国外媒体
   - DOMAIN,bcbolt446c5271-a.akamaihd.net,🌍 国外媒体
   - DOMAIN,content.jwplatform.com,🌍 国外媒体
   - DOMAIN,edge.api.brightcove.com,🌍 国外媒体
   - DOMAIN,videos-f.jwpsrv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,encoretvb.com,🌍 国外媒体
+#   - USER-AGENT,FOX%20NOW*,🌍 国外媒体
   - DOMAIN-SUFFIX,fox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,foxdcg.com,🌍 国外媒体
   - DOMAIN-SUFFIX,uplynk.com,🌍 国外媒体
+#   - USER-AGENT,HBO%20NOW*,🌍 国外媒体
+#   - USER-AGENT,HBOMAX*,🌍 国外媒体
   - DOMAIN-SUFFIX,hbo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogo.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomax.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbomaxcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbonow.com,🌍 国外媒体
+#   - USER-AGENT,HBO%20GO%20PROD*,🌍 国外媒体
+  - DOMAIN-KEYWORD,.hbogoasia.,🌍 国外媒体
   - DOMAIN-KEYWORD,hbogoasia,🌍 国外媒体
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com,🌍 国外媒体
   - DOMAIN,bcbolthboa-a.akamaihd.net,🌍 国外媒体
@@ -4573,6 +3152,7 @@ rules:
   - DOMAIN-SUFFIX,hboasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.com,🌍 国外媒体
   - DOMAIN-SUFFIX,hbogoasia.hk,🌍 国外媒体
+#   - USER-AGENT,HWTVMobile*,🌍 国外媒体
   - DOMAIN-SUFFIX,5itv.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,ocnttv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,cws-hulu.conviva.com,🌍 国外媒体
@@ -4588,9 +3168,12 @@ rules:
   - DOMAIN-SUFFIX,prod.hjholdings.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,streaks.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,yb.uncn.jp,🌍 国外媒体
+#   - USER-AGENT,ITV_Player*,🌍 国外媒体
   - DOMAIN,itvpnpmobile-a.akamaihd.net,🌍 国外媒体
   - DOMAIN-SUFFIX,itv.com,🌍 国外媒体
   - DOMAIN-SUFFIX,itvstatic.com,🌍 国外媒体
+#   - USER-AGENT,JOOX*,🌍 国外媒体
+#   - USER-AGENT,WeMusic*,🌍 国外媒体
   - DOMAIN-KEYWORD,jooxweb-api,🌍 国外媒体
   - DOMAIN-SUFFIX,joox.com,🌍 国外媒体
   - DOMAIN-KEYWORD,japonx,🌍 国外媒体
@@ -4606,25 +3189,32 @@ rules:
   - DOMAIN-SUFFIX,kfs.io,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com,🌍 国外媒体
   - DOMAIN-SUFFIX,kkbox.com.tw,🌍 国外媒体
+#   - USER-AGENT,KKTV*,🌍 国外媒体
+#   - USER-AGENT,com.kktv.ios.kktv*,🌍 国外媒体
   - DOMAIN,kktv-theater.kk.stream,🌍 国外媒体
   - DOMAIN,theater-kktv.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.com.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,kktv.me,🌍 国外媒体
   - DOMAIN,litvfreemobile-hichannel.cdn.hinet.net,🌍 国外媒体
   - DOMAIN-SUFFIX,litv.tv,🌍 国外媒体
+#   - USER-AGENT,LINE%20TV*,🌍 国外媒体
+#   - USER-AGENT,LINE*,🌍 国外媒体
   - DOMAIN,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,d3c7rimkq79yfu.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,linetv.tw,🌍 国外媒体
   - DOMAIN-SUFFIX,profile.line-scdn.net,🌍 国外媒体
+#   - USER-AGENT,My5*,🌍 国外媒体
   - DOMAIN,d349g9zuie06uo.cloudfront.net,🌍 国外媒体
   - DOMAIN-SUFFIX,channel5.com,🌍 国外媒体
   - DOMAIN-SUFFIX,my5.tv,🌍 国外媒体
+#   - USER-AGENT,mytv*,🌍 国外媒体
   - DOMAIN-KEYWORD,nowtv100,🌍 国外媒体
   - DOMAIN-KEYWORD,rthklive,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.hb.omtrdc.net,🌍 国外媒体
   - DOMAIN,mytvsuperlimited.sc.omtrdc.net,🌍 国外媒体
   - DOMAIN-SUFFIX,mytvsuper.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tvb.com,🌍 国外媒体
+#   - USER-AGENT,Argo*,🌍 国外媒体
   - DOMAIN-KEYWORD,apiproxy-device-prod-nlb-,🌍 国外媒体
   - DOMAIN-KEYWORD,dualstack.apiproxy-,🌍 国外媒体
   - DOMAIN-KEYWORD,netflixdnstest,🌍 国外媒体
@@ -4662,60 +3252,27 @@ rules:
   - IP-CIDR,192.173.64.0/18,🌍 国外媒体,no-resolve
   - IP-CIDR,198.38.96.0/19,🌍 国外媒体,no-resolve
   - IP-CIDR,198.45.48.0/20,🌍 国外媒体,no-resolve
-  - IP-CIDR,203.75.84.0/24,🌍 国外媒体,no-resolve
   - IP-CIDR,207.45.72.0/22,🌍 国外媒体,no-resolve
   - IP-CIDR,208.75.76.0/22,🌍 国外媒体,no-resolve
+#   - USER-AGENT,Niconico*,🌍 国外媒体
   - DOMAIN-SUFFIX,dmc.nico,🌍 国外媒体
   - DOMAIN-SUFFIX,nicovideo.jp,🌍 国外媒体
   - DOMAIN-SUFFIX,nimg.jp,🌍 国外媒体
-  - DOMAIN-KEYWORD,nivod,🌍 国外媒体
-  - DOMAIN-SUFFIX,biggggg.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,mudvod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbys.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbys1.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nbyy.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,newpppp.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivodi.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,nivodz.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,vod360.net,🌍 国外媒体
-  - DOMAIN-KEYWORD,olevod,🌍 国外媒体
-  - DOMAIN-SUFFIX,haiwaikan.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,iole.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,olehd.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olelive.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevod.tv,🌍 国外媒体
-  - DOMAIN-SUFFIX,olevodtv.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,openai,🌍 国外媒体
-  - DOMAIN,gemini.google.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,auth0.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,chatgpt.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,client-api.arkoselabs.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,events.statsigapi.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,featuregates.org,🌍 国外媒体
-  - DOMAIN-SUFFIX,identrust.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercom.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,intercomcdn.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaistatic.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,oaiusercontent.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openai.com,🌍 国外媒体
-  - DOMAIN-SUFFIX,openaiapi-site.azureedge.net,🌍 国外媒体
-  - DOMAIN-SUFFIX,sentry.io,🌍 国外媒体
-  - DOMAIN-SUFFIX,stripe.com,🌍 国外媒体
+#   - USER-AGENT,PBS*,🌍 国外媒体
   - DOMAIN-SUFFIX,pbs.org,🌍 国外媒体
+#   - USER-AGENT,Pandora*,🌍 国外媒体
   - DOMAIN-SUFFIX,pandora.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phncdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,phprcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhub.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pornhubpremium.com,🌍 国外媒体
   - DOMAIN-SUFFIX,qobuz.com,🌍 国外媒体
+#   - USER-AGENT,SoundCloud*,🌍 国外媒体
   - DOMAIN-SUFFIX,p-cdn.us,🌍 国外媒体
   - DOMAIN-SUFFIX,sndcdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,soundcloud.com,🌍 国外媒体
-  - DOMAIN-KEYWORD,-spotify-,🌍 国外媒体
+#   - USER-AGENT,Spotify*,🌍 国外媒体
+  - DOMAIN-KEYWORD,-spotify-com,🌍 国外媒体
   - DOMAIN-KEYWORD,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,pscdn.co,🌍 国外媒体
   - DOMAIN-SUFFIX,scdn.co,🌍 国外媒体
@@ -4723,12 +3280,15 @@ rules:
   - DOMAIN-SUFFIX,spotify.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.com,🌍 国外媒体
   - DOMAIN-SUFFIX,spotifycdn.net,🌍 国外媒体
+#   - USER-AGENT,TIDAL*,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal-cms.s3.amazonaws.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidal.com,🌍 国外媒体
   - DOMAIN-SUFFIX,tidalhifi.com,🌍 国外媒体
+#   - USER-AGENT,TaiwanGood*,🌍 国外媒体
   - DOMAIN,hamifans.emome.net,🌍 国外媒体
   - DOMAIN-SUFFIX,skyking.com.tw,🌍 国外媒体
-  - DOMAIN-KEYWORD,tiktokcdn,🌍 国外媒体
+#   - USER-AGENT,TikTok*,🌍 国外媒体
+  - DOMAIN-KEYWORD,tiktokcdn-,🌍 国外媒体
   - DOMAIN-SUFFIX,byteoversea.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ibytedtos.com,🌍 国外媒体
   - DOMAIN-SUFFIX,ipstatp.com,🌍 国外媒体
@@ -4745,6 +3305,7 @@ rules:
   - DOMAIN-SUFFIX,twitch-ext.rootonline.de,🌍 国外媒体
   - DOMAIN-SUFFIX,twitch.tv,🌍 国外媒体
   - DOMAIN-SUFFIX,twitchcdn.net,🌍 国外媒体
+#   - USER-AGENT,Viu*,🌍 国外媒体
   - PROCESS-NAME,com.viu.pad,🌍 国外媒体
   - PROCESS-NAME,com.viu.phone,🌍 国外媒体
   - PROCESS-NAME,com.vuclip.viu,🌍 国外媒体
@@ -4760,6 +3321,9 @@ rules:
   - DOMAIN-SUFFIX,viu.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.now.com,🌍 国外媒体
   - DOMAIN-SUFFIX,viu.tv,🌍 国外媒体
+#   - USER-AGENT,*youtube*,🌍 国外媒体
+#   - USER-AGENT,YouTube*,🌍 国外媒体
+#   - USER-AGENT,com.google.ios.youtube*,🌍 国外媒体
   - DOMAIN-KEYWORD,youtube,🌍 国外媒体
   - DOMAIN,youtubei.googleapis.com,🌍 国外媒体
   - DOMAIN,yt3.ggpht.com,🌍 国外媒体
@@ -4774,7 +3338,14 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,🌍 国外媒体
   - DOMAIN-SUFFIX,yt.be,🌍 国外媒体
   - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
+#   - USER-AGENT,*YouTubeMusic*,🌍 国外媒体
+#   - USER-AGENT,*com.google.ios.youtubemusic*,🌍 国外媒体
+#   - USER-AGENT,YouTubeMusic*,🌍 国外媒体
+#   - USER-AGENT,com.google.ios.youtubemusic*,🌍 国外媒体
   - DOMAIN,music.youtube.com,🌍 国外媒体
+# Telegram
+#PROCESS-NAME,Telegram.exe
+#PROCESS-NAME,org.telegram.messenger
   - DOMAIN-SUFFIX,t.me,📲 电报信息
   - DOMAIN-SUFFIX,tdesktop.com,📲 电报信息
   - DOMAIN-SUFFIX,telegra.ph,📲 电报信息
@@ -4787,10 +3358,48 @@ rules:
   - IP-CIDR6,2001:67c:4e8::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23d::/48,📲 电报信息,no-resolve
   - IP-CIDR6,2001:b28:f23f::/48,📲 电报信息,no-resolve
+# 长风网站，自动注入
+  - DOMAIN-SUFFIX,v2rayse.com,🚀 节点选择
+  - DOMAIN-SUFFIX,cff.pw,🚀 节点选择
+  - DOMAIN-SUFFIX,vpnse.org,🚀 节点选择
+  - DOMAIN-SUFFIX,cfmem.com,🚀 节点选择
+# 代理列表
+# MyList && Other
+# 国外域名
+# 国外域名关键字
+# Top Blocked Sites
+# Amazon
+# BBC
+# Developer 开发者常用国外网站、镜像和论坛
+# Discord
+# Facebook
+# Github
+# Google
+# GoogleCNProxyIP 谷歌中国服务 services.googleapis.cn
+# Instagram
+# Kakao Talk
+# Line
+# OneDrive
+#DOMAIN-SUFFIX,aria.microsoft.com
+# Porn
+# Pixiv
+# Spark
+# Steam
+# TapTap
+# Twitch
+# Twitter
+# Telegram
+# TeraBox
+# Whatsapp
+# Wikipedia 维基相关域名
+#飞流直播
+#华文电视
+# VikACG
   - DOMAIN-SUFFIX,1password.com,🚀 节点选择
   - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
   - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
   - DOMAIN-SUFFIX,btlibrary.me,🚀 节点选择
+  - DOMAIN-SUFFIX,chat.openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,cloudcone.com,🚀 节点选择
   - DOMAIN-SUFFIX,dubox.com,🚀 节点选择
   - DOMAIN-SUFFIX,gameloft.com,🚀 节点选择
@@ -4801,13 +3410,13 @@ rules:
   - DOMAIN-SUFFIX,linkedin.com,🚀 节点选择
   - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
   - DOMAIN-SUFFIX,notion.so,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
   - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
   - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
   - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
   - DOMAIN-SUFFIX,tumbex.com,🚀 节点选择
   - DOMAIN-SUFFIX,twdvd.com,🚀 节点选择
   - DOMAIN-SUFFIX,unsplash.com,🚀 节点选择
-  - DOMAIN-SUFFIX,buzzsprout.com,🚀 节点选择
   - DOMAIN-SUFFIX,eu,🚀 节点选择
   - DOMAIN-SUFFIX,hk,🚀 节点选择
   - DOMAIN-SUFFIX,jp,🚀 节点选择
@@ -4815,6 +3424,7 @@ rules:
   - DOMAIN-SUFFIX,sg,🚀 节点选择
   - DOMAIN-SUFFIX,tw,🚀 节点选择
   - DOMAIN-SUFFIX,uk,🚀 节点选择
+  - DOMAIN-SUFFIX,us,🚀 节点选择
   - DOMAIN-KEYWORD,1e100,🚀 节点选择
   - DOMAIN-KEYWORD,abema,🚀 节点选择
   - DOMAIN-KEYWORD,appledaily,🚀 节点选择
@@ -4965,11 +3575,8 @@ rules:
   - DOMAIN-KEYWORD,uk-live,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.co,🚀 节点选择
   - DOMAIN-SUFFIX,bbc.com,🚀 节点选择
-  - DOMAIN-SUFFIX,claude.ai,🚀 节点选择
-  - DOMAIN-SUFFIX,anthropic.com,🚀 节点选择
   - DOMAIN-SUFFIX,apache.org,🚀 节点选择
   - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.io,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.co,🚀 节点选择
   - DOMAIN-SUFFIX,elastic.com,🚀 节点选择
   - DOMAIN-SUFFIX,gcr.io,🚀 节点选择
@@ -5084,8 +3691,6 @@ rules:
   - IP-CIDR,119.235.236.0/23,🚀 节点选择,no-resolve
   - IP-CIDR,147.92.128.0/17,🚀 节点选择,no-resolve
   - IP-CIDR,203.104.128.0/19,🚀 节点选择,no-resolve
-  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
-  - DOMAIN-SUFFIX,challenges.cloudflare.com,🚀 节点选择
   - DOMAIN-KEYWORD,1drv,🚀 节点选择
   - DOMAIN-KEYWORD,onedrive,🚀 节点选择
   - DOMAIN-KEYWORD,skydrive,🚀 节点选择
@@ -5123,7 +3728,6 @@ rules:
   - DOMAIN-SUFFIX,ypncdn.com,🚀 节点选择
   - DOMAIN-SUFFIX,pixiv.net,🚀 节点选择
   - DOMAIN-SUFFIX,pximg.net,🚀 节点选择
-  - DOMAIN-SUFFIX,fanbox.cc,🚀 节点选择
   - DOMAIN-SUFFIX,amplitude.com,🚀 节点选择
   - DOMAIN-SUFFIX,firebaseio.com,🚀 节点选择
   - DOMAIN-SUFFIX,hockeyapp.net,🚀 节点选择
@@ -5142,6 +3746,7 @@ rules:
   - DOMAIN-SUFFIX,steamstatic.com,🚀 节点选择
   - DOMAIN-SUFFIX,steamstat.us,🚀 节点选择
   - DOMAIN,steambroadcast.akamaized.net,🚀 节点选择
+  - DOMAIN,steamcdn-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamcommunity-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamstore-a.akamaihd.net,🚀 节点选择
   - DOMAIN,steamusercontent-a.akamaihd.net,🚀 节点选择
@@ -5198,14 +3803,59 @@ rules:
   - DOMAIN-SUFFIX,wikiversity.org,🚀 节点选择
   - DOMAIN-SUFFIX,wikivoyage.org,🚀 节点选择
   - DOMAIN-SUFFIX,wiktionary.org,🚀 节点选择
-  - DOMAIN-SUFFIX,zoom.us,🚀 节点选择
-  - DOMAIN-SUFFIX,zoomgov.com,🚀 节点选择
   - DOMAIN-SUFFIX,neulion.com,🚀 节点选择
   - DOMAIN-SUFFIX,icntv.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,flzbcdn.xyz,🚀 节点选择
   - DOMAIN-SUFFIX,ocnttv.com,🚀 节点选择
   - DOMAIN-SUFFIX,vikacg.com,🚀 节点选择
   - DOMAIN-SUFFIX,picjs.xyz,🚀 节点选择
+# 直连列表
+# MyList
+# CN域名直连(中国|公司|网络)
+# 中国国内常见域名关键词直连
+# 360
+# 4399
+# 58
+# Alibaba
+# Baidu
+# Bilibili
+# Blizzard
+# ByteDance
+# CCTV
+# ChinaNet
+# DiDi
+# Douyu 斗鱼
+# Epic
+# HuaWei
+# Iflytek 科大讯飞
+# Iqiyi
+# JD
+# Kingsoft
+# Kuaishou 快手
+# Meitu
+# LeTV 乐视
+# MGTV 芒果TV
+# MI
+# NetEase
+# PPTV、PPLive
+# PDD 拼多多
+# Sina
+# Sohu Sogo
+# Sony
+# SteamCN
+# Tencent
+# Vip 唯品会
+# Ximalaya 喜马拉雅
+# Xunlei 迅雷
+# YYeTs 人人影视
+# Private Tracker
+# TeamViewer
+# Public Direct CDN 公共直连
+#DOMAIN-SUFFIX,ajax.aspnetcdn.com
+#DOMAIN-SUFFIX,ajax.cloudflare.com
+#DOMAIN-SUFFIX,cdnjs.cloudflare.com
+#DOMAIN-SUFFIX,code.jquery.com
+# AccelerateDirectSites
   - DOMAIN-SUFFIX,13th.tech,🎯 全球直连
   - DOMAIN-SUFFIX,423down.com,🎯 全球直连
   - DOMAIN-SUFFIX,bokecc.com,🎯 全球直连
@@ -5221,12 +3871,11 @@ rules:
   - DOMAIN-SUFFIX,pdfwifi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhenguanyu.biz,🎯 全球直连
   - DOMAIN-SUFFIX,zhenguanyu.com,🎯 全球直连
-  - DOMAIN-SUFFIX,snapdrop.net,🎯 全球直连
-  - DOMAIN-SUFFIX,tebex.io,🎯 全球直连
   - DOMAIN-SUFFIX,cn,🎯 全球直连
   - DOMAIN-SUFFIX,xn--fiqs8s,🎯 全球直连
   - DOMAIN-SUFFIX,xn--55qx5d,🎯 全球直连
   - DOMAIN-SUFFIX,xn--io0a7i,🎯 全球直连
+  - DOMAIN-KEYWORD,-cn,🎯 全球直连
   - DOMAIN-KEYWORD,360buy,🎯 全球直连
   - DOMAIN-KEYWORD,alicdn,🎯 全球直连
   - DOMAIN-KEYWORD,alimama,🎯 全球直连
@@ -5273,7 +3922,6 @@ rules:
   - DOMAIN-SUFFIX,aliyuncdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyuncs.com,🎯 全球直连
   - DOMAIN-SUFFIX,aliyundrive.com,🎯 全球直连
-  - DOMAIN-SUFFIX,aliyundrive.net,🎯 全球直连
   - DOMAIN-SUFFIX,amap.com,🎯 全球直连
   - DOMAIN-SUFFIX,autonavi.com,🎯 全球直连
   - DOMAIN-SUFFIX,dingtalk.com,🎯 全球直连
@@ -5313,8 +3961,6 @@ rules:
   - DOMAIN-SUFFIX,biliapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,biliapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilibili.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bilibili.co,🎯 全球直连
-  - DOMAIN-SUFFIX,biliintl.co,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.com,🎯 全球直连
   - DOMAIN-SUFFIX,biligame.net,🎯 全球直连
   - DOMAIN-SUFFIX,bilivideo.com,🎯 全球直连
@@ -5322,6 +3968,9 @@ rules:
   - DOMAIN-SUFFIX,hdslb.com,🎯 全球直连
   - DOMAIN-SUFFIX,im9.com,🎯 全球直连
   - DOMAIN-SUFFIX,smtcdns.net,🎯 全球直连
+  - DOMAIN-SUFFIX,battle.net,🎯 全球直连
+  - DOMAIN-SUFFIX,battlenet.com,🎯 全球直连
+  - DOMAIN-SUFFIX,blizzard.com,🎯 全球直连
   - DOMAIN-SUFFIX,amemv.com,🎯 全球直连
   - DOMAIN-SUFFIX,bdxiguaimg.com,🎯 全球直连
   - DOMAIN-SUFFIX,bdxiguastatic.com,🎯 全球直连
@@ -5336,7 +3985,6 @@ rules:
   - DOMAIN-SUFFIX,bytetos.com,🎯 全球直连
   - DOMAIN-SUFFIX,bytexservice.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyin.com,🎯 全球直连
-  - DOMAIN-SUFFIX,douyincdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinpic.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinstatic.com,🎯 全球直连
   - DOMAIN-SUFFIX,douyinvod.com,🎯 全球直连
@@ -5385,25 +4033,12 @@ rules:
   - DOMAIN-SUFFIX,dbankcdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hc-cdn.com,🎯 全球直连
   - DOMAIN-SUFFIX,hicloud.com,🎯 全球直连
-  - DOMAIN-SUFFIX,hihonor.com,🎯 全球直连
   - DOMAIN-SUFFIX,huawei.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweicloud.com,🎯 全球直连
   - DOMAIN-SUFFIX,huaweishop.net,🎯 全球直连
   - DOMAIN-SUFFIX,hwccpc.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmall.com,🎯 全球直连
   - DOMAIN-SUFFIX,vmallres.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawnfs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawno.com,🎯 全球直连
-  - DOMAIN-SUFFIX,allawntech.com,🎯 全球直连
-  - DOMAIN-SUFFIX,coloros.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytap.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapcs.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapdownload.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapimage.com,🎯 全球直连
-  - DOMAIN-SUFFIX,heytapmobi.com,🎯 全球直连
-  - DOMAIN-SUFFIX,oppo.com,🎯 全球直连
-  - DOMAIN-SUFFIX,oppoer.me,🎯 全球直连
-  - DOMAIN-SUFFIX,oppomobile.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyink.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflyrec.com,🎯 全球直连
   - DOMAIN-SUFFIX,iflytek.com,🎯 全球直连
@@ -5503,7 +4138,6 @@ rules:
   - DOMAIN,st.dl.bscstorage.net,🎯 全球直连
   - DOMAIN,st.dl.eccdnx.com,🎯 全球直连
   - DOMAIN,st.dl.pinyuncloud.com,🎯 全球直连
-  - DOMAIN,xz.pphimalayanrt.com,🎯 全球直连
   - DOMAIN,steampipe.steamcontent.tnkjmec.com,🎯 全球直连
   - DOMAIN,steampowered.com.8686c.com,🎯 全球直连
   - DOMAIN,steamstatic.com.8686c.com,🎯 全球直连
@@ -5555,7 +4189,46 @@ rules:
   - DOMAIN-SUFFIX,zmzapi.com,🎯 全球直连
   - DOMAIN-SUFFIX,zmzapi.net,🎯 全球直连
   - DOMAIN-SUFFIX,zmzfile.com,🎯 全球直连
+  - DOMAIN-KEYWORD,announce,🎯 全球直连
+  - DOMAIN-KEYWORD,torrent,🎯 全球直连
+  - DOMAIN-KEYWORD,tracker,🎯 全球直连
+  - DOMAIN-SUFFIX,animebytes.tv,🎯 全球直连
+  - DOMAIN-SUFFIX,animetorrents.me,🎯 全球直连
+  - DOMAIN-SUFFIX,awesome-hd.me,🎯 全球直连
+  - DOMAIN-SUFFIX,beitai.pt,🎯 全球直连
+  - DOMAIN-SUFFIX,bittorrent.com,🎯 全球直连
+  - DOMAIN-SUFFIX,broadcasthe.net,🎯 全球直连
+  - DOMAIN-SUFFIX,chdbits.co,🎯 全球直连
+  - DOMAIN-SUFFIX,classix-unlimited.co.uk,🎯 全球直连
+  - DOMAIN-SUFFIX,empornium.me,🎯 全球直连
+  - DOMAIN-SUFFIX,gazellegames.net,🎯 全球直连
+  - DOMAIN-SUFFIX,hd4fans.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdchina.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdhome.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdsky.me,🎯 全球直连
+  - DOMAIN-SUFFIX,hdtime.org,🎯 全球直连
+  - DOMAIN-SUFFIX,hdzone.me,🎯 全球直连
+  - DOMAIN-SUFFIX,icetorrent.org,🎯 全球直连
+  - DOMAIN-SUFFIX,jpopsuki.eu,🎯 全球直连
+  - DOMAIN-SUFFIX,keepfrds.com,🎯 全球直连
+  - DOMAIN-SUFFIX,leaguehd.com,🎯 全球直连
+  - DOMAIN-SUFFIX,m-team.cc,🎯 全球直连
+  - DOMAIN-SUFFIX,madsrevolution.net,🎯 全球直连
+  - DOMAIN-SUFFIX,msg.vg,🎯 全球直连
+  - DOMAIN-SUFFIX,nanyangpt.com,🎯 全球直连
+  - DOMAIN-SUFFIX,ncore.cc,🎯 全球直连
+  - DOMAIN-SUFFIX,open.cd,🎯 全球直连
+  - DOMAIN-SUFFIX,ourbits.club,🎯 全球直连
+  - DOMAIN-SUFFIX,passthepopcorn.me,🎯 全球直连
+  - DOMAIN-SUFFIX,privatehd.to,🎯 全球直连
+  - DOMAIN-SUFFIX,pthome.net,🎯 全球直连
+  - DOMAIN-SUFFIX,redacted.ch,🎯 全球直连
+  - DOMAIN-SUFFIX,springsunday.net,🎯 全球直连
+  - DOMAIN-SUFFIX,tjupt.org,🎯 全球直连
+  - DOMAIN-SUFFIX,totheglory.im,🎯 全球直连
+  - DOMAIN-SUFFIX,trontv.com,🎯 全球直连
   - DOMAIN-SUFFIX,teamviewer.com,🎯 全球直连
+  - IP-CIDR,109.239.140.0/24,🎯 全球直连,no-resolve
   - IP-CIDR,139.220.243.27/32,🎯 全球直连,no-resolve
   - IP-CIDR,172.16.102.56/32,🎯 全球直连,no-resolve
   - IP-CIDR,185.188.32.1/28,🎯 全球直连,no-resolve
@@ -5569,10 +4242,6 @@ rules:
   - DOMAIN-SUFFIX,jiasule.com,🎯 全球直连
   - DOMAIN-SUFFIX,staticfile.org,🎯 全球直连
   - DOMAIN-SUFFIX,upaiyun.com,🎯 全球直连
-  - DOMAIN-SUFFIX,doh.pub,🎯 全球直连
-  - DOMAIN-SUFFIX,dns.alidns.com,🎯 全球直连
-  - DOMAIN-SUFFIX,doh.360.cn,🎯 全球直连
-  - IP-CIDR,1.12.12.12/32,🎯 全球直连,no-resolve
   - DOMAIN-SUFFIX,10010.com,🎯 全球直连
   - DOMAIN-SUFFIX,115.com,🎯 全球直连
   - DOMAIN-SUFFIX,12306.com,🎯 全球直连
@@ -5602,7 +4271,6 @@ rules:
   - DOMAIN-SUFFIX,biqudu.com,🎯 全球直连
   - DOMAIN-SUFFIX,biquge.com,🎯 全球直连
   - DOMAIN-SUFFIX,bitauto.com,🎯 全球直连
-  - DOMAIN-SUFFIX,bosszhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,c-ctrip.com,🎯 全球直连
   - DOMAIN-SUFFIX,camera360.com,🎯 全球直连
   - DOMAIN-SUFFIX,cdnmama.com,🎯 全球直连
@@ -5638,7 +4306,6 @@ rules:
   - DOMAIN-SUFFIX,eastday.com,🎯 全球直连
   - DOMAIN-SUFFIX,eastmoney.com,🎯 全球直连
   - DOMAIN-SUFFIX,ecitic.com,🎯 全球直连
-  - DOMAIN-SUFFIX,element-plus.org,🎯 全球直连
   - DOMAIN-SUFFIX,ewqcxz.com,🎯 全球直连
   - DOMAIN-SUFFIX,fang.com,🎯 全球直连
   - DOMAIN-SUFFIX,fantasy.tv,🎯 全球直连
@@ -5717,7 +4384,6 @@ rules:
   - DOMAIN-SUFFIX,nruan.com,🎯 全球直连
   - DOMAIN-SUFFIX,nuomi.com,🎯 全球直连
   - DOMAIN-SUFFIX,onedns.net,🎯 全球直连
-  - DOMAIN-SUFFIX,oneplus.com,🎯 全球直连
   - DOMAIN-SUFFIX,onlinedown.net,🎯 全球直连
   - DOMAIN-SUFFIX,oracle.com,🎯 全球直连
   - DOMAIN-SUFFIX,oschina.net,🎯 全球直连
@@ -5740,7 +4406,6 @@ rules:
   - DOMAIN-SUFFIX,quanmin.tv,🎯 全球直连
   - DOMAIN-SUFFIX,qunar.com,🎯 全球直连
   - DOMAIN-SUFFIX,qunarzz.com,🎯 全球直连
-  - DOMAIN-SUFFIX,realme.com,🎯 全球直连
   - DOMAIN-SUFFIX,repaik.com,🎯 全球直连
   - DOMAIN-SUFFIX,ruguoapp.com,🎯 全球直连
   - DOMAIN-SUFFIX,runoob.com,🎯 全球直连
@@ -5774,7 +4439,6 @@ rules:
   - DOMAIN-SUFFIX,upyun.com,🎯 全球直连
   - DOMAIN-SUFFIX,uxengine.net,🎯 全球直连
   - DOMAIN-SUFFIX,videocc.net,🎯 全球直连
-  - DOMAIN-SUFFIX,vivo.com,🎯 全球直连
   - DOMAIN-SUFFIX,wandoujia.com,🎯 全球直连
   - DOMAIN-SUFFIX,weather.com,🎯 全球直连
   - DOMAIN-SUFFIX,weico.cc,🎯 全球直连
@@ -5811,9 +4475,15 @@ rules:
   - DOMAIN-SUFFIX,zhaopin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhihu.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhimg.com,🎯 全球直连
-  - DOMAIN-SUFFIX,zhipin.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhongsou.com,🎯 全球直连
   - DOMAIN-SUFFIX,zhuihd.com,🎯 全球直连
+# 中国云服务商ip端
+# 阿里
+# 腾讯 qq
+# 百度 Baidu
+# 华为 huwei
+# 网易 NetEase
+# 360
   - IP-CIDR,8.128.0.0/10,🎯 全球直连,no-resolve
   - IP-CIDR,8.208.0.0/12,🎯 全球直连,no-resolve
   - IP-CIDR,14.1.112.0/22,🎯 全球直连,no-resolve
