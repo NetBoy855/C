@@ -7,10 +7,10 @@ proxies:
     type: http
     server: 210.75.240.135
     port: 10044
-  - name: 北京002
+  - name: 上海
     type: socks5
-    server: 210.76.193.20
-    port: 10793
+    server: 140.207.114.166
+    port: 10080
   - name: 天津
     type: http
     server: 120.92.212.16
@@ -32,7 +32,7 @@ proxy-groups:
     type: select
     proxies:
       - 北京
-      - 北京002
+      - 上海
       - 天津
       - 上海01
       - 云南
