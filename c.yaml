@@ -3,11 +3,11 @@ allow-lan: false
 external-controller: 127.0.0.1:49858
 secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
-  - name: 北京
+  - name: 新加坡
     type: http
     server: 36.110.143.55
     port: 8080
-  - name: 北京01
+  - name: 天津
     type: http
     server: 120.92.212.16
     port: 7890
@@ -23,7 +23,7 @@ proxies:
     type: http
     server: 36.147.78.166
     port: 80
-  - name: 北京123
+  - name: 湖北
     type: http
     server: 123.57.0.163
     port: 8888
@@ -31,11 +31,11 @@ proxy-groups:
   - name: bj_group
     type: select
     proxies:
-      - 北京
-      - 北京01
+      - 新加坡
+      - 天津
       - 北京02
       - 北京0101
       - 云南
-      - 北京123
+      - 湖北
 rules:
   - "MATCH,DIRECT"
