@@ -24,9 +24,9 @@ proxies:
     server: 36.147.78.166
     port: 80
   - name: 湖北
-    type: http
-    server: 123.57.0.163
-    port: 8888
+    type: socks4
+    server: 118.145.198.145
+    port: 10808
 proxy-groups:
   - name: bj_group
     type: select
