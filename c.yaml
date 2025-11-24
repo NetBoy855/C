@@ -23,10 +23,6 @@ proxies:
     type: http
     server: 36.147.78.166
     port: 80
-  - name: 湖北
-    type: socks
-    server: 118.145.198.145
-    port: 10808
 proxy-groups:
   - name: bj_group
     type: select
@@ -36,6 +32,5 @@ proxy-groups:
       - 北京02
       - 北京0101
       - 云南
-      - 湖北
 rules:
   - "MATCH,DIRECT"
