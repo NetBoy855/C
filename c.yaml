@@ -3,10 +3,10 @@ allow-lan: false
 external-controller: 127.0.0.1:49858
 secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
-  - name: 新加坡
-    type: http
-    server: 36.110.143.55
-    port: 8080
+  - name: 北京
+    type: socks5
+    server: 111.201.208.235
+    port: 1080
   - name: 天津
     type: http
     server: 120.92.212.16
