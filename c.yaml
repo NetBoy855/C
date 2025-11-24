@@ -31,7 +31,7 @@ proxy-groups:
   - name: bj_group
     type: select
     proxies:
-      - 新加坡
+      - 北京
       - 天津
       - 北京02
       - 北京0101
