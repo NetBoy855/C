@@ -12,9 +12,9 @@ proxies:
     server: 120.92.212.16
     port: 7890
   - name: 北京02
-    type: socks5
-    server: 120.133.82.62
-    port: 44127
+    type: http
+    server: 202.112.51.124
+    port: 3128
   - name: 北京0101
     type: http
     server: 116.236.68.169
