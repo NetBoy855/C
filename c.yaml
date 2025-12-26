@@ -35,7 +35,7 @@ proxy-groups:
       - 天津
       - 海淀
       - 上海
-      - 云南
+      - 聊城
       - 北京大兴
 rules:
   - "MATCH,DIRECT"
