@@ -13,8 +13,8 @@ proxies:
     port: 7890
   - name: 北京01
     type: http
-    server: 117.50.184.139
-    port: 7890
+    server: 54.222.174.194
+    port: 80
   - name: 上海
     type: http
     server: 114.67.65.20
