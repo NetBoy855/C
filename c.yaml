@@ -3,10 +3,10 @@ allow-lan: false
 external-controller: 127.0.0.1:49858
 secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
-  - name: 海淀
+  - name: 北京
     type: http
-    server: 101.43.255.96
-    port: 80
+    server: 117.122.240.82
+    port: 3338
   - name: 天津
     type: http
     server: 120.92.212.16
@@ -31,7 +31,7 @@ proxy-groups:
   - name: bj_group
     type: select
     proxies:
-      - 海淀
+      - 北京
       - 天津
       - 北京01
       - 上海
