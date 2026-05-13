@@ -5,8 +5,8 @@ secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
   - name: 北京
     type: http
-    server: 117.122.240.82
-    port: 3338
+    server: 54.222.174.194
+    port: 80
   - name: 天津
     type: http
     server: 120.92.212.16
@@ -15,17 +15,17 @@ proxies:
     type: http
     server: 59.46.216.131
     port: 30001
-  - name: 浙江
+  - name: 北京1
     type: http
-    server: 218.108.131.186
-    port: 17890
+    server: 120.220.197.195
+    port: 59999
   - name: 聊城
     type: http
     server: 220.197.44.36
     port: 3128
-  - name: 北京大兴
+  - name: 北京2
     type: http
-    server: 123.57.0.163
+    server: 120.132.52.172
     port: 8888
 proxy-groups:
   - name: bj_group
@@ -34,8 +34,8 @@ proxy-groups:
       - 北京
       - 天津
       - 辽宁
-      - 浙江
+      - 北京1
       - 聊城
-      - 北京大兴
+      - 北京2
 rules:
   - "MATCH,DIRECT"
