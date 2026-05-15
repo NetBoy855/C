@@ -1,49 +1,41 @@
 {
-  "spider": "https://cyao2q.github.io/files/cyao.jar",
-  "wallpaper": "http://bing.it120.cc/api/getIt120BingPhoto",
+  "extend": "https://cyao2q.github.io/files/m.json",
+  "wallpaper": "https://bing.it120.cc/api/getIt120BingPhoto",
   "sites": [
     {
       "key": "baixiaotang",
-      "name": "💡百小堂",
+      "name": "💡百小堂┃直连",
       "type": 3,
       "api": "csp_AppYsV2",
       "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "ext": "https://www.baixiaotangtop.com/api.php/provide/vod/"
     },
     {
       "key": "huarenok",
-      "name": "👑华人OK",
+      "name": "👑华人OK┃直连",
       "type": 3,
       "api": "csp_AppYsV2",
       "searchable": 1,
       "quickSearch": 1,
+      "filterable": 1,
       "ext": "https://huarenok.com/api.php/provide/vod/"
     },
     {
-      "key": "olevod",
-      "name": "🎬欧乐影院",
+      "key": "olevod_xbpq",
+      "name": "🎬欧乐影院┃网页",
       "type": 3,
       "api": "csp_XBPQ",
       "ext": {
         "站名": "欧乐影院",
         "主页url": "https://www.olevod.com",
-        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
         "数组": "video-list-item\">&&</div>",
         "图片": "data-original=\"&&\"",
         "标题": "title=\"&&\"",
         "链接": "href=\"&&\"",
         "搜索url": "https://www.olevod.com/index.php/vod/search.html?wd={wd}"
       }
-    },
-    {
-      "key": "iyf_tv",
-      "name": "🚀爱壹帆",
-      "type": 3,
-      "api": "csp_AppYsV2",
-      "searchable": 1,
-      "quickSearch": 1,
-      "ext": "https://www.iyf.tv/api.php/provide/vod/"
     }
   ]
 }
