@@ -1,7 +1,6 @@
 {
-  "spider": "https://fastly.jsdelivr.net/gh/clion007/res@main/jar/cl.jar",
+  "spider": "https://cyao2q.github.io/files/cyao.jar;md5;f62916174a7266157f788939c091993a",
   "wallpaper": "https://bing.it120.cc/api/getIt120BingPhoto",
-  "warning": "资源来自互联网，仅供学习交流",
   "sites": [
     {
       "key": "baixiaotang",
@@ -35,7 +34,9 @@
         "图片": "data-original=\"&&\"",
         "标题": "title=\"&&\"",
         "链接": "href=\"&&\"",
-        "搜索url": "https://www.olevod.com/index.php/vod/search.html?wd={wd}"
+        "搜索url": "https://www.olevod.com/index.php/vod/search.html?wd={wd}",
+        "播放数组": "playlist-item\">&&</a>",
+        "播放列表": "<span>&&</span>"
       }
     },
     {
@@ -46,28 +47,9 @@
       "searchable": 1,
       "quickSearch": 1,
       "ext": "https://www.iyf.tv/api.php/provide/vod/"
-    },
-    {
-      "key": "push_agent",
-      "name": "📺推送┃资源转发",
-      "type": 3,
-      "api": "csp_Push",
-      "searchable": 0,
-      "changeable": 0
-    }
-  ],
-  "lives": [
-    {
-      "name": "内置直播",
-      "type": 0,
-      "url": "https://fastly.jsdelivr.net/gh/fanmingming/live@main/tv/m3u/ipv6.m3u",
-      "playerType": 1
     }
   ],
   "flags": [
     "youku", "qq", "iqiyi", "v_p_s", "mgtv", "letv", "bilibili"
-  ],
-  "ads": [
-    "mimg.0c1q0l.com", "www.ad.com", "ad.net", "v.stee7.com"
   ]
 }
