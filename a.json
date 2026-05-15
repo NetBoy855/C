@@ -1,0 +1,72 @@
+{
+  "spider": "https://ghproxy.net/https://raw.githubusercontent.com/FongMi/CatVodSpider/main/jar/targets/production.jar",
+  "wallpaper": "https://bing.it120.cc/api/getIt120BingPhoto",
+  "sites": [
+    {
+      "key": "baixiaotang",
+      "name": " 💡 百小堂┃海外直连",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://www.baixiaotangtop.com/api.php/provide/vod/"
+    },
+    {
+      "key": "olevod",
+      "name": " 🎬 欧乐影院┃海外首选",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "📊 网站": "https://www.olevod.com",
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
+        "🔍 搜索url": "/index.php/vod/search.html?wd={wd}",
+        "列表": "body && .video-list-item",
+        "标题": "title",
+        "图片": "data-original",
+        "链接": "href"
+      }
+    },
+    {
+      "key": "huarenok",
+      "name": " 👑 华人OK┃高清聚合",
+      "type": 3,
+      "api": "csp_AppYsV2",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "https://huarenok.com/api.php/provide/vod/"
+    },
+    {
+      "key": "iyf_tv",
+      "name": " 🚀 IYF爱壹帆┃点播",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "📊 网站": "https://www.iyf.tv",
+        "🔍 搜索url": "/search?key={wd}",
+        "注意": "IYF部分地区有防爬机制，若无法播放需配合FongMi原生JS包或海外代理"
+      }
+    }
+  ],
+  "lives": [
+    {
+      "name": "海外华人直播源",
+      "type": 0,
+      "url": "https://ghproxy.net/https://raw.githubusercontent.com/fanmingming/live/main/tv/m3u/ipv6.m3u",
+      "playerType": 1
+    }
+  ],
+  "ads": [
+    "mimg.0c1q0l.com",
+    "www.ad.com",
+    "ad.net",
+    "olevod.com/ads"
+  ]
+}
