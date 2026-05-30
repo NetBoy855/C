@@ -4,9 +4,9 @@ external-controller: 127.0.0.1:49858
 secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
   - name: 北京
-    type: http
-    server: 59.66.22.245
-    port: 6382
+    type: socks5
+    server: 120.133.82.62
+    port: 44250
   - name: 天津
     type: http
     server: 120.92.212.16
@@ -24,9 +24,9 @@ proxies:
     server: 220.197.44.36
     port: 3128
   - name: 北京2
-    type: http
-    server: 120.132.52.172
-    port: 8888
+    type: socks5
+    server: 120.220.197.195
+    port: 59999
 proxy-groups:
   - name: bj_group
     type: select
