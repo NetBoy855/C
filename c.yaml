@@ -25,8 +25,8 @@ proxies:
     port: 1080
   - name: 北京2
     type: socks5
-    server: 120.220.197.195
-    port: 59999
+    server: 123.113.238.4
+    port: 1080
 proxy-groups:
   - name: bj_group
     type: select
