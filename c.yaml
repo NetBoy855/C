@@ -5,8 +5,8 @@ secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
   - name: 北京
     type: http
-    server: 210.77.22.33
-    port: 6789
+    server: 101.6.70.131
+    port: 4780
   - name: 天津
     type: http
     server: 120.92.212.16
