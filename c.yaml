@@ -5,8 +5,8 @@ secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
   - name: 北京
     type: http
-    server: 101.6.70.131
-    port: 4780
+    server: 123.57.94.90
+    port: 8888
   - name: 天津
     type: http
     server: 120.92.212.16
@@ -20,9 +20,9 @@ proxies:
     server: 111.48.191.1
     port: 7890
   - name: 北京01
-    type: socks5
-    server: 210.76.193.221
-    port: 4564
+    type: http
+    server: 120.92.111.242
+    port: 15010
   - name: 北京2
     type: socks5
     server: 123.113.238.4
