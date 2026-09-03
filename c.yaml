@@ -7,10 +7,10 @@ proxies:
     type: http
     server: 123.57.213.24
     port: 3539
-  - name: 天津
+  - name: 石家庄
     type: http
-    server: 120.92.212.16
-    port: 7890
+    server: 27.185.218.213
+    port: 17981
   - name: 四川
     type: socks5
     server: 117.175.168.195
@@ -24,15 +24,15 @@ proxies:
     server: 120.92.111.242
     port: 15010
   - name: 北京2
-    type: socks5
-    server: 123.113.238.4
-    port: 1080
+    type: http
+    server: 123.57.213.24
+    port: 3539
 proxy-groups:
   - name: bj_group
     type: select
     proxies:
       - 北京
-      - 天津
+      - 石家庄
       - 四川
       - 湖北
       - 北京01
