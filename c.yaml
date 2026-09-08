@@ -5,8 +5,8 @@ secret: 4af40e12-1617-45b0-8f41-e1256d10c034
 proxies:
   - name: 北京
     type: http
-    server: 123.57.213.24
-    port: 3539
+    server: 120.92.111.242
+    port: 15010
   - name: 石家庄
     type: http
     server: 27.185.218.213
